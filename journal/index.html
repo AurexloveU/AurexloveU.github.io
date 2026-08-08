@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="mist">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拾光集 · Aurex 的日记本</title>
+<meta name="description" content="一本低饱和、多主题、可离线的中文日记本。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237a8b99'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f4f6f7' font-family='serif'%3E拾%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ======== 侧栏 ======== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-seal">拾</div>
+      <div>
+        <h1>拾光集</h1>
+        <p class="brand-sub">Aurex 的日记本</p>
+      </div>
+    </div>
+
+    <button class="btn-new" id="btn-new">✎&ensp;写一篇</button>
+
+    <nav class="side-nav" id="side-nav">
+      <button data-view="timeline" class="active"><span class="nav-ico">☰</span>时间线</button>
+      <button data-view="calendar"><span class="nav-ico">▦</span>日历</button>
+      <button data-view="stats"><span class="nav-ico">◔</span>统计与导出</button>
+    </nav>
+
+    <div class="side-section">
+      <h2 class="side-title">全局主题</h2>
+      <div class="theme-list" id="theme-list"></div>
+    </div>
+
+    <div class="side-foot">
+      <div class="sync-status" id="sync-status">
+        <span class="dot"></span><span class="txt">本地模式</span>
+      </div>
+      <p class="side-note">数据保存在浏览器,连接后端后自动同步。</p>
+    </div>
+  </aside>
+
+  <!-- ======== 主区 ======== -->
+  <main class="main">
+    <header class="topbar" id="topbar">
+      <button class="hamburger" id="btn-menu" title="菜单">☰</button>
+      <h2 class="view-title" id="view-title">时间线</h2>
+      <div class="search-wrap">
+        <span class="search-ico">⌕</span>
+        <input type="search" id="search-input" placeholder="搜索标题、正文、标签…" autocomplete="off">
+      </div>
+    </header>
+
+    <!-- 时间线 -->
+    <section class="view active" id="view-timeline">
+      <div class="memories" id="memories" hidden></div>
+      <div class="filter-bar" id="filter-bar" hidden></div>
+      <div class="timeline" id="timeline-list"></div>
+    </section>
+
+    <!-- 日历 -->
+    <section class="view" id="view-calendar">
+      <div class="cal-head">
+        <button class="cal-nav" id="cal-prev" title="上个月">‹</button>
+        <h3 class="cal-title" id="cal-title">2026 年 8 月</h3>
+        <button class="cal-nav" id="cal-next" title="下个月">›</button>
+        <button class="cal-today" id="cal-today-btn">回到今天</button>
+      </div>
+      <div class="cal-week">
+        <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+      <p class="cal-hint">点击有墨点的日子,查看当天的日记。</p>
+    </section>
+
+    <!-- 统计 -->
+    <section class="view" id="view-stats">
+      <div class="stat-tiles">
+        <div class="tile"><b id="stat-count">0</b><span>篇日记</span></div>
+        <div class="tile"><b id="stat-words">0</b><span>累计字数</span></div>
+        <div class="tile"><b id="stat-streak">0</b><span>连续记录(天)</span></div>
+        <div class="tile"><b id="stat-fav">0</b><span>收藏</span></div>
+      </div>
+
+      <div class="card stat-card">
+        <h3 class="card-title">心情曲线 · 最近 30 天</h3>
+        <div class="chart-wrap" id="mood-chart"></div>
+      </div>
+
+      <div class="stat-row">
+        <div class="card stat-card">
+          <h3 class="card-title">心情分布</h3>
+          <div id="mood-dist"></div>
+        </div>
+        <div class="card stat-card">
+          <h3 class="card-title">常用标签</h3>
+          <div class="tag-cloud" id="tag-cloud"></div>
+        </div>
+      </div>
+
+      <div class="card stat-card">
+        <h3 class="card-title">导出</h3>
+        <div class="export-row">
+          <button class="btn" id="btn-export-md">导出全部 .md</button>
+          <button class="btn" id="btn-export-json">导出全部 .json</button>
+        </div>
+        <p class="muted">Markdown 适合阅读与迁移,JSON 保留全部元数据(心情、标签、主题)。</p>
+      </div>
+
+      <div class="card stat-card">
+        <h3 class="card-title">后端同步(可选)</h3>
+        <div class="export-row">
+          <input type="text" id="api-input" class="text-input" placeholder="例如 http://localhost:4870(留空 = 自动探测)">
+          <button class="btn" id="btn-api-save">保存并重连</button>
+        </div>
+        <p class="muted" id="api-status">未连接:当前使用浏览器本地存储,功能完整可用。</p>
+      </div>
+    </section>
+
+    <!-- 编辑器 -->
+    <section class="view" id="view-editor">
+      <div class="editor-top">
+        <button class="btn ghost" id="btn-back">‹ 返回</button>
+        <input type="date" id="entry-date" class="date-input" title="日记日期">
+        <div class="mood-picker" id="mood-picker" title="今天的心情"></div>
+        <span class="flex-sp"></span>
+        <button class="icon-btn" id="btn-pin" title="置顶">📌</button>
+        <button class="icon-btn" id="btn-fav" title="收藏">☆</button>
+        <select id="entry-theme" class="select" title="本篇主题(覆盖全局)"></select>
+        <button class="icon-btn" id="btn-export-entry" title="导出本篇为 .md">⤓</button>
+        <button class="icon-btn danger" id="btn-delete" title="删除本篇">✕</button>
+      </div>
+
+      <div class="editor-tools">
+        <div class="fmt-group">
+          <button class="fmt" data-fmt="bold" title="粗体 (Ctrl+B)"><b>B</b></button>
+          <button class="fmt" data-fmt="italic" title="斜体 (Ctrl+I)"><i>I</i></button>
+          <button class="fmt" data-fmt="code" title="行内代码">&lt;/&gt;</button>
+          <button class="fmt" data-fmt="h2" title="标题">H</button>
+          <button class="fmt" data-fmt="quote" title="引用">❝</button>
+          <button class="fmt" data-fmt="list" title="列表">•—</button>
+          <button class="fmt" data-fmt="hr" title="分隔线">—</button>
+          <button class="fmt" data-fmt="link" title="链接">🔗</button>
+        </div>
+        <span class="flex-sp"></span>
+        <div class="seg" id="mode-seg">
+          <button class="seg-btn active" data-mode="write">编写</button>
+          <button class="seg-btn" data-mode="preview">预览</button>
+        </div>
+        <button class="btn ghost" id="btn-focus" title="专注模式 (Esc 退出)">专注</button>
+      </div>
+
+      <div class="prompt-box" id="prompt-box">
+        <span class="prompt-label">今日一题</span>
+        <span class="prompt-text" id="prompt-text"></span>
+        <button class="mini-btn" id="btn-prompt-shuffle">换一个</button>
+        <button class="mini-btn" id="btn-prompt-insert">写入</button>
+      </div>
+
+      <div class="paper editor-paper">
+        <input type="text" id="entry-title" class="entry-title" placeholder="给今天起个标题…" autocomplete="off">
+        <input type="text" id="entry-tags" class="entry-tags" placeholder="标签,用逗号或空格分隔,例如:生活 读书" autocomplete="off">
+        <textarea id="entry-body" class="entry-body" placeholder="落笔即成时光。支持 Markdown:# 标题、**粗体**、> 引用、- 列表、```代码```……" spellcheck="false"></textarea>
+        <article class="entry-preview md" id="entry-preview" hidden></article>
+      </div>
+
+      <div class="editor-status">
+        <span id="word-count">0 字</span>
+        <span class="sep">·</span>
+        <span id="read-time">约 0 分钟</span>
+        <span class="flex-sp"></span>
+        <span id="save-status">尚未保存</span>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="focus-exit" id="focus-exit" title="退出专注模式 (Esc)">退出专注</div>
+
+<script src="js/markdown.js"></script>
+<script src="js/prompts.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

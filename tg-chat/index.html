@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Aurex Chat</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%233a95d9'/%3E%3Cpath d='M14 30l36-14-6 34-10-8-6 6-2-10z' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ============ 侧边栏:会话列表 ============ -->
+  <aside id="sidebar">
+    <header class="sb-head">
+      <button class="icon-btn" id="sbSettingsBtn" title="设置">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      </button>
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+        <input id="chatSearch" type="text" placeholder="搜索会话" autocomplete="off">
+        <button class="icon-btn mini" id="chatSearchClear" hidden title="清除">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <button class="icon-btn" id="themeBtn" title="切换主题">
+        <svg class="ic-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm-1-6h2v3h-2zm0 19h2v3h-2zM1 11h3v2H1zm19 0h3v2h-3zM3.5 4.9 4.9 3.5l2.1 2.1-1.4 1.4zm13.5 13.5 1.4-1.4 2.1 2.1-1.4 1.4zM3.5 19.1l2.1-2.1 1.4 1.4-2.1 2.1zM17 5.6l2.1-2.1 1.4 1.4-2.1 2.1z"/></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24"><path d="M12.3 2a9.9 9.9 0 0 0-2.6.36 10 10 0 0 1 0 19.28A10 10 0 1 0 12.3 2z"/></svg>
+      </button>
+    </header>
+    <nav id="chatList" aria-label="会话列表"></nav>
+    <footer class="sb-foot">
+      <span class="conn"><i id="connDot" class="dot off"></i><span id="connText">本地演示模式</span></span>
+      <span class="brand">Aurex&nbsp;Chat</span>
+    </footer>
+  </aside>
+
+  <!-- ============ 主聊天窗口 ============ -->
+  <main id="chatPane">
+    <div id="emptyState">
+      <div class="empty-pill">选择一个会话开始聊天</div>
+    </div>
+
+    <section id="chatView" hidden>
+      <header id="chatHeader">
+        <button class="icon-btn only-mobile" id="backBtn" title="返回">
+          <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"/></svg>
+        </button>
+        <div class="h-avatar avatar" id="hAvatar"></div>
+        <div class="h-info" id="hInfo">
+          <div class="h-title" id="hTitle"></div>
+          <div class="h-sub" id="hSub"></div>
+        </div>
+        <div class="h-actions">
+          <button class="icon-btn" id="hSearchBtn" title="搜索消息">
+            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+          </button>
+          <button class="icon-btn" id="hMoreBtn" title="更多">
+            <svg viewBox="0 0 24 24"><path d="M12 8a2 2 0 1 0-2-2 2 2 0 0 0 2 2zm0 2a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm0 6a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/></svg>
+          </button>
+        </div>
+        <!-- 消息内搜索条 -->
+        <div id="msgSearch" hidden>
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+          <input id="msIn" type="text" placeholder="在此会话中搜索…" autocomplete="off">
+          <span id="msCount"></span>
+          <button class="icon-btn mini" id="msUp" title="上一条">
+            <svg viewBox="0 0 24 24"><path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+          </button>
+          <button class="icon-btn mini" id="msDown" title="下一条">
+            <svg viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+          </button>
+          <button class="icon-btn mini" id="msClose" title="关闭">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- 置顶消息条 -->
+      <div id="pinBar" hidden>
+        <div class="pin-rail"></div>
+        <div class="pin-body">
+          <div class="pin-label" id="pinLabel">置顶消息</div>
+          <div class="pin-text" id="pinText"></div>
+        </div>
+        <button class="icon-btn mini" id="pinClose" title="取消置顶">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <div id="msgScroll">
+        <div id="msgList"></div>
+      </div>
+
+      <button id="jumpBtn" hidden title="回到底部">
+        <svg viewBox="0 0 24 24"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        <b id="jumpBadge" hidden></b>
+      </button>
+
+      <footer id="composer">
+        <div id="composeBanner" hidden></div>
+        <div class="compose-row">
+          <button class="icon-btn" id="emojiBtn" title="表情与贴纸">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm3.5-9A1.5 1.5 0 1 0 14 9.5 1.5 1.5 0 0 0 15.5 11zm-7 0A1.5 1.5 0 1 0 7 9.5 1.5 1.5 0 0 0 8.5 11zm3.5 6.5A5.5 5.5 0 0 0 16.9 14H7.1a5.5 5.5 0 0 0 4.9 3.5z"/></svg>
+          </button>
+          <textarea id="msgInput" rows="1" placeholder="写点什么…"></textarea>
+          <button class="icon-btn" id="attachBtn" title="发送图片">
+            <svg viewBox="0 0 24 24"><path d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"/></svg>
+          </button>
+          <input type="file" id="fileInput" accept="image/*" multiple hidden>
+          <button id="sendBtn" title="发送">
+            <svg viewBox="0 0 24 24"><path d="M2.4 20.6 22 12 2.4 3.4l-.01 6.7L16 12 2.39 13.9z"/></svg>
+          </button>
+        </div>
+
+        <!-- 表情 / 贴纸面板 -->
+        <div id="emojiPanel" hidden>
+          <div class="ep-tabs">
+            <button class="ep-tab active" data-tab="emoji">表情</button>
+            <button class="ep-tab" data-tab="sticker">贴纸</button>
+          </div>
+          <div class="ep-body">
+            <div id="emojiGrid" class="ep-page"></div>
+            <div id="stickerGrid" class="ep-page" hidden></div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- 浮层 -->
+  <div id="ctxMenu" hidden></div>
+  <div id="modalRoot" hidden></div>
+  <div id="lightbox" hidden></div>
+  <div id="toast" hidden></div>
+</div>
+
+<script src="js/emoji.js"></script>
+<script src="js/bot.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/net.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

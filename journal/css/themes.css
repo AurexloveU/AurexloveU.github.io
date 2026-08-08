@@ -1,0 +1,180 @@
+/* ============================================================
+   拾光集 · 主题系统
+   8 套低饱和主题,全部通过 CSS 自定义属性切换。
+   切换过渡动画见 main.css(background-color / color / border-color)。
+   每套主题的令牌:
+   --bg        页面底色            --bg-hi / --bg-lo  背景光晕(径向渐变)
+   --paper     纸张(卡片)底色     --paper-hi         纸张高光
+   --paper-line 纸张纤维纹理色      --ink              正文墨色
+   --ink-2     次级文字            --ink-3            辅助/占位文字
+   --line      分隔线              --accent           主题色
+   --accent-ink 主题色上的文字      --accent-soft      主题色浅底
+   --mark      搜索高亮底色        --shadow           投影色
+   ============================================================ */
+
+/* —— 1. 晨雾 mist:清晨的青灰,冷静而透气 —— */
+:root,
+[data-theme="mist"] {
+  --bg: #e7eaed;
+  --bg-hi: rgba(255, 255, 255, 0.60);
+  --bg-lo: rgba(122, 139, 153, 0.13);
+  --paper: #f4f6f7;
+  --paper-hi: rgba(255, 255, 255, 0.70);
+  --paper-line: rgba(58, 66, 74, 0.035);
+  --ink: #3a424a;
+  --ink-2: #6b7681;
+  --ink-3: #9aa4ad;
+  --line: #d3d9dd;
+  --accent: #7a8b99;
+  --accent-ink: #f6f8f9;
+  --accent-soft: #e0e6ea;
+  --mark: rgba(122, 139, 153, 0.28);
+  --shadow: rgba(58, 66, 74, 0.08);
+}
+
+/* —— 2. 薰衣草 lavender:灰紫,温柔的黄昏前调 —— */
+[data-theme="lavender"] {
+  --bg: #eae7ef;
+  --bg-hi: rgba(255, 255, 255, 0.60);
+  --bg-lo: rgba(139, 130, 161, 0.13);
+  --paper: #f5f3f8;
+  --paper-hi: rgba(255, 255, 255, 0.70);
+  --paper-line: rgba(70, 65, 83, 0.035);
+  --ink: #464153;
+  --ink-2: #767085;
+  --ink-3: #a29cb1;
+  --line: #d8d3e0;
+  --accent: #8b82a1;
+  --accent-ink: #f7f5fa;
+  --accent-soft: #e3dfeb;
+  --mark: rgba(139, 130, 161, 0.28);
+  --shadow: rgba(70, 65, 83, 0.08);
+}
+
+/* —— 3. 旧纸 sepia:泛黄的纸页与褪色墨迹 —— */
+[data-theme="sepia"] {
+  --bg: #eae1cf;
+  --bg-hi: rgba(255, 250, 235, 0.65);
+  --bg-lo: rgba(156, 133, 96, 0.15);
+  --paper: #f6efdf;
+  --paper-hi: rgba(255, 252, 242, 0.75);
+  --paper-line: rgba(76, 66, 50, 0.045);
+  --ink: #4c4232;
+  --ink-2: #7d7159;
+  --ink-3: #a89a7e;
+  --line: #ddd2b8;
+  --accent: #9c8560;
+  --accent-ink: #faf6ec;
+  --accent-soft: #eadfc7;
+  --mark: rgba(156, 133, 96, 0.30);
+  --shadow: rgba(76, 66, 50, 0.10);
+}
+
+/* —— 4. 鼠尾草 sage:灰绿,植物园的安静角落 —— */
+[data-theme="sage"] {
+  --bg: #e5e9e2;
+  --bg-hi: rgba(255, 255, 255, 0.60);
+  --bg-lo: rgba(124, 143, 120, 0.13);
+  --paper: #f3f5f0;
+  --paper-hi: rgba(255, 255, 255, 0.70);
+  --paper-line: rgba(60, 69, 60, 0.035);
+  --ink: #3c453c;
+  --ink-2: #6d7a6d;
+  --ink-3: #9aa596;
+  --line: #d2dacd;
+  --accent: #7c8f78;
+  --accent-ink: #f5f8f4;
+  --accent-soft: #dfe6da;
+  --mark: rgba(124, 143, 120, 0.28);
+  --shadow: rgba(60, 69, 60, 0.08);
+}
+
+/* —— 5. 黄昏 dusk:灰粉与暖褐,日落最后十分钟 —— */
+[data-theme="dusk"] {
+  --bg: #ece3e0;
+  --bg-hi: rgba(255, 250, 246, 0.62);
+  --bg-lo: rgba(165, 131, 124, 0.14);
+  --paper: #f7f0ed;
+  --paper-hi: rgba(255, 252, 249, 0.72);
+  --paper-line: rgba(76, 64, 63, 0.038);
+  --ink: #4c403f;
+  --ink-2: #806f6c;
+  --ink-3: #ab9c98;
+  --line: #ddcfca;
+  --accent: #a5837c;
+  --accent-ink: #faf4f2;
+  --accent-soft: #ecdcd6;
+  --mark: rgba(165, 131, 124, 0.28);
+  --shadow: rgba(76, 64, 63, 0.09);
+}
+
+/* —— 6. 海盐 seasalt:淡青,退潮后的浅滩 —— */
+[data-theme="seasalt"] {
+  --bg: #e2e9e9;
+  --bg-hi: rgba(255, 255, 255, 0.60);
+  --bg-lo: rgba(111, 146, 149, 0.13);
+  --paper: #f1f6f6;
+  --paper-hi: rgba(255, 255, 255, 0.70);
+  --paper-line: rgba(56, 71, 71, 0.035);
+  --ink: #384747;
+  --ink-2: #677878;
+  --ink-3: #93a3a3;
+  --line: #cfdbdb;
+  --accent: #6f9295;
+  --accent-ink: #f3f8f8;
+  --accent-soft: #dbe6e6;
+  --mark: rgba(111, 146, 149, 0.28);
+  --shadow: rgba(56, 71, 71, 0.08);
+}
+
+/* —— 7. 水墨 ink:炭黑纸面,墨色微青(深色)—— */
+[data-theme="ink"] {
+  --bg: #202322;
+  --bg-hi: rgba(255, 255, 255, 0.045);
+  --bg-lo: rgba(0, 0, 0, 0.30);
+  --paper: #2a2d2c;
+  --paper-hi: rgba(255, 255, 255, 0.035);
+  --paper-line: rgba(255, 255, 255, 0.028);
+  --ink: #d6d9d4;
+  --ink-2: #a3a8a1;
+  --ink-3: #737872;
+  --line: #3a3e3c;
+  --accent: #8fa79b;
+  --accent-ink: #1f2422;
+  --accent-soft: #37403c;
+  --mark: rgba(143, 167, 155, 0.32);
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+/* —— 8. 夜航 night:蓝灰夜色,舷窗外的灯(深色)—— */
+[data-theme="night"] {
+  --bg: #1f2329;
+  --bg-hi: rgba(255, 255, 255, 0.045);
+  --bg-lo: rgba(0, 0, 0, 0.30);
+  --paper: #282d35;
+  --paper-hi: rgba(255, 255, 255, 0.035);
+  --paper-line: rgba(255, 255, 255, 0.028);
+  --ink: #d4d8de;
+  --ink-2: #a0a7b1;
+  --ink-3: #6f7781;
+  --line: #383f49;
+  --accent: #8296ad;
+  --accent-ink: #1c2127;
+  --accent-soft: #333c48;
+  --mark: rgba(130, 150, 173, 0.32);
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+/* ============================================================
+   侧栏主题色板:每个色块直接硬编码对应主题的 纸色/主题色,
+   这样不用切换主题也能预览。
+   ============================================================ */
+.swatch::before { background: linear-gradient(135deg, #f4f6f7 50%, #7a8b99 50%); }
+.swatch[data-theme-id="mist"]::before     { background: linear-gradient(135deg, #f4f6f7 50%, #7a8b99 50%); }
+.swatch[data-theme-id="lavender"]::before { background: linear-gradient(135deg, #f5f3f8 50%, #8b82a1 50%); }
+.swatch[data-theme-id="sepia"]::before    { background: linear-gradient(135deg, #f6efdf 50%, #9c8560 50%); }
+.swatch[data-theme-id="sage"]::before     { background: linear-gradient(135deg, #f3f5f0 50%, #7c8f78 50%); }
+.swatch[data-theme-id="dusk"]::before     { background: linear-gradient(135deg, #f7f0ed 50%, #a5837c 50%); }
+.swatch[data-theme-id="seasalt"]::before  { background: linear-gradient(135deg, #f1f6f6 50%, #6f9295 50%); }
+.swatch[data-theme-id="ink"]::before      { background: linear-gradient(135deg, #2a2d2c 50%, #8fa79b 50%); }
+.swatch[data-theme-id="night"]::before    { background: linear-gradient(135deg, #282d35 50%, #8296ad 50%); }

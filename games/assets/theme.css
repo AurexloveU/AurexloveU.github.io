@@ -1,0 +1,271 @@
+/* ============================================================
+   奕苑 · 共享主题  —— 低饱和 / 薰衣草紫 / 中文衬线
+   ============================================================ */
+
+:root {
+  --font-serif: "Noto Serif SC", "Songti SC", "STSong", "SimSun", "Source Han Serif SC", serif;
+
+  /* 浅色主题 */
+  --bg: #f5f3f8;
+  --bg-soft: #ece8f2;
+  --card: #fdfcfe;
+  --ink: #3b3547;
+  --ink-strong: #2c2738;
+  --muted: #8a8398;
+  --accent: #8b7fa8;
+  --accent-ink: #5e5378;
+  --accent-soft: #e6e0ef;
+  --line: #e2dcec;
+  --shadow: 0 2px 14px rgba(90, 80, 120, 0.10);
+  --good: #6f9a7c;
+  --bad: #b07070;
+
+  /* 棋盘配色(默认:薰衣草) */
+  --board-light: #f0ebf6;
+  --board-dark: #b7a8ce;
+  --board-frame: #8b7fa8;
+  --board-hint: rgba(94, 83, 120, 0.45);
+  --board-last: rgba(139, 127, 168, 0.35);
+  --board-check: rgba(176, 112, 112, 0.55);
+  --go-board: #e9e2f1;
+  --go-line: #7f7590;
+}
+
+/* 深色主题 */
+:root[data-theme="dark"] {
+  --bg: #201c28;
+  --bg-soft: #282331;
+  --card: #2b2635;
+  --ink: #d9d3e4;
+  --ink-strong: #efeaf7;
+  --muted: #8f88a0;
+  --accent: #a191c2;
+  --accent-ink: #c4b8da;
+  --accent-soft: #3a3348;
+  --line: #3b3448;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- 棋盘配色方案 ---------- */
+:root[data-board="ink"] {           /* 黛墨 */
+  --board-light: #e8e9ee;
+  --board-dark: #8e93a8;
+  --board-frame: #5c6175;
+  --go-board: #e4e5ea;
+  --go-line: #6b7085;
+}
+:root[data-board="sage"] {          /* 苔青 */
+  --board-light: #ecefe8;
+  --board-dark: #9fae94;
+  --board-frame: #74846a;
+  --go-board: #e7ebe0;
+  --go-line: #74846a;
+}
+:root[data-board="clay"] {          /* 陶土 */
+  --board-light: #f2ece4;
+  --board-dark: #c2a58c;
+  --board-frame: #96755a;
+  --go-board: #eee5d8;
+  --go-line: #8d7053;
+}
+:root[data-board="moon"] {          /* 月白 */
+  --board-light: #f4f4f6;
+  --board-dark: #b9bcc9;
+  --board-frame: #8489a0;
+  --go-board: #eeeef2;
+  --go-line: #7d8298;
+}
+
+/* ---------- 基础 ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  min-height: 100%;
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 500px at 15% -10%, var(--accent-soft), transparent 60%),
+    radial-gradient(900px 420px at 110% 8%, var(--accent-soft), transparent 55%);
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
+a { color: var(--accent-ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.4rem 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+}
+button:hover { border-color: var(--accent); background: var(--accent-soft); }
+button:active { transform: translateY(1px); }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+button.primary:hover { background: var(--accent-ink); }
+button:disabled { opacity: 0.45; cursor: not-allowed; }
+button.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-ink); }
+
+select, input[type="text"] {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+}
+
+/* ---------- 页头 ---------- */
+.site-header {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem 0.6rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.site-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--ink-strong);
+  letter-spacing: 0.28em;
+}
+.site-title small { font-size: 0.85rem; color: var(--muted); letter-spacing: 0.12em; margin-left: 0.6rem; }
+.site-nav { margin-left: auto; display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 1.2rem; }
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+}
+
+h2.panel-title {
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.hint { color: var(--muted); font-size: 0.85rem; }
+
+.toolbar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin: 0.6rem 0; }
+
+/* ---------- 首页卡片 ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+.game-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.3rem 1.2rem;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+.game-card:hover { transform: translateY(-4px); border-color: var(--accent); text-decoration: none; }
+.game-card .glyph {
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--accent-ink);
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: var(--font-serif);
+}
+.game-card h3 { font-size: 1.25rem; letter-spacing: 0.25em; color: var(--ink-strong); margin-bottom: 0.35rem; }
+.game-card p { color: var(--muted); font-size: 0.88rem; }
+.game-card .tags { margin-top: 0.7rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.game-card .tags span {
+  font-size: 0.72rem;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  border-radius: 99px;
+  padding: 0.1rem 0.55rem;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- 通用布局:棋盘 + 侧栏 ---------- */
+.game-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 640px) minmax(240px, 320px);
+  gap: 1.2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+@media (max-width: 860px) {
+  .game-layout { grid-template-columns: 1fr; }
+}
+
+.status-line {
+  font-size: 1.02rem;
+  color: var(--ink-strong);
+  letter-spacing: 0.06em;
+  min-height: 1.7em;
+}
+.status-line .warn { color: var(--bad); }
+.status-line .good { color: var(--good); }
+
+/* ---------- 弹层 ---------- */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(30, 25, 40, 0.45);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 50;
+}
+.overlay.hidden { display: none; }
+.overlay .dialog {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.3rem 1.5rem;
+  max-width: min(92vw, 420px);
+  text-align: center;
+}
+.overlay .dialog h3 { letter-spacing: 0.2em; color: var(--accent-ink); margin-bottom: 0.8rem; }
+
+/* ---------- 徽章 / 表格 ---------- */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  border-radius: 99px;
+  padding: 0.05rem 0.55rem;
+  letter-spacing: 0.08em;
+}
+table.plain { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+table.plain th, table.plain td { text-align: left; padding: 0.3rem 0.4rem; border-bottom: 1px solid var(--line); }
+table.plain th { color: var(--muted); font-weight: 600; letter-spacing: 0.1em; }
+
+.footer-note {
+  max-width: 1080px;
+  margin: 2.4rem auto 0;
+  padding: 0 1.2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奕苑 · 棋类合集</title>
+<link rel="stylesheet" href="assets/theme.css">
+<script src="assets/common.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-title">奕 苑<small>Aurex 的棋案</small></div>
+  <nav class="site-nav"></nav>
+</header>
+
+<main class="container">
+  <p class="hint" style="margin-top:0.4rem; letter-spacing:0.1em;">
+    三局清欢,一盏薰衣草色的灯。全部纯前端可玩;若启动 <code>server/</code> 后端,还可联机对弈。
+  </p>
+
+  <div class="card-grid">
+    <a class="game-card" href="chess/index.html">
+      <span class="glyph">♞</span>
+      <h3>国际象棋</h3>
+      <p>完整规则:王车易位、吃过路兵、升变、将杀与和棋判定。内置可调难度 AI,亦可同屏双人。</p>
+      <div class="tags">
+        <span>人机 · 四档难度</span><span>双人</span><span>悔棋</span><span>PGN 导出</span><span>复盘</span><span>联机</span>
+      </div>
+    </a>
+
+    <a class="game-card" href="gomoku/index.html">
+      <span class="glyph">⦿</span>
+      <h3>五子棋</h3>
+      <p>十五路棋盘,启发式 AI 对手,支持禁手规则(三三 / 四四 / 长连)。落子如落雨。</p>
+      <div class="tags">
+        <span>人机</span><span>双人</span><span>悔棋</span><span>禁手可选</span><span>联机</span>
+      </div>
+    </a>
+
+    <a class="game-card" href="ludo/index.html">
+      <span class="glyph">⚄</span>
+      <h3>飞行棋</h3>
+      <p>四色争渡:掷六起飞、踩子送回、终点归位。人类与电脑玩家自由混搭,同屏最多四人。</p>
+      <div class="tags">
+        <span>2–4 人</span><span>电脑玩家</span><span>骰子动画</span>
+      </div>
+    </a>
+  </div>
+
+  <section class="panel" style="margin-top:1.6rem;">
+    <h2 class="panel-title">案 头 说 明</h2>
+    <p class="hint">
+      · 右上角可切换 <b>棋盘配色</b>(薰衣草 / 黛墨 / 苔青 / 陶土 / 月白)、<b>深浅主题</b> 与 <b>音效</b>,偏好会记住。<br>
+      · 所有游戏离线可玩,无任何外部依赖;棋子皆以字形与内联 SVG 绘成。<br>
+      · 联机对弈:在仓库 <code>games/server/</code> 目录 <code>npm install &amp;&amp; npm start</code>,然后在棋局页「联机」面板创建 / 加入房间。<br>
+      · 详见 <a href="https://github.com/AurexloveU/AurexloveU.github.io/tree/main/games">README</a>。
+    </p>
+  </section>
+</main>
+
+<p class="footer-note">奕苑 · 为 Aurex 而作 · 纸上谈兵,落子无悔</p>
+
+</body>
+</html>

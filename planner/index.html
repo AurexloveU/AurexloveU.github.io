@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aurex 计划台 · 四象限每日计划与待办 — 薰衣草色的时间花园">
+<meta name="theme-color" content="#f6f4f9">
+<title>Aurex · 计划台</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='26' fill='%238577ad'/%3E%3Ccircle cx='25' cy='25' r='7' fill='%23ded7ec'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo-dot"></span>
+    <h1>Aurex · 计划台</h1>
+    <span class="sub">PLANNER</span>
+  </div>
+
+  <nav class="tabs" aria-label="视图切换">
+    <button class="tab active" data-view="today">今日<span class="kbd-hint">1</span></button>
+    <button class="tab" data-view="day">象限<span class="kbd-hint">2</span></button>
+    <button class="tab" data-view="week">周<span class="kbd-hint">3</span></button>
+    <button class="tab" data-view="month">月<span class="kbd-hint">4</span></button>
+    <button class="tab" data-view="stats">统计<span class="kbd-hint">5</span></button>
+  </nav>
+
+  <div class="quickadd-wrap">
+    <input id="quickadd" type="text" autocomplete="off"
+           placeholder="快速添加:写日志 #写作 !2 @明天 p:高 r:日 …(按 N 聚焦,? 看语法)">
+  </div>
+
+  <div class="iconbtns">
+    <span class="sync-dot" id="sync-dot" title="同步状态"></span>
+    <span class="sync-label" id="sync-label">本地模式</span>
+    <button class="iconbtn" id="btn-undo" title="撤销 (Ctrl+Z)">↶</button>
+    <button class="iconbtn" id="btn-redo" title="重做 (Ctrl+Shift+Z)">↷</button>
+    <button class="iconbtn" id="btn-ics" title="导出 .ics 日历 (E)">📅</button>
+    <button class="iconbtn" id="btn-theme" title="深浅主题 (D)">☾</button>
+    <button class="iconbtn" id="btn-help" title="快捷键与语法 (?)">?</button>
+    <button class="iconbtn" id="btn-settings" title="设置">⚙</button>
+  </div>
+</header>
+
+<main>
+  <div id="view-root"></div>
+  <footer>
+    aurex 计划台 · 数据存于本地浏览器 · <a href="../index.html">回到母站</a>
+  </footer>
+</main>
+
+<div id="toasts" aria-live="polite"></div>
+
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="js/recur.js"></script>
+<script src="js/quickadd.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/ics.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

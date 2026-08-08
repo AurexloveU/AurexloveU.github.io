@@ -1,0 +1,17 @@
+{
+  "name": "aurex-planner-server",
+  "version": "1.0.0",
+  "description": "Aurex 计划台 · 可选后端:任务 CRUD + JSON 文件持久化 + 统计端点",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "license": "MIT",
+  "private": true
+}

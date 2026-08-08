@@ -45,7 +45,7 @@
 }
 #movelist li { border-bottom: 1px dashed var(--line); padding: 0 0.25rem; display: flex; gap: 0.6rem; }
 #movelist .no { color: var(--muted); width: 2.4em; flex: none; }
-#movelist .who-b::before { content: "●"; margin-right: 0.35em; color: #38324a; }
+#movelist .who-b::before { content: "●"; margin-right: 0.35em; color: var(--ink-strong); }
 #movelist .who-w::before { content: "○"; margin-right: 0.35em; color: var(--accent-ink); }
 
 .net-status { font-size: 0.85rem; color: var(--muted); min-height: 1.5em; margin-top: 0.3rem; }
@@ -462,10 +462,11 @@
         }
       },
       onResult: function (msg) {
+        var RTXT = { five: "五连告成", full: "满盘平局", resign: "认输", "peer-leave": "对方离开", client: "对局结束" };
         if (!G.over) {
           G.over = true;
           G.winner = msg.result === "1/2-1/2" ? 0 : (msg.result === "1-0" ? 1 : 2);
-          G.reason = msg.reason || "认输";
+          G.reason = RTXT[msg.reason] || msg.reason || "认输";
           render();
         }
         var extra = "";

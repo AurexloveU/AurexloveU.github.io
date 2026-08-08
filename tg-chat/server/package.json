@@ -1,0 +1,17 @@
+{
+  "name": "aurex-chat-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aurex Chat 演示后端:Express + WebSocket,多房间/私聊、消息持久化、presence、Aevi bot 端点",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五子棋 · 奕苑</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<script src="../assets/common.js"></script>
+<script src="../assets/net.js"></script>
+<script src="gomoku-ai.js"></script>
+<style>
+.board-wrap { display: flex; justify-content: center; }
+#gobo {
+  width: 100%; max-width: 600px; aspect-ratio: 1;
+  background: var(--go-board);
+  border: 6px solid var(--board-frame);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  touch-action: manipulation;
+  cursor: pointer;
+  display: block;
+}
+#gobo .grid-line { stroke: var(--go-line); stroke-width: 1.1; }
+#gobo .star { fill: var(--go-line); }
+#gobo .coord-t { fill: var(--go-line); font-size: 13px; font-family: var(--font-serif); opacity: 0.85; }
+#gobo .stone-b { fill: url(#grad-b); stroke: #262133; stroke-width: 0.8; }
+#gobo .stone-w { fill: url(#grad-w); stroke: #a49bbd; stroke-width: 0.8; }
+#gobo .ghost { opacity: 0.4; pointer-events: none; }
+#gobo .lastdot { fill: #b07070; }
+#gobo .lastdot.on-b { fill: #d9c9e8; }
+#gobo .forbid { stroke: #b07070; stroke-width: 2.2; opacity: 0.8; pointer-events: none; }
+#gobo .winline { stroke: var(--accent-ink); stroke-width: 4; stroke-linecap: round; opacity: 0.65; }
+
+.mode-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+.mode-row button { flex: 1; }
+.field-row { display: flex; align-items: center; gap: 0.5rem; margin: 0.45rem 0; flex-wrap: wrap; }
+.field-row label { font-size: 0.88rem; color: var(--muted); white-space: nowrap; }
+.field-row select, .field-row input[type="text"] { flex: 1; min-width: 0; }
+.hidden { display: none !important; }
+.check-row { display: flex; align-items: center; gap: 0.45rem; margin: 0.5rem 0; font-size: 0.9rem; color: var(--ink); }
+
+#movelist {
+  list-style: none; max-height: 300px; overflow-y: auto;
+  font-size: 0.9rem; line-height: 1.85;
+}
+#movelist li { border-bottom: 1px dashed var(--line); padding: 0 0.25rem; display: flex; gap: 0.6rem; }
+#movelist .no { color: var(--muted); width: 2.4em; flex: none; }
+#movelist .who-b::before { content: "●"; margin-right: 0.35em; color: #38324a; }
+#movelist .who-w::before { content: "○"; margin-right: 0.35em; color: var(--accent-ink); }
+
+.net-status { font-size: 0.85rem; color: var(--muted); min-height: 1.5em; margin-top: 0.3rem; }
+.room-code { font-size: 1.35rem; letter-spacing: 0.35em; color: var(--accent-ink); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-title">五子棋<small><a href="../index.html">← 返回奕苑</a></small></div>
+  <nav class="site-nav"></nav>
+</header>
+
+<main class="container">
+  <div class="game-layout">
+
+    <section class="panel">
+      <div class="status-line" id="status">—</div>
+      <div class="board-wrap">
+        <svg id="gobo" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="grad-b" cx="0.36" cy="0.32" r="0.9">
+              <stop offset="0%" stop-color="#6e6584"/>
+              <stop offset="55%" stop-color="#3c3550"/>
+              <stop offset="100%" stop-color="#241f33"/>
+            </radialGradient>
+            <radialGradient id="grad-w" cx="0.36" cy="0.32" r="0.9">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="60%" stop-color="#f1eef8"/>
+              <stop offset="100%" stop-color="#d5cde6"/>
+            </radialGradient>
+          </defs>
+          <g id="layer-grid"></g>
+          <g id="layer-marks"></g>
+          <g id="layer-stones"></g>
+          <g id="layer-top"></g>
+        </svg>
+      </div>
+      <div class="toolbar">
+        <button id="btn-new" class="primary">新对局</button>
+        <button id="btn-undo">悔 棋</button>
+        <button id="btn-resign" class="hidden">认 输</button>
+      </div>
+    </section>
+
+    <aside>
+      <section class="panel">
+        <h2 class="panel-title">对 局 设 置</h2>
+        <div class="mode-row">
+          <button id="mode-ai" class="on">人 机</button>
+          <button id="mode-local">双 人</button>
+          <button id="mode-online">联 机</button>
+        </div>
+
+        <div id="ai-opts">
+          <div class="field-row">
+            <label>我执</label>
+            <select id="sel-side">
+              <option value="1">黑棋(先行)</option>
+              <option value="2">白棋(后行)</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <label>难度</label>
+            <select id="sel-level">
+              <option value="1">一 · 随手</option>
+              <option value="2" selected>二 · 稳健</option>
+              <option value="3">三 · 深思</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="check-row" id="renju-row">
+          <input type="checkbox" id="chk-renju">
+          <label for="chk-renju">黑方禁手(三三 / 四四 / 长连)</label>
+        </div>
+        <p class="hint">禁手开启时,黑棋不可走出双活三、双四或六连以上;恰好五连仍然获胜。棋盘上会以红叉标出禁点。</p>
+
+        <div id="online-opts" class="hidden">
+          <div class="field-row">
+            <label>昵称</label>
+            <input type="text" id="in-name" maxlength="16" placeholder="Aurex">
+          </div>
+          <div class="field-row">
+            <label>服务器</label>
+            <input type="text" id="in-server" placeholder="ws://localhost:8787">
+          </div>
+          <div class="field-row">
+            <button id="btn-create" class="primary" style="flex:1">创建房间(执黑)</button>
+          </div>
+          <div class="field-row">
+            <input type="text" id="in-room" maxlength="4" placeholder="房间号" style="text-transform:uppercase">
+            <button id="btn-join">加 入</button>
+          </div>
+          <div class="net-status" id="net-status">未连接。启动 games/server 后端后可联机。</div>
+          <div id="room-info" class="hidden">
+            房间 <span class="room-code" id="room-code"></span>
+            <span class="badge" id="my-side-badge"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:1rem;">
+        <h2 class="panel-title">手 数 记 录</h2>
+        <ol id="movelist"></ol>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<div class="overlay hidden" id="ov-result">
+  <div class="dialog">
+    <h3 id="rs-title"></h3>
+    <p id="rs-text" class="hint" style="margin-bottom:1rem;"></p>
+    <div class="toolbar" style="justify-content:center;">
+      <button id="rs-new" class="primary">再来一局</button>
+    </div>
+  </div>
+</div>
+
+<p class="footer-note">十五道之间,黑白相持 —— 落子如落雨,五连成川。</p>
+
+<script>
+(function () {
+  "use strict";
+  var K = window.Gomoku, N = K.N;
+  var sfx = window.Aurex.sfx;
+  var SVGNS = "http://www.w3.org/2000/svg";
+  var MARGIN = 40, GAP = 40, R = 17;
+
+  var G = {
+    mode: "ai",           // ai | local | online
+    humanSide: 1,
+    level: 2,
+    renju: false,
+    board: K.emptyBoard(),
+    moves: [],            // {x, y, who}
+    turn: 1,
+    over: false, winner: 0, reason: null,
+    thinking: false,
+    net: null, netSide: null, netOn: false, peerName: null
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var svg = $("gobo");
+  var layers = {
+    grid: $("layer-grid"), marks: $("layer-marks"),
+    stones: $("layer-stones"), top: $("layer-top")
+  };
+
+  function px(v) { return MARGIN + v * GAP; }
+  function el(tag, attrs) {
+    var e = document.createElementNS(SVGNS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+
+  /* ---------------- 画棋盘 ---------------- */
+  function drawGrid() {
+    var g = layers.grid;
+    g.innerHTML = "";
+    for (var i = 0; i < N; i++) {
+      g.appendChild(el("line", { x1: px(0), y1: px(i), x2: px(N - 1), y2: px(i), "class": "grid-line" }));
+      g.appendChild(el("line", { x1: px(i), y1: px(0), x2: px(i), y2: px(N - 1), "class": "grid-line" }));
+    }
+    [[3,3],[11,3],[7,7],[3,11],[11,11]].forEach(function (p) {
+      g.appendChild(el("circle", { cx: px(p[0]), cy: px(p[1]), r: 3.4, "class": "star" }));
+    });
+    var letters = "ABCDEFGHJKLMNOP"; // 惯例跳过 I
+    for (var c = 0; c < N; c++) {
+      var t1 = el("text", { x: px(c), y: MARGIN - 18, "text-anchor": "middle", "class": "coord-t" });
+      t1.textContent = letters[c];
+      g.appendChild(t1);
+      var t2 = el("text", { x: MARGIN - 20, y: px(c) + 4, "text-anchor": "middle", "class": "coord-t" });
+      t2.textContent = String(N - c);
+      g.appendChild(t2);
+    }
+  }
+
+  function coordName(x, y) { return "ABCDEFGHJKLMNOP"[x] + (N - y); }
+
+  /* ---------------- 渲染 ---------------- */
+  function render() {
+    var s = layers.stones, m = layers.marks;
+    s.innerHTML = ""; m.innerHTML = "";
+    for (var y = 0; y < N; y++) for (var x = 0; x < N; x++) {
+      var v = G.board[y * N + x];
+      if (!v) continue;
+      s.appendChild(el("circle", {
+        cx: px(x), cy: px(y), r: R,
+        "class": v === 1 ? "stone-b" : "stone-w"
+      }));
+    }
+    var last = G.moves[G.moves.length - 1];
+    if (last) {
+      s.appendChild(el("circle", {
+        cx: px(last.x), cy: px(last.y), r: 4.2,
+        "class": "lastdot" + (last.who === 1 ? " on-b" : "")
+      }));
+    }
+    // 禁手标记:轮到黑棋且开禁手时
+    if (G.renju && !G.over && G.turn === 1 && humanCanMove()) {
+      K.candidates(G.board).forEach(function (c) {
+        if (K.forbidden(G.board, c.x, c.y)) {
+          var cx = px(c.x), cy = px(c.y), d = 7;
+          m.appendChild(el("line", { x1: cx - d, y1: cy - d, x2: cx + d, y2: cy + d, "class": "forbid" }));
+          m.appendChild(el("line", { x1: cx - d, y1: cy + d, x2: cx + d, y2: cy - d, "class": "forbid" }));
+        }
+      });
+    }
+    renderMoveList();
+    renderStatus();
+  }
+
+  function renderMoveList() {
+    var ol = $("movelist");
+    ol.innerHTML = "";
+    G.moves.forEach(function (mv, i) {
+      var li = document.createElement("li");
+      var no = document.createElement("span");
+      no.className = "no"; no.textContent = (i + 1) + ".";
+      var sp = document.createElement("span");
+      sp.className = mv.who === 1 ? "who-b" : "who-w";
+      sp.textContent = coordName(mv.x, mv.y);
+      li.appendChild(no); li.appendChild(sp);
+      ol.appendChild(li);
+    });
+    ol.scrollTop = ol.scrollHeight;
+  }
+
+  function renderStatus() {
+    var e = $("status");
+    if (G.over) {
+      var t = G.winner === 0 ? "平局(满盘)" : (G.winner === 1 ? "黑方胜" : "白方胜");
+      e.innerHTML = "<span class='good'>对局结束 · " + t + (G.reason ? " · " + G.reason : "") + "</span>";
+      return;
+    }
+    var who = G.turn === 1 ? "黑方" : "白方";
+    if (G.thinking) { e.textContent = who + "行棋 · 电脑思考中…"; return; }
+    if (G.mode === "ai") e.textContent = G.turn === G.humanSide ? "轮到你了(" + who + ")" : who + "行棋";
+    else if (G.mode === "online") {
+      if (!G.netOn) { e.textContent = "联机模式 · 等待建立对局"; return; }
+      e.textContent = G.turn === G.netSide ? "轮到你了(" + who + ")" : "等待对方(" + who + ")…";
+    }
+    else e.textContent = who + "行棋";
+  }
+
+  /* ---------------- 对局流程 ---------------- */
+  function humanCanMove() {
+    if (G.over || G.thinking) return false;
+    if (G.mode === "ai") return G.turn === G.humanSide;
+    if (G.mode === "online") return G.netOn && G.turn === G.netSide;
+    return true;
+  }
+
+  function newGame() {
+    G.board = K.emptyBoard();
+    G.moves = []; G.turn = 1;
+    G.over = false; G.winner = 0; G.reason = null; G.thinking = false;
+    $("ov-result").classList.add("hidden");
+    render();
+    maybeAI();
+  }
+
+  function playMove(x, y, fromNet) {
+    if (G.over || G.board[y * N + x] !== 0) return;
+    var who = G.turn;
+    var win = K.isWinningMove(G.board, x, y, who, G.renju);
+    G.board[y * N + x] = who;
+    G.moves.push({ x: x, y: y, who: who });
+    sfx.move();
+
+    if (win) {
+      G.over = true; G.winner = who; G.reason = "五连告成";
+    } else if (G.moves.length === N * N) {
+      G.over = true; G.winner = 0; G.reason = "满盘";
+    } else {
+      G.turn = 3 - who;
+    }
+
+    if (G.mode === "online" && !fromNet && G.net) {
+      G.net.sendMove({ x: x, y: y });
+      if (G.over) {
+        var res = G.winner === 0 ? "1/2-1/2" : (G.winner === 1 ? "1-0" : "0-1");
+        G.net.sendResult(res, G.reason);
+      }
+    }
+
+    render();
+    if (G.over) showResult();
+    else maybeAI();
+  }
+
+  function maybeAI() {
+    if (G.mode !== "ai" || G.over || G.turn === G.humanSide || G.thinking) return;
+    G.thinking = true;
+    renderStatus();
+    setTimeout(function () {
+      var m = K.bestMove(G.board, G.turn, G.level, G.renju);
+      G.thinking = false;
+      if (m) playMove(m.x, m.y);
+      else { G.over = true; G.winner = 0; G.reason = "无处可落"; render(); showResult(); }
+    }, 160);
+  }
+
+  function undo() {
+    if (G.mode === "online") { sfx.illegal(); return; }
+    if (G.thinking || G.moves.length === 0) { sfx.illegal(); return; }
+    var n = 1;
+    if (G.mode === "ai" && G.moves.length >= 2 && G.turn === G.humanSide) n = 2;
+    for (var i = 0; i < n; i++) {
+      var mv = G.moves.pop();
+      G.board[mv.y * N + mv.x] = 0;
+      G.turn = mv.who;
+    }
+    G.over = false; G.winner = 0; G.reason = null;
+    $("ov-result").classList.add("hidden");
+    sfx.click();
+    render();
+    maybeAI();
+  }
+
+  function showResult(customTitle, customText) {
+    var title, text;
+    if (customTitle) { title = customTitle; text = customText || ""; }
+    else {
+      title = G.winner === 0 ? "平 局" : (G.winner === 1 ? "黑 方 胜" : "白 方 胜");
+      text = G.reason || "";
+      var meWin = null;
+      if (G.mode === "ai") meWin = G.winner === G.humanSide;
+      if (G.mode === "online") meWin = G.winner === G.netSide;
+      if (G.winner === 0 || meWin === null) sfx.win();
+      else (meWin ? sfx.win : sfx.lose)();
+    }
+    $("rs-title").textContent = title;
+    $("rs-text").textContent = text;
+    $("ov-result").classList.remove("hidden");
+  }
+
+  /* ---------------- 交互 ---------------- */
+  function evtCoord(evt) {
+    var rect = svg.getBoundingClientRect();
+    var sx = (evt.clientX - rect.left) * 640 / rect.width;
+    var sy = (evt.clientY - rect.top) * 640 / rect.height;
+    var x = Math.round((sx - MARGIN) / GAP), y = Math.round((sy - MARGIN) / GAP);
+    if (x < 0 || x >= N || y < 0 || y >= N) return null;
+    if (Math.abs(sx - px(x)) > GAP * 0.42 || Math.abs(sy - px(y)) > GAP * 0.42) return null;
+    return { x: x, y: y };
+  }
+
+  svg.addEventListener("click", function (evt) {
+    if (!humanCanMove()) return;
+    var c = evtCoord(evt);
+    if (!c || G.board[c.y * N + c.x] !== 0) return;
+    if (G.renju && G.turn === 1) {
+      var f = K.forbidden(G.board, c.x, c.y);
+      if (f) {
+        sfx.illegal();
+        var names = { "overline": "长连", "double-four": "双四", "double-three": "双三" };
+        $("status").innerHTML = "<span class='warn'>禁手:" + (names[f] || f) + ",此处不可落子</span>";
+        return;
+      }
+    }
+    playMove(c.x, c.y);
+  });
+
+  svg.addEventListener("mousemove", function (evt) {
+    layers.top.innerHTML = "";
+    if (!humanCanMove()) return;
+    var c = evtCoord(evt);
+    if (!c || G.board[c.y * N + c.x] !== 0) return;
+    layers.top.appendChild(el("circle", {
+      cx: px(c.x), cy: px(c.y), r: R,
+      "class": (G.turn === 1 ? "stone-b" : "stone-w") + " ghost"
+    }));
+  });
+  svg.addEventListener("mouseleave", function () { layers.top.innerHTML = ""; });
+
+  /* ---------------- 联机 ---------------- */
+  function netClient() {
+    if (G.net) G.net.leave();
+    G.net = new AurexNet.Client({
+      url: $("in-server").value || AurexNet.defaultUrl(),
+      game: "gomoku",
+      name: $("in-name").value || "Aurex",
+      onStatus: function (t) { $("net-status").textContent = t; },
+      onError: function (t) { $("net-status").textContent = "⚠ " + t; sfx.illegal(); },
+      onRoom: function (msg) {
+        G.netSide = msg.side;
+        $("room-code").textContent = msg.room;
+        $("my-side-badge").textContent = msg.side === 1 ? "执黑" : "执白";
+        $("room-info").classList.remove("hidden");
+        $("net-status").textContent = "已入房,等待对手…";
+      },
+      onStart: function (msg) {
+        G.netOn = true;
+        G.renju = false; // 联机暂按自由规则,双方一致
+        $("chk-renju").checked = false;
+        if (msg && msg.players) {
+          var others = msg.players.filter(function (p) { return p.side !== G.netSide; });
+          G.peerName = others.length ? others[0].name : "对手";
+          $("net-status").textContent = "对局开始:对手是「" + G.peerName + "」";
+        }
+        newGame();
+      },
+      onMove: function (data) {
+        if (typeof data.x === "number" && typeof data.y === "number") playMove(data.x, data.y, true);
+      },
+      onPeerLeave: function () {
+        $("net-status").textContent = "对方已离开房间。";
+        if (!G.over) {
+          G.over = true; G.winner = G.netSide; G.reason = "对方离开";
+          render(); showResult();
+        }
+      },
+      onResult: function (msg) {
+        if (!G.over) {
+          G.over = true;
+          G.winner = msg.result === "1/2-1/2" ? 0 : (msg.result === "1-0" ? 1 : 2);
+          G.reason = msg.reason || "认输";
+          render();
+        }
+        var extra = "";
+        if (msg.elo) {
+          extra = "  ELO:" + msg.elo.map(function (p) {
+            return p.name + " " + p.elo + (p.delta >= 0 ? " (+" + p.delta + ")" : " (" + p.delta + ")");
+          }).join(" · ");
+        }
+        showResult(
+          G.winner === 0 ? "平 局" : (G.winner === 1 ? "黑 方 胜" : "白 方 胜"),
+          (G.reason || "") + extra
+        );
+      }
+    });
+    return G.net;
+  }
+
+  /* ---------------- 控件 ---------------- */
+  function setMode(mode) {
+    G.mode = mode;
+    ["ai", "local", "online"].forEach(function (m) {
+      $("mode-" + m).classList.toggle("on", m === mode);
+    });
+    $("ai-opts").classList.toggle("hidden", mode !== "ai");
+    $("online-opts").classList.toggle("hidden", mode !== "online");
+    $("btn-resign").classList.toggle("hidden", mode !== "online");
+    $("btn-undo").disabled = mode === "online";
+    $("renju-row").classList.toggle("hidden", mode === "online");
+    if (mode !== "online" && G.net) { G.net.leave(); G.netOn = false; $("room-info").classList.add("hidden"); }
+    if (mode !== "online") newGame();
+    else { G.netOn = false; newGame(); $("net-status").textContent = "创建或加入房间开始联机。"; }
+    sfx.click();
+  }
+
+  $("mode-ai").addEventListener("click", function () { setMode("ai"); });
+  $("mode-local").addEventListener("click", function () { setMode("local"); });
+  $("mode-online").addEventListener("click", function () { setMode("online"); });
+  $("sel-side").addEventListener("change", function () { G.humanSide = parseInt(this.value, 10); newGame(); });
+  $("sel-level").addEventListener("change", function () { G.level = parseInt(this.value, 10); });
+  $("chk-renju").addEventListener("change", function () { G.renju = this.checked; newGame(); });
+
+  $("btn-new").addEventListener("click", function () {
+    if (G.mode === "online") { $("net-status").textContent = "联机模式下请重新建房开始新对局。"; return; }
+    sfx.click(); newGame();
+  });
+  $("btn-undo").addEventListener("click", undo);
+  $("btn-resign").addEventListener("click", function () {
+    if (G.mode === "online" && G.net && G.netOn && !G.over) G.net.resign();
+  });
+  $("btn-create").addEventListener("click", function () { netClient().createRoom(); });
+  $("btn-join").addEventListener("click", function () { netClient().joinRoom($("in-room").value); });
+  $("rs-new").addEventListener("click", function () {
+    $("ov-result").classList.add("hidden");
+    if (G.mode === "online") $("net-status").textContent = "联机模式下请重新建房开始新对局。";
+    else newGame();
+  });
+
+  $("in-server").value = AurexNet.defaultUrl();
+
+  drawGrid();
+  newGame();
+})();
+</script>
+</body>
+</html>

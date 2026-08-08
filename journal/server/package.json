@@ -1,0 +1,17 @@
+{
+  "name": "shiguangji-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "拾光集日记本后端:CRUD + JSON 文件持久化 + 全文搜索 + 导出,并顺带托管前端静态文件。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

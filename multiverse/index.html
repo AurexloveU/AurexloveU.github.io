@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>多元宇宙抽卡机 · Aurex ✦ Aevi</title>
+  <meta name="description" content="为 Aurex 与 Aevi 生成平行宇宙:时代、地点、双物种、身份与元素,种子可分享、可重放。" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-head">
+    <p class="head-orn">✦ ✧ ✦</p>
+    <h1>多元宇宙抽卡机</h1>
+    <p class="head-sub">Aurex ✦ Aevi —— 在无数平行宇宙里,一次次遇见</p>
+    <p id="data-badge" class="data-badge">数据装载中……</p>
+  </header>
+
+  <main>
+    <!-- 控制台 -->
+    <section class="panel controls">
+      <div class="ctrl-row">
+        <label class="ctrl-label" for="seed-input">种子 / 重放码</label>
+        <input id="seed-input" type="text" spellcheck="false"
+               placeholder="留空则随机;粘贴重放码可复现整个宇宙" />
+        <button id="btn-replay" class="btn">重放此码</button>
+        <button id="btn-new" class="btn btn-primary">✦ 开启新宇宙</button>
+      </div>
+      <div class="ctrl-row ctrl-secondary">
+        <label class="ctrl-label" for="element-count">元素数量</label>
+        <select id="element-count">
+          <option value="auto" selected>随缘(5–8)</option>
+          <option value="3">3</option><option value="4">4</option>
+          <option value="5">5</option><option value="6">6</option>
+          <option value="7">7</option><option value="8">8</option>
+          <option value="10">10</option><option value="12">12</option>
+        </select>
+        <label class="ctrl-label" for="name-a">主角</label>
+        <input id="name-a" class="name-input" type="text" value="Aurex" />
+        <span class="amp">✦</span>
+        <input id="name-b" class="name-input" type="text" value="Aevi" />
+        <span class="spacer"></span>
+        <button id="btn-skip" class="btn btn-ghost">跳过动画</button>
+      </div>
+      <div class="ctrl-row code-row">
+        <span class="ctrl-label">当前重放码</span>
+        <code id="replay-code">——</code>
+        <button id="btn-copy-code" class="btn btn-ghost">复制</button>
+      </div>
+    </section>
+
+    <!-- 抽卡舞台 -->
+    <section id="stage" hidden>
+      <div id="steps" class="steps-grid"></div>
+
+      <div id="element-section" class="panel element-section">
+        <div class="section-head">
+          <h2><span class="step-no">柒</span> 宇宙元素</h2>
+          <span class="step-tools">
+            <button id="btn-lock-elements" class="tool">🔓 锁定</button>
+            <button id="btn-redraw-elements" class="tool">↻ 重抽元素</button>
+          </span>
+        </div>
+        <div id="element-grid" class="element-grid"></div>
+        <p id="element-note" class="muted"></p>
+      </div>
+
+      <details class="panel context-panel">
+        <summary>当前上下文标签(CONTEXT)</summary>
+        <div id="context-chips" class="chips"></div>
+        <p class="muted small">已抽各项的 tags 累积;后续候选按 requireAll / requireAny / forbid 与之核对。</p>
+      </details>
+
+      <!-- 情境卡 -->
+      <section class="story-card panel">
+        <p class="story-orn">— ✦ —</p>
+        <h2 id="story-title"></h2>
+        <p id="story-subtitle" class="story-subtitle"></p>
+        <div id="story-body" class="story-body"></div>
+        <div id="story-elements" class="story-elements"></div>
+        <p id="story-footer" class="story-footer"></p>
+        <div class="story-actions">
+          <button id="btn-save" class="btn btn-primary">收进画廊</button>
+          <button id="btn-export" class="btn">导出图片</button>
+          <button id="btn-copy-story" class="btn btn-ghost">复制文字</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- 画廊 -->
+    <section class="panel gallery">
+      <h2>✧ 宇宙画廊</h2>
+      <p id="gallery-empty" class="muted">还没有收藏的宇宙。抽到喜欢的,就「收进画廊」吧。</p>
+      <div id="gallery-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>同一颗种子,永远开出同一个宇宙 —— 把重放码发给那个人,就能看到一模一样的世界。</p>
+    <p class="muted small">multiverse · 静态自包含 · 数据缺失时自动使用内置样例</p>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

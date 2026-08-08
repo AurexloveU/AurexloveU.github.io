@@ -1,0 +1,7 @@
+{
+  "name": "multiverse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "多元宇宙抽卡机(Aurex ✦ Aevi):纯静态前端 + 共享纯函数引擎。此 package.json 仅声明 ESM,使 server/ 能直接 import ../engine/*.js,无任何依赖。",
+  "type": "module"
+}

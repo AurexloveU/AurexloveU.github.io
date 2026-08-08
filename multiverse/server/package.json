@@ -1,0 +1,17 @@
+{
+  "name": "multiverse-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "多元宇宙抽卡机后端:数据服务 + 保存宇宙 + 画廊 + 种子重放 API(与前端共用纯函数引擎)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

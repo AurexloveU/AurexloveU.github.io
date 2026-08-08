@@ -65,7 +65,7 @@ function compute() {
     data: state.data,
     seed: state.seed,
     attempts: state.attempts,
-    elementCountSpec: state.elementCountSpec,
+    elementCount: state.elementCountSpec, // 'auto' 或固定整数
     names: state.names,
   });
   state.story = composeStory(state.result);

@@ -84,8 +84,7 @@ async function replayCode(code, names) {
     data,
     seed: parsed.seed,
     attempts: parsed.attempts,
-    elementCountSpec: parsed.elementCountSpec,
-    elementCount: parsed.elementCountSpec,
+    elementCount: parsed.elementCountSpec, // 'auto' 或固定整数
     names,
   });
   const story = composeStory(result);

@@ -42,21 +42,29 @@ function nm(item) {
   return item ? item.name : '未知';
 }
 
-/** 物种 + 身份的一句话人物简介。 */
-function personLine(name, speciesStep, roleStep) {
+/**
+ * 物种 + 身份的一句话人物简介。
+ * prev = 前一位主角的 { species, role },用于两人撞车时避免逐字重复:
+ * 同物种省略重复描述,同身份补一句确定性的缘分小注。
+ */
+function personLine(name, speciesStep, roleStep, prev) {
   const sp = speciesStep && speciesStep.item;
   const role = roleStep && roleStep.item;
   if (!sp) return `${name}的身影尚未在这个宇宙显形。`;
-  let line = `${name}在这里是${sp.name}`;
+  const sameSpecies = prev && prev.species && prev.species.id === sp.id;
+  const sameRole = prev && prev.role && role && prev.role.id === role.id;
+
+  let line = sameSpecies ? `${name}恰好也是${sp.name}` : `${name}在这里是${sp.name}`;
   if (role) {
-    line += `,以「${role.name}」的身份生活`;
+    line += sameRole ? `,而且同样以「${role.name}」的身份生活` : `,以「${role.name}」的身份生活`;
   } else if (roleStep && roleStep.skipped && roleStep.reason === 'no-society') {
     line += `,不属于任何社会,只属于自己(和另一个人)`;
   } else if (roleStep && roleStep.skipped) {
     line += `,在这个时代还没有一个现成的身份能框住这样的存在`;
   }
   line += '。';
-  if (sp.desc) line += sp.desc;
+  if (sp.desc && !sameSpecies) line += sp.desc;
+  if (sameRole) line += '同族又同行——这大概是命运偷懒,也大概是命运偏心。';
   return line;
 }
 
@@ -87,9 +95,14 @@ export function composeStory(result) {
   if (place && place.desc) p2 += place.desc;
   paragraphs.push(p2);
 
-  /* 两位主角 */
-  paragraphs.push(personLine(a, s.speciesA, s.roleA));
-  paragraphs.push(personLine(b, s.speciesB, s.roleB));
+  /* 两位主角(第二段可感知第一段,避免撞车时逐字重复) */
+  paragraphs.push(personLine(a, s.speciesA, s.roleA, null));
+  paragraphs.push(
+    personLine(b, s.speciesB, s.roleB, {
+      species: s.speciesA && s.speciesA.item,
+      role: s.roleA && s.roleA.item,
+    }),
+  );
 
   /* 相遇 */
   paragraphs.push(pickOne(rng, MEET_LINES));

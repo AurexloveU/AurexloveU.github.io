@@ -1192,7 +1192,15 @@ function init() {
   updateConn();
   renderChatList();
   if (S.activeChat && Store.chatById(S.activeChat)) openChat(S.activeChat);
-  else showEmpty();
+  else {
+    // 宽屏首次进入:直接打开列表最上面那个会话,免得右半屏空着;
+    // 窄屏(手机)保持先看会话列表,和 Telegram 一致。
+    const first = matchMedia('(min-width: 721px)').matches
+      ? el.chatList.querySelector('.chat-item')
+      : null;
+    if (first) openChat(first.dataset.id);
+    else showEmpty();
+  }
   if (S.server && S.autoConnect) connectNet();
 }
 init();

@@ -12,6 +12,15 @@
   var LS_SEEDED   = 'shiguang.seeded.v1';
   var DEFAULT_API = 'http://localhost:4870';
 
+  /** 当前页面是否跑在本机(localhost / 127.0.0.1 / file://) */
+  function isLocalHost() {
+    try {
+      var h = global.location && global.location.hostname;
+      if (!h) return true; // file:// 下 hostname 为空,按本地算
+      return h === 'localhost' || h === '127.0.0.1' || h === '::1' || h === '[::1]' || /\.local$/.test(h);
+    } catch (e) { return false; }
+  }
+
   var Store = {
     entries: [],
     settings: { theme: 'mist', apiBase: '' },
@@ -112,8 +121,18 @@
     /** 探测后端;在线则拉取远端并双向合并 */
     connect: function () {
       var self = this;
-      this.base = (this.settings.apiBase || DEFAULT_API).replace(/\/+$/, '');
+      var custom = (this.settings.apiBase || '').trim();
+      this.base = (custom || DEFAULT_API).replace(/\/+$/, '');
       if (typeof fetch !== 'function') { self.online = false; return Promise.resolve(false); }
+      // 没手填地址时,只在本地环境才自动探测默认端口:线上(GitHub Pages)
+      // 探测 localhost 必然失败,还会被 https 混合内容拦截,徒增控制台报错。
+      if (!custom && !isLocalHost()) {
+        self.online = false;
+        return Promise.resolve().then(function () {
+          if (typeof self.onRemoteSync === 'function') self.onRemoteSync(false);
+          return false;
+        });
+      }
       return this.api('/api/health')
         .then(function (h) {
           if (!h || h.ok !== true) throw new Error('health check failed');

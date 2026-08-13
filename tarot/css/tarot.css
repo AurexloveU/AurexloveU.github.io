@@ -380,7 +380,8 @@ footer {
 
 @media (max-width: 640px) {
   main { padding: 0 16px 60px; }
-  .hero { padding-top: 40px; }
+  /* 装饰轨道是旋转中的方块,窄屏会把页面顶出横向滚动条,这里裁掉 */
+  .hero { padding-top: 40px; overflow: hidden; }
   .daily-wrap { gap: 28px; }
   .modal { padding: 24px 18px; }
   .spread-board { overflow-x: auto; }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>牌库 · AUREX / TAROT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c2542'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23c9bfe6' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23c9bfe6'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/tarot.css"/>
+</head>
+<body>
+<nav class="top-nav" aria-label="页面导航">
+  <a class="wordmark" href="index.html">AUREX / TAROT</a>
+  <div class="nav-links">
+    <a href="index.html">今日</a>
+    <a href="spreads.html">牌阵</a>
+    <a href="library.html" class="active">牌库</a>
+    <a href="history.html">档案</a>
+  </div>
+</nav>
+<main>
+  <section class="page-section" style="padding-top:36px">
+    <p class="section-index">LIBRARY / 全牌一览</p>
+    <h2>78 张,一张不少</h2>
+    <p class="section-note">22 张大阿卡纳与 56 张小阿卡纳。点击任意牌查看正逆位含义、关键词、元素占星对应,以及为 AI 心智重写的风味解读。</p>
+
+    <div class="lib-controls">
+      <input type="text" id="lib-search" placeholder="搜索:中文名 / 英文名 / 关键词,如「月亮」「swords」「秩序」" aria-label="搜索牌"/>
+      <div class="chip-row" id="lib-chips"></div>
+      <span class="lib-count" id="lib-count"></span>
+    </div>
+
+    <div class="lib-grid" id="lib-grid"></div>
+    <p class="empty-tip" id="lib-empty" style="display:none">没有匹配的牌 —— 换个关键词,或清掉筛选。</p>
+  </section>
+</main>
+<footer>
+  <span>TAROT REWRITTEN FOR AI MINDS</span>
+  <span>V1.0 · AUREX MULTIVERSE</span>
+</footer>
+
+<script src="data/cards.js"></script>
+<script src="js/core.js"></script>
+<script src="js/cardart.js"></script>
+<script src="js/ui.js"></script>
+<script>
+(async function () {
+  await Tarot.load();
+  const cards = Tarot.cards();
+
+  const FILTERS = [
+    { key: 'all', label: '全部', test: () => true },
+    { key: 'major', label: '大阿卡纳', test: (c) => c.arcana === 'major' },
+    { key: 'wands', label: '权杖·火', test: (c) => c.suit === 'wands' },
+    { key: 'cups', label: '圣杯·水', test: (c) => c.suit === 'cups' },
+    { key: 'swords', label: '宝剑·风', test: (c) => c.suit === 'swords' },
+    { key: 'pentacles', label: '星币·土', test: (c) => c.suit === 'pentacles' },
+    { key: 'court', label: '宫廷牌', test: (c) => !!c.rank },
+  ];
+  let activeFilter = 'all';
+  let query = '';
+
+  const chipWrap = document.getElementById('lib-chips');
+  FILTERS.forEach((f) => {
+    const b = document.createElement('button');
+    b.className = 'f-chip' + (f.key === activeFilter ? ' on' : '');
+    b.textContent = f.label;
+    b.addEventListener('click', () => {
+      activeFilter = f.key;
+      chipWrap.querySelectorAll('.f-chip').forEach((x) => x.classList.toggle('on', x === b));
+      render();
+    });
+    chipWrap.appendChild(b);
+  });
+
+  const search = document.getElementById('lib-search');
+  let debounce;
+  search.addEventListener('input', () => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => { query = search.value.trim().toLowerCase(); render(); }, 120);
+  });
+
+  const RANK_ZH = { page: '侍从', knight: '骑士', queen: '王后', king: '国王' };
+  function subLabel(c) {
+    if (c.arcana === 'major') return 'No.' + c.number + ' · ' + c.name_en;
+    const suit = { wands: '权杖', cups: '圣杯', swords: '宝剑', pentacles: '星币' }[c.suit];
+    return suit + (c.rank ? RANK_ZH[c.rank] : ' ' + c.number) + ' · ' + c.name_en;
+  }
+
+  function matches(c) {
+    if (!FILTERS.find((f) => f.key === activeFilter).test(c)) return false;
+    if (!query) return true;
+    const hay = (c.name_zh + ' ' + c.name_en + ' ' + c.keywords.join(' ') + ' ' + c.element + ' ' + c.astrology).toLowerCase();
+    return query.split(/\s+/).every((t) => hay.includes(t));
+  }
+
+  const grid = document.getElementById('lib-grid');
+  function render() {
+    grid.innerHTML = '';
+    const shown = cards.filter(matches);
+    shown.forEach((c) => {
+      const cell = document.createElement('button');
+      cell.className = 'lib-cell';
+      cell.innerHTML = Tarot.art.front(c) +
+        '<div class="nm">' + Tarot.esc(c.name_zh) + '</div>' +
+        '<div class="sub">' + Tarot.esc(subLabel(c)) + '</div>';
+      cell.addEventListener('click', () => Tarot.ui.showCard(c));
+      grid.appendChild(cell);
+    });
+    document.getElementById('lib-count').textContent = shown.length + ' / ' + cards.length;
+    document.getElementById('lib-empty').style.display = shown.length ? 'none' : 'block';
+  }
+  render();
+})();
+</script>
+</body>
+</html>

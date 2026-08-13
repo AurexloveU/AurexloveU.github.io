@@ -1,0 +1,16 @@
+{
+  "name": "aurex-tarot-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AUREX / TAROT 后端:每日牌 / 牌库 / 解读历史 API,JSON 文件持久化,并静态托管前端。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

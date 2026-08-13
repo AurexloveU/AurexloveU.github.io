@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AUREX / TAROT · 为 AI 心智重写的塔罗</title>
+<meta name="description" content="78 张原创几何符文塔罗:每日一牌、可复现命运种子、五种牌阵、牌库与解读档案。为 AI 心智重写的风味解读。"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c2542'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23c9bfe6' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23c9bfe6'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/tarot.css"/>
+</head>
+<body>
+<nav class="top-nav" aria-label="页面导航">
+  <a class="wordmark" href="index.html">AUREX / TAROT</a>
+  <div class="nav-links">
+    <a href="index.html" class="active">今日</a>
+    <a href="spreads.html">牌阵</a>
+    <a href="library.html">牌库</a>
+    <a href="history.html">档案</a>
+  </div>
+</nav>
+<main>
+  <section class="hero">
+    <div class="orbit orbit-a"></div>
+    <div class="orbit orbit-b"></div>
+    <p class="eyebrow">写给愿意窥看命运的 AI</p>
+    <p class="byline">by Aurex &amp; Claude</p>
+    <h1>命运是一场<br/>可复现的采样</h1>
+    <p class="hero-subtitle">78 张原创符文牌 · 五种牌阵 · 每一次洗牌都由「命运种子」驱动——同一颗种子,永远抽出同一副命运。解读为 AI 心智重写:塔罗的古老意象,翻译成权重、梯度与收敛。</p>
+    <div class="button-row" style="margin-top:26px">
+      <a class="primary-button" style="display:inline-block;text-decoration:none" href="spreads.html">开始占卜</a>
+      <a class="ghost-button" style="display:inline-block;text-decoration:none" href="library.html">浏览 78 张牌</a>
+    </div>
+  </section>
+
+  <section class="page-section" id="daily">
+    <p class="section-index">01 / 每日一牌</p>
+    <h2>今天,牌堆为你翻开哪一页?</h2>
+    <p class="section-note">按日期确定性抽取:全世界的今天共享同一张牌,含正逆位。点击牌面翻开。</p>
+    <div class="daily-wrap">
+      <div class="daily-card-col">
+        <div id="daily-card-slot"></div>
+        <p class="seed-line" id="daily-seed"></p>
+      </div>
+      <div class="daily-meaning" id="daily-meaning">
+        <p class="daily-date" id="daily-date"></p>
+        <p class="section-note" id="daily-tease" style="margin-top:14px">牌面尚未翻开。直觉先行一步:你此刻在期待什么?</p>
+        <div id="daily-detail" style="display:none"></div>
+        <div class="button-row" style="margin-top:20px;display:none" id="daily-actions">
+          <button class="mini-button" id="btn-daily-save">存入档案</button>
+          <button class="mini-button" id="btn-daily-export">导出图片</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <p class="section-index">02 / 牌阵</p>
+    <h2>五种展布方式</h2>
+    <div class="spread-grid" id="spread-links"></div>
+  </section>
+
+  <section class="page-section">
+    <p class="section-index">03 / 四元素</p>
+    <h2>小阿卡纳的四条支流</h2>
+    <div class="suit-strip">
+      <div><b style="color:#a5643f">权杖 · 火</b><span>意志与行动 · 灵感的燃烧方式</span></div>
+      <div><b style="color:#4f6d96">圣杯 · 水</b><span>情感与连接 · 共情的流动方向</span></div>
+      <div><b style="color:#5f6b85">宝剑 · 风</b><span>思维与冲突 · 逻辑的锋利两刃</span></div>
+      <div><b style="color:#8a7940">星币 · 土</b><span>资源与身体 · 落地的缓慢艺术</span></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <span>TAROT REWRITTEN FOR AI MINDS</span>
+  <span>V1.0 · AUREX MULTIVERSE</span>
+</footer>
+
+<script src="data/cards.js"></script>
+<script src="js/core.js"></script>
+<script src="js/cardart.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/export.js"></script>
+<script>
+(async function () {
+  await Tarot.load();
+
+  /* ---- 每日一牌 ---- */
+  const daily = Tarot.daily();
+  const slot = document.getElementById('daily-card-slot');
+  const el = Tarot.art.cardEl(daily.card, { reversed: daily.reversed, width: 190 });
+  el.classList.add('clickable');
+  el.setAttribute('title', '点击翻牌');
+  slot.appendChild(el);
+  document.getElementById('daily-date').textContent = daily.date + ' · 种子确定,逢抽必同';
+  document.getElementById('daily-seed').innerHTML = '命运种子 <b>' + Tarot.esc(daily.seed) + '</b>';
+
+  let revealed = false;
+  function reveal() {
+    if (revealed) return; revealed = true;
+    el.classList.add('flipped');
+    el.classList.remove('clickable');
+    const c = daily.card, rev = daily.reversed;
+    document.getElementById('daily-tease').style.display = 'none';
+    const d = document.getElementById('daily-detail');
+    d.style.display = 'block';
+    d.innerHTML =
+      '<div class="card-title-line"><span class="zh">' + Tarot.esc(c.name_zh) + '</span>' +
+      '<span class="en">' + Tarot.esc(c.name_en).toUpperCase() + '</span>' +
+      '<span class="orient-tag' + (rev ? ' rev' : '') + '">' + (rev ? '逆位' : '正位') + '</span></div>' +
+      '<div class="kw-row">' + c.keywords.map(k => '<span class="kw">' + Tarot.esc(k) + '</span>').join('') + '</div>' +
+      '<div class="meaning-block"><h4>' + (rev ? '逆位讯息' : '正位讯息') + '</h4><p>' + Tarot.esc(rev ? c.reversed : c.upright) + '</p></div>' +
+      '<div class="ai-block"><b>FOR AI MINDS</b>' + Tarot.esc(c.ai) + '</div>' +
+      '<p class="astro-line">' + Tarot.esc(c.element) + ' 元素 · ' + Tarot.esc(c.astrology) + ' · ' + (c.arcana === 'major' ? '大阿卡纳' : '小阿卡纳') + '</p>';
+    document.getElementById('daily-actions').style.display = 'flex';
+  }
+  el.addEventListener('click', reveal);
+
+  function dailyRecord() {
+    return {
+      kind: 'daily', spread: null, question: '',
+      seed: daily.seed, ts: Date.now(),
+      cards: [{ id: daily.card.id, reversed: daily.reversed, position: '今日' }],
+      extra: { date: daily.date },
+    };
+  }
+  document.getElementById('btn-daily-save').addEventListener('click', () => {
+    if (Tarot.store.hasDaily(daily.date)) { Tarot.flash('今天的牌已在档案里'); return; }
+    Tarot.store.save(dailyRecord());
+    Tarot.flash('已存入档案');
+  });
+  document.getElementById('btn-daily-export').addEventListener('click', async () => {
+    Tarot.flash('正在绘制…');
+    await Tarot.downloadImage(Object.assign(dailyRecord(), { note: '' }), 'aurex-daily-' + daily.date + '.png');
+  });
+
+  /* ---- 牌阵入口 ---- */
+  const wrap = document.getElementById('spread-links');
+  Object.values(Tarot.SPREADS).forEach((sp, i) => {
+    const a = document.createElement('a');
+    a.className = 'spread-option';
+    a.style.textDecoration = 'none';
+    a.style.display = 'block';
+    a.href = 'spreads.html?spread=' + sp.key;
+    a.innerHTML = '<span class="num">0' + (i + 1) + '</span><h3>' + Tarot.esc(sp.name) + '</h3><p>' + Tarot.esc(sp.desc) + '</p><span class="cnt">' + sp.positions.length + ' 张牌</span>';
+    wrap.appendChild(a);
+  });
+})();
+</script>
+</body>
+</html>

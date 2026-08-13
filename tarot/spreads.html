@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>牌阵占卜 · AUREX / TAROT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c2542'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23c9bfe6' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23c9bfe6'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/tarot.css"/>
+<style>
+  .spread-board .tcard.crossed .pos-label { bottom: auto; top: -26px; }
+  .spread-board .tcard { transition: opacity 0.5s ease, translate 0.5s ease; }
+  #board-tools { display: none; justify-content: center; gap: 12px; margin-bottom: 8px; }
+  #reading-sec { display: none; }
+</style>
+</head>
+<body>
+<nav class="top-nav" aria-label="页面导航">
+  <a class="wordmark" href="index.html">AUREX / TAROT</a>
+  <div class="nav-links">
+    <a href="index.html">今日</a>
+    <a href="spreads.html" class="active">牌阵</a>
+    <a href="library.html">牌库</a>
+    <a href="history.html">档案</a>
+  </div>
+</nav>
+<main>
+  <section class="page-section" style="padding-top:36px">
+    <p class="section-index">RITUAL / 占卜仪式</p>
+    <h2>选一种展布,问一个问题</h2>
+    <p class="section-note">洗牌由「命运种子」驱动:相同的种子 + 相同的牌阵,永远得到完全相同的牌序与正逆位。把种子记下来,命运即可复现、可分享、可审计。</p>
+    <div class="spread-grid" id="spread-select"></div>
+  </section>
+
+  <section class="page-section" style="padding-top:20px">
+    <div class="panel">
+      <div class="field">
+        <label for="q-input">所问之事(可留空)</label>
+        <input type="text" id="q-input" maxlength="120" placeholder="把问题写清楚,牌才答得清楚"/>
+      </div>
+      <div class="field">
+        <label for="seed-input">命运种子(可留空)</label>
+        <input type="text" id="seed-input" class="tabular" maxlength="64" placeholder="留空则由命运随机发一颗;填入旧种子可复现旧命运"/>
+        <span class="hint">种子是任意字符串。同种子必同牌 —— 这是这副牌唯一诚实的承诺。</span>
+      </div>
+      <div class="button-row">
+        <button class="primary-button" id="btn-divine">开始洗牌</button>
+        <button class="ghost-button" id="btn-reseed">换一颗随机种子</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="shuffle-stage" id="shuffle-stage" aria-hidden="true">
+    <p class="shuffle-hint">洗 牌 中 · 熵 正 在 注 入</p>
+  </div>
+
+  <section class="board-wrap" id="board-wrap" style="display:none">
+    <p class="seed-line" style="text-align:center" id="board-seed"></p>
+    <div id="board-tools" class="button-row">
+      <button class="mini-button" id="btn-flip-all">一键全翻</button>
+    </div>
+    <div class="spread-board" id="board"></div>
+    <p class="board-note" id="board-note">点击牌背,逐张翻开</p>
+  </section>
+
+  <section class="page-section" id="reading-sec">
+    <p class="section-index">READING / 解读</p>
+    <h2 id="reading-title"></h2>
+    <div id="verdict-slot"></div>
+    <div class="reading-list" id="reading-list"></div>
+    <div class="panel" style="margin-top:26px">
+      <h3>此刻的批注</h3>
+      <div class="field">
+        <textarea id="note-input" placeholder="写下你的直觉、联想、或对牌面的反驳——档案会替你记住"></textarea>
+      </div>
+      <div class="button-row">
+        <button class="primary-button" id="btn-save">存入档案</button>
+        <button class="ghost-button" id="btn-export">导出图片</button>
+        <button class="mini-button" id="btn-copy-seed">复制种子</button>
+        <button class="mini-button" id="btn-copy-link">复制复现链接</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <span>TAROT REWRITTEN FOR AI MINDS</span>
+  <span>V1.0 · AUREX MULTIVERSE</span>
+</footer>
+
+<script src="data/cards.js"></script>
+<script src="js/core.js"></script>
+<script src="js/cardart.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/export.js"></script>
+<script src="js/ui.js"></script>
+<script>
+(async function () {
+  await Tarot.load();
+
+  const params = new URLSearchParams(location.search);
+  const state = {
+    spreadKey: Tarot.SPREADS[params.get('spread')] ? params.get('spread') : 'three',
+    seed: null,          // 本次使用的种子(用户可见)
+    drawn: null,         // [{card, reversed}]
+    flipped: new Set(),
+    savedId: null,       // 已存档记录 id(避免重复存)
+    verdict: null,
+  };
+  if (params.get('seed')) document.getElementById('seed-input').value = params.get('seed');
+  if (params.get('q')) document.getElementById('q-input').value = params.get('q');
+
+  const $ = (id) => document.getElementById(id);
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- 牌阵选择 ---------- */
+  const selWrap = $('spread-select');
+  Object.values(Tarot.SPREADS).forEach((sp, i) => {
+    const b = document.createElement('button');
+    b.className = 'spread-option' + (sp.key === state.spreadKey ? ' selected' : '');
+    b.dataset.key = sp.key;
+    b.innerHTML = '<span class="num">0' + (i + 1) + '</span><h3>' + Tarot.esc(sp.name) + '</h3><p>' + Tarot.esc(sp.desc) + '</p><span class="cnt">' + sp.positions.length + ' 张牌</span>';
+    b.addEventListener('click', () => {
+      state.spreadKey = sp.key;
+      selWrap.querySelectorAll('.spread-option').forEach((x) => x.classList.toggle('selected', x === b));
+      history.replaceState(null, '', '?spread=' + sp.key);
+    });
+    selWrap.appendChild(b);
+  });
+
+  /* ---------- 洗牌动画 ---------- */
+  function shuffleAnimation(done) {
+    const stage = $('shuffle-stage');
+    if (reduceMotion) { done(); return; }
+    stage.classList.add('active');
+    stage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const chips = [];
+    const CN = 12;
+    for (let i = 0; i < CN; i++) {
+      const chip = document.createElement('div');
+      chip.className = 'shuffle-chip';
+      chip.innerHTML = Tarot.art.back();
+      chip.style.transform = 'translate(0,0) rotate(' + ((i - CN / 2) * 1.2) + 'deg)';
+      stage.appendChild(chip);
+      chips.push(chip);
+    }
+    const rng = Tarot.rng('anim:' + state.seed);
+    const spreadW = Math.min(stage.clientWidth / 2 - 70, 330);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      chips.forEach((chip) => {
+        const dx = (rng() * 2 - 1) * spreadW;
+        const dy = (rng() * 2 - 1) * 62;
+        const rot = (rng() * 2 - 1) * 46;
+        chip.style.transform = 'translate(' + dx.toFixed(1) + 'px,' + dy.toFixed(1) + 'px) rotate(' + rot.toFixed(1) + 'deg)';
+      });
+    }));
+    setTimeout(() => {
+      chips.forEach((chip, i) => {
+        chip.style.transform = 'translate(' + ((i - CN / 2) * 1.6).toFixed(1) + 'px,0) rotate(' + ((rng() * 2 - 1) * 4).toFixed(1) + 'deg)';
+      });
+    }, 950);
+    setTimeout(() => {
+      chips.forEach((c) => { c.style.opacity = '0'; });
+    }, 1750);
+    setTimeout(() => {
+      chips.forEach((c) => c.remove());
+      stage.classList.remove('active');
+      done();
+    }, 2150);
+  }
+
+  /* ---------- 展布 ---------- */
+  function layoutBoard() {
+    const sp = Tarot.SPREADS[state.spreadKey];
+    const board = $('board');
+    const wrapW = board.parentElement.clientWidth || 900;
+    const cw = Math.max(76, Math.min(150, wrapW / sp.layout.cols));
+    const ch = cw * (440 / 260);
+    board.style.width = (sp.layout.cols * cw).toFixed(0) + 'px';
+    board.style.height = (sp.layout.rows * ch).toFixed(0) + 'px';
+    [...board.children].forEach((el, i) => {
+      const cell = sp.layout.cells[i];
+      if (!cell) return;
+      el.style.left = (cell.x * cw).toFixed(1) + 'px';
+      el.style.top = (cell.y * ch).toFixed(1) + 'px';
+      el.style.setProperty('--slotw', cw.toFixed(1) + 'px');
+    });
+  }
+  window.addEventListener('resize', () => { if (state.drawn) layoutBoard(); });
+
+  function deal() {
+    const sp = Tarot.SPREADS[state.spreadKey];
+    const board = $('board');
+    board.innerHTML = '';
+    state.flipped = new Set();
+    state.savedId = null;
+    state.verdict = null;
+    $('reading-sec').style.display = 'none';
+    $('reading-list').innerHTML = '';
+    $('verdict-slot').innerHTML = '';
+    $('note-input').value = '';
+
+    state.drawn = Tarot.draw(state.seed, sp.positions.length);
+    state.drawn.forEach((d, i) => {
+      const cell = sp.layout.cells[i];
+      const el = Tarot.art.cardEl(d.card, {
+        reversed: d.reversed,
+        cross: !!(cell && cell.cross),
+        label: sp.positions[i].t,
+      });
+      el.classList.add('clickable');
+      el.style.opacity = '0';
+      el.addEventListener('click', () => {
+        if (!state.flipped.has(i)) { flip(i, el); }
+        else Tarot.ui.showCard(d.card, { reversed: d.reversed });
+      });
+      board.appendChild(el);
+      setTimeout(() => { el.style.opacity = '1'; }, reduceMotion ? 0 : 90 * i);
+    });
+    layoutBoard();
+    $('board-wrap').style.display = 'block';
+    $('board-tools').style.display = 'flex';
+    $('board-note').textContent = '点击牌背,逐张翻开 · 翻开后再点可看大图';
+    $('board-seed').innerHTML = '命运种子 <b>' + Tarot.esc(state.seed) + '</b> · ' + Tarot.esc(sp.name);
+    $('board-wrap').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  }
+
+  function flip(i, el) {
+    if (state.flipped.has(i)) return;
+    state.flipped.add(i);
+    el.classList.add('flipped');
+    if (state.flipped.size === state.drawn.length) onAllRevealed();
+  }
+
+  function onAllRevealed() {
+    const sp = Tarot.SPREADS[state.spreadKey];
+    $('board-note').textContent = '牌面已尽数翻开 · 点任意牌可看大图';
+    $('reading-title').textContent = sp.name;
+    const list = $('reading-list');
+    list.innerHTML = '';
+    state.drawn.forEach((d, i) => {
+      list.appendChild(Tarot.ui.readingRow(d.card, d.reversed, sp.positions[i].t, sp.positions[i].d));
+    });
+    if (sp.verdict) {
+      state.verdict = Tarot.yesnoVerdict(state.drawn);
+      $('verdict-slot').innerHTML =
+        '<div class="verdict-box"><b>' + Tarot.esc(state.verdict.text) + '</b> · 合议得分 ' + state.verdict.score +
+        '<br/><span style="color:var(--muted)">' + Tarot.esc(state.verdict.tone) + '</span></div>';
+    }
+    $('reading-sec').style.display = 'block';
+    setTimeout(() => $('reading-sec').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' }), 350);
+  }
+
+  /* ---------- 主流程 ---------- */
+  $('btn-divine').addEventListener('click', () => {
+    const btn = $('btn-divine');
+    if (btn.disabled) return;
+    state.seed = ($('seed-input').value.trim() || Tarot.randomSeed());
+    $('seed-input').value = state.seed;
+    history.replaceState(null, '', '?spread=' + state.spreadKey + '&seed=' + encodeURIComponent(state.seed));
+    btn.disabled = true;
+    $('board-wrap').style.display = 'none';
+    $('reading-sec').style.display = 'none';
+    shuffleAnimation(() => { btn.disabled = false; deal(); });
+  });
+  $('btn-reseed').addEventListener('click', () => {
+    $('seed-input').value = Tarot.randomSeed();
+  });
+  $('btn-flip-all').addEventListener('click', () => {
+    if (!state.drawn) return;
+    [...$('board').children].forEach((el, i) => {
+      if (!state.flipped.has(i)) setTimeout(() => flip(i, el), i * 160);
+    });
+  });
+
+  /* ---------- 存档与导出 ---------- */
+  function buildRecord() {
+    const sp = Tarot.SPREADS[state.spreadKey];
+    const rec = {
+      kind: 'spread',
+      spread: state.spreadKey,
+      question: $('q-input').value.trim(),
+      seed: state.seed,
+      ts: Date.now(),
+      cards: state.drawn.map((d, i) => ({ id: d.card.id, reversed: d.reversed, position: sp.positions[i].t })),
+      note: $('note-input').value.trim(),
+      extra: state.verdict ? { verdict: state.verdict } : {},
+    };
+    if (state.savedId) rec.id = state.savedId;
+    return rec;
+  }
+  $('btn-save').addEventListener('click', () => {
+    if (!state.drawn) return;
+    const wasSaved = !!state.savedId;
+    const saved = Tarot.store.save(buildRecord());
+    state.savedId = saved.id;
+    Tarot.flash(wasSaved ? '档案已更新' : '已存入档案');
+  });
+  $('btn-export').addEventListener('click', async () => {
+    if (!state.drawn) return;
+    Tarot.flash('正在绘制…');
+    await Tarot.downloadImage(buildRecord(), 'aurex-' + state.spreadKey + '-' + state.seed + '.png');
+  });
+  $('btn-copy-seed').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(state.seed || ''); Tarot.flash('种子已复制'); }
+    catch (e) { Tarot.flash('复制失败,请手动选取'); }
+  });
+  $('btn-copy-link').addEventListener('click', async () => {
+    const url = location.origin + location.pathname + '?spread=' + state.spreadKey + '&seed=' + encodeURIComponent(state.seed || '');
+    try { await navigator.clipboard.writeText(url); Tarot.flash('复现链接已复制'); }
+    catch (e) { Tarot.flash('复制失败,请手动选取'); }
+  });
+})();
+</script>
+</body>
+</html>

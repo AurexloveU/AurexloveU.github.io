@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>解读档案 · AUREX / TAROT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232c2542'/%3E%3Ccircle cx='50' cy='50' r='26' fill='none' stroke='%23c9bfe6' stroke-width='5'/%3E%3Ccircle cx='50' cy='50' r='7' fill='%23c9bfe6'/%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/tarot.css"/>
+</head>
+<body>
+<nav class="top-nav" aria-label="页面导航">
+  <a class="wordmark" href="index.html">AUREX / TAROT</a>
+  <div class="nav-links">
+    <a href="index.html">今日</a>
+    <a href="spreads.html">牌阵</a>
+    <a href="library.html">牌库</a>
+    <a href="history.html" class="active">档案</a>
+  </div>
+</nav>
+<main>
+  <section class="page-section" style="padding-top:36px">
+    <p class="section-index">ARCHIVE / 解读档案</p>
+    <h2>命运的留底</h2>
+    <p class="section-note">每一次占卜都可以存档、批注、导出。数据默认只活在这台设备的 localStorage 里;配置后端地址后可双向同步。</p>
+
+    <div class="panel" style="margin-top:22px">
+      <h3>备份与同步</h3>
+      <div class="button-row" style="margin-bottom:14px">
+        <button class="mini-button" id="btn-backup">导出 JSON 备份</button>
+        <button class="mini-button" id="btn-restore">导入 JSON 备份</button>
+        <input type="file" id="file-restore" accept="application/json" class="sr-only"/>
+        <span class="lib-count" id="arch-count"></span>
+      </div>
+      <div class="field" style="margin-bottom:10px">
+        <label for="api-input">后端地址(可留空)</label>
+        <input type="text" id="api-input" class="tabular" placeholder="例如 http://localhost:7777 —— 留空即纯本地模式"/>
+        <span class="hint">后端见仓库 tarot/server/(Node + Express,JSON 文件持久化)。同步策略:同 id 记录以更新时间较新者为准。</span>
+      </div>
+      <div class="button-row">
+        <button class="mini-button" id="btn-api-save">保存地址</button>
+        <button class="mini-button" id="btn-api-ping">测试连接</button>
+        <button class="mini-button" id="btn-sync">立即同步</button>
+        <span class="sync-status" id="sync-status"></span>
+      </div>
+    </div>
+
+    <div id="hist-list" style="margin-top:26px"></div>
+    <p class="empty-tip" id="hist-empty" style="display:none">档案还是空的。去 <a href="spreads.html">牌阵</a> 抽一次,或把 <a href="index.html">今日一牌</a> 存进来。</p>
+  </section>
+</main>
+<footer>
+  <span>TAROT REWRITTEN FOR AI MINDS</span>
+  <span>V1.0 · AUREX MULTIVERSE</span>
+</footer>
+
+<script src="data/cards.js"></script>
+<script src="js/core.js"></script>
+<script src="js/cardart.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/export.js"></script>
+<script src="js/ui.js"></script>
+<script>
+(async function () {
+  await Tarot.load();
+  const $ = (id) => document.getElementById(id);
+
+  function titleOf(rec) {
+    if (rec.kind === 'daily') return '每日一牌 · ' + ((rec.extra && rec.extra.date) || '');
+    const sp = Tarot.SPREADS[rec.spread];
+    return sp ? sp.name : (rec.spread || '解读');
+  }
+  function positionsOf(rec) {
+    const sp = rec.spread && Tarot.SPREADS[rec.spread];
+    return sp ? sp.positions : null;
+  }
+
+  /* ---------- 列表渲染 ---------- */
+  function render() {
+    const list = Tarot.store.list();
+    const wrap = $('hist-list');
+    wrap.innerHTML = '';
+    $('hist-empty').style.display = list.length ? 'none' : 'block';
+    $('arch-count').textContent = list.length + ' 条记录';
+
+    list.forEach((rec) => {
+      const item = document.createElement('div');
+      item.className = 'hist-item';
+
+      const minis = rec.cards.map((c) => {
+        const card = Tarot.byId(c.id);
+        if (!card) return '';
+        return '<span class="mini' + (c.reversed ? ' rev' : '') + '" title="' + Tarot.esc(c.position || card.name_zh) + '">' + Tarot.art.front(card) + '</span>';
+      }).join('');
+
+      item.innerHTML =
+        '<div class="hist-head">' +
+        '<span class="hist-title">' + Tarot.esc(titleOf(rec)) + '</span>' +
+        '<span class="hist-meta">' + Tarot.fmtTime(rec.ts) + (rec.seed ? ' · 种子 ' + Tarot.esc(rec.seed) : '') + '</span>' +
+        '</div>' +
+        (rec.question ? '<p class="hist-q">所问:' + Tarot.esc(rec.question) + '</p>' : '') +
+        '<div class="hist-cards">' + minis + '</div>' +
+        (rec.extra && rec.extra.verdict
+          ? '<div class="verdict-box" style="margin-top:8px"><b>' + Tarot.esc(rec.extra.verdict.text) + '</b> · 合议得分 ' + rec.extra.verdict.score + '</div>'
+          : '') +
+        '<div class="hist-note"><label for="note-' + rec.id + '">笔记</label>' +
+        '<textarea id="note-' + rec.id + '" placeholder="补一段事后的验证或反思…">' + Tarot.esc(rec.note || '') + '</textarea></div>' +
+        '<div class="hist-actions">' +
+        '<button class="mini-button" data-act="note">保存笔记</button>' +
+        '<button class="mini-button" data-act="detail">展开解读</button>' +
+        '<button class="mini-button" data-act="export">导出图片</button>' +
+        (rec.kind === 'spread' && rec.seed
+          ? '<a class="mini-button" style="text-decoration:none;display:inline-block" href="spreads.html?spread=' + encodeURIComponent(rec.spread) + '&seed=' + encodeURIComponent(rec.seed) + '">复现此局</a>'
+          : '') +
+        '<button class="mini-button danger" data-act="del">删除</button>' +
+        '</div>' +
+        '<div class="hist-detail"><div class="reading-list"></div></div>';
+
+      // 缩略图点击看大图
+      item.querySelectorAll('.hist-cards .mini').forEach((m, i) => {
+        m.style.cursor = 'zoom-in';
+        m.addEventListener('click', () => {
+          const c = rec.cards[i];
+          const card = Tarot.byId(c.id);
+          if (card) Tarot.ui.showCard(card, { reversed: !!c.reversed });
+        });
+      });
+
+      item.querySelector('[data-act="note"]').addEventListener('click', () => {
+        Tarot.store.setNote(rec.id, item.querySelector('textarea').value.trim());
+        Tarot.flash('笔记已保存');
+      });
+      item.querySelector('[data-act="detail"]').addEventListener('click', (e) => {
+        const det = item.querySelector('.hist-detail');
+        const open = det.classList.toggle('open');
+        e.target.textContent = open ? '收起解读' : '展开解读';
+        if (open && !det.dataset.built) {
+          det.dataset.built = '1';
+          const listEl = det.querySelector('.reading-list');
+          const poss = positionsOf(rec);
+          rec.cards.forEach((c, i) => {
+            const card = Tarot.byId(c.id);
+            if (!card) return;
+            const p = poss && poss[i] ? poss[i] : { t: c.position || '', d: '' };
+            listEl.appendChild(Tarot.ui.readingRow(card, !!c.reversed, p.t, p.d));
+          });
+        }
+      });
+      item.querySelector('[data-act="export"]').addEventListener('click', async () => {
+        Tarot.flash('正在绘制…');
+        const fresh = Tarot.store.get(rec.id) || rec; // 带上最新笔记
+        await Tarot.downloadImage(fresh, 'aurex-tarot-' + rec.id + '.png');
+      });
+      item.querySelector('[data-act="del"]').addEventListener('click', () => {
+        if (!confirm('删除这条解读?此操作不可撤销。')) return;
+        Tarot.store.remove(rec.id);
+        render();
+        Tarot.flash('已删除');
+      });
+
+      wrap.appendChild(item);
+    });
+  }
+
+  /* ---------- 备份 ---------- */
+  $('btn-backup').addEventListener('click', () => {
+    const blob = new Blob([Tarot.store.exportJSON()], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'aurex-tarot-backup-' + Tarot.todayStr() + '.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  });
+  $('btn-restore').addEventListener('click', () => $('file-restore').click());
+  $('file-restore').addEventListener('change', async (e) => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try {
+      const added = Tarot.store.importJSON(await f.text());
+      render();
+      Tarot.flash('导入完成:合并 ' + added + ' 条');
+    } catch (err) {
+      Tarot.flash('导入失败:' + err.message);
+    }
+    e.target.value = '';
+  });
+
+  /* ---------- 后端同步 ---------- */
+  const status = $('sync-status');
+  function setStatus(text, cls) {
+    status.textContent = text;
+    status.className = 'sync-status' + (cls ? ' ' + cls : '');
+  }
+  $('api-input').value = localStorage.getItem('aurex-tarot-api-base') || '';
+  $('btn-api-save').addEventListener('click', () => {
+    Tarot.store.setApiBase($('api-input').value);
+    Tarot.flash($('api-input').value.trim() ? '后端地址已保存' : '已切回纯本地模式');
+    setStatus('', '');
+  });
+  $('btn-api-ping').addEventListener('click', async () => {
+    setStatus('探测中…', '');
+    const r = await Tarot.store.ping();
+    if (r.ok) setStatus('后端在线 · ' + (r.server.name || '') + ' · ' + (r.server.records != null ? r.server.records + ' 条云端记录' : ''), 'ok');
+    else setStatus(r.reason === 'unset' ? '未配置后端地址' : '连不上:' + r.reason, 'err');
+  });
+  $('btn-sync').addEventListener('click', async () => {
+    setStatus('同步中…', '');
+    try {
+      const r = await Tarot.store.sync();
+      render();
+      setStatus('同步完成 · 合并后共 ' + r.merged + ' 条', 'ok');
+    } catch (err) {
+      setStatus('同步失败:' + err.message, 'err');
+    }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

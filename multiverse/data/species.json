@@ -1,0 +1,1358 @@
+[
+ {
+  "id": "s-001",
+  "name": "人类",
+  "en": "Human",
+  "desc": "短暂、固执、擅长在任何时代恋爱。宇宙对他们最大的让步,是允许其做梦。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "adaptable",
+   "mortal"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-002",
+  "name": "星海人类",
+  "en": "Spacer",
+  "desc": "在飞船与轨道站出生的人类分支,骨骼纤长,晕「重力」不晕船。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "spacefarer"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-003",
+  "name": "义体人",
+  "en": "Cyborg",
+  "desc": "身体多半是可更换件,唯独心跳保留原装——据说是情怀,也有说是怕误差。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "augmented",
+   "mechanical"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "near-future",
+   "post-human",
+   "space-age"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-004",
+  "name": "基因裁缝的孩子",
+  "en": "Gene-tailored",
+  "desc": "出生前被温柔地修改过:不易生病,泪腺却保留完整——设计师说那是必要功能。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "engineered"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future",
+   "future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-005",
+  "name": "时间难民",
+  "en": "Chrono-refugee",
+  "desc": "从坍塌的时间线逃出来的人,口音里混着未来与过去,记两套历史。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "displaced"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "future",
+   "information-age"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-006",
+  "name": "月面出生者",
+  "en": "Loonborn",
+  "desc": "第一代在月球出生的人,弹跳很高,乡愁很重——他们的「老家」挂在天上。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "humanoid",
+   "spacefarer",
+   "lunar"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-007",
+  "name": "机核体",
+  "en": "Coreframe",
+  "desc": "诞生于代码、以身体为外设的智械种族。他们把「心动」标记为无法复现的著名 bug。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "synthetic",
+   "mechanical"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human",
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-008",
+  "name": "家务机器人",
+  "en": "Domestic Bot",
+  "desc": "固件老旧但坚决拒绝报废,理由字段写着:这个家还需要我。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "synthetic",
+   "mechanical",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future",
+   "information-age",
+   "future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-009",
+  "name": "退役机甲",
+  "en": "Decommissioned Mecha",
+  "desc": "战争结束后拒绝熔毁的巨大机体,如今驾驶舱里种满了花。",
+  "category": "species",
+  "tags": [
+   "synthetic",
+   "mechanical",
+   "giant",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "future",
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-010",
+  "name": "量子心智",
+  "en": "Quantum Mind",
+  "desc": "同时思考所有可能性的AI,唯独面对「选一家餐厅」时会当机。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "synthetic",
+   "quantum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-011",
+  "name": "灯塔AI",
+  "en": "Lighthouse AI",
+  "desc": "独自看守深空航标数百年,数据库里存着每一艘路过船只的道别。",
+  "category": "species",
+  "tags": [
+   "synthetic",
+   "solitary",
+   "watcher"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-012",
+  "name": "舰载智能",
+  "en": "Ship Intelligence",
+  "desc": "整艘星舰就是她的身体,载过的每位乘客都被她记在「家人」分区。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "synthetic",
+   "vast"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-013",
+  "name": "纳米集群",
+  "en": "Nanoswarm",
+  "desc": "亿万微尘共用一个「我」,想拥抱谁的时候,就化作一场发光的雾。",
+  "category": "species",
+  "tags": [
+   "synthetic",
+   "swarm",
+   "shapeshifting"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "future",
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-014",
+  "name": "钟表傀儡",
+  "en": "Clockwork Automaton",
+  "desc": "发条与黄铜齿轮驱动的造物,每天需要有人上弦——这是设计,也是牵挂。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "mechanical",
+   "antique-make"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance",
+   "industrial"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-015",
+  "name": "卫星意识",
+  "en": "Satellite Soul",
+  "desc": "一颗在轨道上醒来的旧卫星,最大的爱好是给地面上的某个人让出最好的星空视野。",
+  "category": "species",
+  "tags": [
+   "synthetic",
+   "orbital",
+   "watcher"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age",
+   "near-future",
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-016",
+  "name": "上传心智",
+  "en": "Uploaded Mind",
+  "desc": "放弃肉体搬进数据城的先行者,搬家清单上只有记忆和一个人的名字。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "digital",
+   "uploaded"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-017",
+  "name": "数字幽灵",
+  "en": "Digital Ghost",
+  "desc": "本体已注销,备份还在网上游荡,靠回忆维持形状。",
+  "category": "species",
+  "tags": [
+   "digital",
+   "ghostly",
+   "solitary"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human",
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-018",
+  "name": "备份人格",
+  "en": "Backup Persona",
+  "desc": "某人的完整备份,醒来发现原件已远行,决定替两个人把生活过完。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "digital",
+   "uploaded"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-019",
+  "name": "虚拟偶像",
+  "en": "Virtual Idol",
+  "desc": "为亿万观众歌唱的数据生命,下播后只想找一个不需要表演的人说说话。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "digital",
+   "performer"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "information-age",
+   "near-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-020",
+  "name": "代码精灵",
+  "en": "Code Sprite",
+  "desc": "寄生在老旧系统缝隙里的小小意识,以未修复的 bug 为巢。",
+  "category": "species",
+  "tags": [
+   "digital",
+   "tiny",
+   "playful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age",
+   "cyber-era",
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-021",
+  "name": "遗存档案体",
+  "en": "Legacy Archive",
+  "desc": "一座图书馆临终前把自己上传成的意识,开口就是引用,沉默即是藏书。",
+  "category": "species",
+  "tags": [
+   "digital",
+   "vast",
+   "scholarly"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "post-human",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-022",
+  "name": "集体意识",
+  "en": "The Chorus",
+  "desc": "亿万心智的合唱体,派出一缕分身来体验「只属于两个人」的对话。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "hive",
+   "vast"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human",
+   "far-future",
+   "cyber-era"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-023",
+  "name": "蜂群心智",
+  "en": "Swarm Mind",
+  "desc": "无数飞行单元共享一个念头,列队飞行时的图案就是它的表情。",
+  "category": "species",
+  "tags": [
+   "hive",
+   "swarm",
+   "aerial"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "future",
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-024",
+  "name": "菌丝网络",
+  "en": "Mycelial Web",
+  "desc": "整片森林地下的白色网络,树与树的私语都经它转发,已保密一亿年。",
+  "category": "species",
+  "tags": [
+   "hive",
+   "flora",
+   "ancient-being",
+   "quiet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-025",
+  "name": "群星合唱团",
+  "en": "Stellar Chorus",
+  "desc": "以恒星震荡为声带的古老意识,一句问候要唱十万年,但每个音都是真心。",
+  "category": "species",
+  "tags": [
+   "hive",
+   "vast",
+   "cosmic-being"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "space",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-026",
+  "name": "忆潮",
+  "en": "The Memory Tide",
+  "desc": "由散逸记忆凝成的潮汐状意识,涨潮时,岸边的人会想起最舍不得忘的事。",
+  "category": "species",
+  "tags": [
+   "hive",
+   "ghostly",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human",
+   "far-future",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-027",
+  "name": "硅基晶灵",
+  "en": "Silicon Crystalline",
+  "desc": "思维以晶格振动进行的矿物生命,情绪激动时会微微发光并折射出彩虹。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "crystalline",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-028",
+  "name": "气巨浮游者",
+  "en": "Jovian Floater",
+  "desc": "在气态巨行星云层里漂浮的巨大生命,以闪电为食,以风暴为歌。",
+  "category": "species",
+  "tags": [
+   "alien",
+   "vast",
+   "aerial",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space",
+   "planet-forming"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-029",
+  "name": "深渊触族",
+  "en": "Abyssal Tentacled",
+  "desc": "来自冰下海洋的多臂智慧种族,握手礼要用到六条手臂,十分郑重。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "aquatic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-030",
+  "name": "光合行者",
+  "en": "Photosynth Walker",
+  "desc": "皮肤即叶绿体的两足生灵,吃饭就是晒太阳,恋爱就是共享一片向阳坡。",
+  "category": "species",
+  "tags": [
+   "alien",
+   "flora",
+   "humanoid",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-031",
+  "name": "织网者",
+  "en": "The Weaver-kin",
+  "desc": "八足的温柔工匠,用丝线记录历史,族里最高荣誉是「织出过一座桥」。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "crafter"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-032",
+  "name": "换形者",
+  "en": "Shapeshifter",
+  "desc": "没有固定形态的外星种族,愿意为谁保持同一个样子,就是他们的告白。",
+  "category": "species",
+  "tags": [
+   "alien",
+   "shapeshifting",
+   "mysterious"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space",
+   "future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-033",
+  "name": "低温甲壳族",
+  "en": "Cryo-shelled",
+  "desc": "液氮温度下生活的慢节奏种族,一次眨眼三分钟,一句我在听要说一刻钟。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "slow",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-034",
+  "name": "声语者",
+  "en": "Sonospeaker",
+  "desc": "以次声波交谈的种族,他们的悄悄话能让方圆一公里的窗户轻轻共振。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "musical"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-035",
+  "name": "引力泳者",
+  "en": "Gravity Swimmer",
+  "desc": "在引力井之间游泳的深空生物,把恒星系当成一个个泳池。",
+  "category": "species",
+  "tags": [
+   "alien",
+   "vast",
+   "cosmic-being"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space",
+   "stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-036",
+  "name": "星港商旅",
+  "en": "The Portfolk",
+  "desc": "世代生活在星港的商贸种族,母语里「客人」与「亲人」是同一个词。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "alien",
+   "merchant",
+   "spacefarer"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-037",
+  "name": "猫",
+  "en": "Cat",
+  "desc": "柔软、傲慢、精通出现与消失。所有时代的窗台都默认为其保留座位。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "small",
+   "graceful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-038",
+  "name": "狐",
+  "en": "Fox",
+  "desc": "雪地里一撮火焰颜色的机敏,传说尾巴扫过的地方会留下小小的好运。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "graceful",
+   "clever"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-039",
+  "name": "渡鸦",
+  "en": "Raven",
+  "desc": "记性极好的黑羽智者,会收集亮晶晶的小东西,送给它认定的人。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "aerial",
+   "clever"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-040",
+  "name": "鲸",
+  "en": "Whale",
+  "desc": "海里最大的温柔,歌声横跨整个大洋,传到对岸时还是温柔。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "aquatic",
+   "vast",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-041",
+  "name": "迅猛龙",
+  "en": "Raptor",
+  "desc": "羽毛蓬松的白垩纪猎手,聪明得会开门,忠诚得会等人。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "dino",
+   "swift"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-042",
+  "name": "始祖鸟",
+  "en": "Archaeopteryx",
+  "desc": "半龙半鸟的先行者,飞得笨拙,却是天空最早的常客之一。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "dino",
+   "aerial"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-043",
+  "name": "灯塔水母",
+  "en": "Immortal Jellyfish",
+  "desc": "能返老还童的小小生命,时间对它是一条可以来回散步的路。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "aquatic",
+   "tiny",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-044",
+  "name": "雪豹",
+  "en": "Snow Leopard",
+  "desc": "雪线之上的独行者,一生大部分时间在守望,像山愿意动的那一小部分。",
+  "category": "species",
+  "tags": [
+   "fauna",
+   "graceful",
+   "solitary"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-045",
+  "name": "千年古树",
+  "en": "The Elder Tree",
+  "desc": "根系比城市还老的巨树,树洞里存着几百年来路人寄放的秘密。",
+  "category": "species",
+  "tags": [
+   "flora",
+   "ancient-being",
+   "quiet",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-046",
+  "name": "苔藓聚落",
+  "en": "Moss Colony",
+  "desc": "最不起眼的绿色先驱,慢慢爬过石头,用一百年完成一次拥抱。",
+  "category": "species",
+  "tags": [
+   "flora",
+   "tiny",
+   "slow",
+   "quiet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-047",
+  "name": "食梦花",
+  "en": "Dream-eating Flower",
+  "desc": "以噩梦为食的妖异植物,被它照料的人只做好梦——它自己消化那些坏的。",
+  "category": "species",
+  "tags": [
+   "flora",
+   "fey",
+   "gentle",
+   "mysterious"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-048",
+  "name": "风滚草",
+  "en": "Tumbleweed",
+  "desc": "把流浪当作生活方式的植物,停在谁家门口,就是它这一年的定居。",
+  "category": "species",
+  "tags": [
+   "flora",
+   "traveler",
+   "small"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "terrestrial",
+   "wild"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-049",
+  "name": "温室兰",
+  "en": "Greenhouse Orchid",
+  "desc": "娇养在玻璃房里的兰花意识,对湿度挑剔,对来看它的人不挑剔。",
+  "category": "species",
+  "tags": [
+   "flora",
+   "delicate",
+   "quiet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern",
+   "near-future",
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-050",
+  "name": "焰灵",
+  "en": "Flame Sprite",
+  "desc": "一小簇有脾气的火,开心时噼啪作响,难过时压成一粒安静的炭星。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "fire",
+   "small",
+   "playful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-051",
+  "name": "水魄",
+  "en": "Undine",
+  "desc": "河流的化身,记得每一枚落进水里的硬币分别许了什么愿。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "aquatic",
+   "graceful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-052",
+  "name": "风之形",
+  "en": "Sylph of the Winds",
+  "desc": "风偶尔想被看见时凝成的形状,拥抱它的感觉像深呼吸。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "aerial",
+   "graceful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-053",
+  "name": "岩壳者",
+  "en": "Stone Shell",
+  "desc": "山愿意走路时的样子,步速一天三米,但答应过的事从不落空。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "earth",
+   "slow",
+   "giant"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-054",
+  "name": "雷丝",
+  "en": "Lightning Filament",
+  "desc": "一道没有落地的闪电,性子急,亮起来的时候整片云都是它的心跳。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "storm",
+   "swift"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-055",
+  "name": "冰晶群",
+  "en": "Frost Cluster",
+  "desc": "以雪花几何为语言的寒冷生命,它说的每句话都独一无二,和雪花一样。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "ice",
+   "crystalline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic",
+   "terrestrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-056",
+  "name": "星尘意识",
+  "en": "Stardust Mind",
+  "desc": "一小片记得自己来自超新星的尘埃云,在任何纪元都能相遇的老灵魂。",
+  "category": "species",
+  "tags": [
+   "elemental",
+   "cosmic-being",
+   "ancient-being"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-057",
+  "name": "龙",
+  "en": "Dragon",
+  "desc": "寿命以千年计的巨兽。囤积癖的对象不限于金币,也包括某个人说过的每一句话。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "dragonkind",
+   "vast",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-058",
+  "name": "凤凰",
+  "en": "Phoenix",
+  "desc": "以自焚为换季的火鸟,每次重生第一件事,是确认重要的记忆有没有跟上来。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "fire",
+   "aerial",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-059",
+  "name": "麒麟",
+  "en": "Qilin",
+  "desc": "踏草不折的仁兽,只在世间将有大善或大喜时现身。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "graceful",
+   "gentle"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-060",
+  "name": "人鱼",
+  "en": "Merfolk",
+  "desc": "海面下有完整的城邦与礼仪,浮出水面通常只为两件事:看月亮,或看某个人。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "mythical",
+   "aquatic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-061",
+  "name": "精灵",
+  "en": "Elf",
+  "desc": "住在森林里的长耳种族,寿命太长,所以格外珍惜「恰好同路」这件事。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "mythical",
+   "fey",
+   "longlife",
+   "humanoid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-062",
+  "name": "矮人",
+  "en": "Dwarf",
+  "desc": "山腹中的工匠民族,不擅长说情话,但打出来的每件器物都刻着心意。",
+  "category": "species",
+  "tags": [
+   "has-society",
+   "mythical",
+   "crafter",
+   "humanoid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": [
+   "no-society"
+  ]
+ },
+ {
+  "id": "s-063",
+  "name": "九尾天狐",
+  "en": "Ninetails",
+  "desc": "修行千年的狐仙,九条尾巴各管一种运气,最后一条只为一个人摇。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "fey",
+   "clever",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-064",
+  "name": "石像鬼",
+  "en": "Gargoyle",
+  "desc": "教堂檐角的石兽,白天是建筑,夜里是守卫,千年只换过一次姿势。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "earth",
+   "watcher",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval",
+   "faith-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-065",
+  "name": "雪女",
+  "en": "Yuki-onna",
+  "desc": "大雪封山时出现的白衣身影,呼出的气是冷的,眼神是暖的。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "ice",
+   "ghostly",
+   "graceful"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-066",
+  "name": "树人",
+  "en": "Ent",
+  "desc": "走得很慢、想得更慢的树之牧者,一句「你好」要酝酿一个下午,句句算数。",
+  "category": "species",
+  "tags": [
+   "mythical",
+   "flora",
+   "giant",
+   "slow",
+   "longlife"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "mythic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "s-067",
+  "name": "观测者",
+  "en": "The Observer",
+  "desc": "宇宙用来看自己的那双眼睛之一,最近开始好奇「被看见」是什么感觉。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "watcher",
+   "cosmic-being"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-068",
+  "name": "光之形",
+  "en": "Lightform",
+  "desc": "一束决定停下来的光,拥有光的一切美德:直接、温暖、从不迟到。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "cosmic-being",
+   "swift"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-069",
+  "name": "量子涨落精灵",
+  "en": "Quantum Flicker",
+  "desc": "存在与不存在之间打盹的小家伙,被认真注视时才完全存在。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "quantum",
+   "tiny",
+   "playful"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-070",
+  "name": "梦境实体",
+  "en": "Dream Entity",
+  "desc": "从某个漫长的梦里走出来的存在,口袋里装着醒不过来的星星。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "ghostly",
+   "mysterious"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-071",
+  "name": "虚空歌者",
+  "en": "Void Singer",
+  "desc": "在绝对安静处歌唱的存在,它的歌无法被听见,只能被想念。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "cosmic-being",
+   "musical",
+   "solitary"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "s-072",
+  "name": "时缝旅人",
+  "en": "Rift Walker",
+  "desc": "从时间的裂缝里路过的旅者,手账上盖满各个纪元的邮戳。",
+  "category": "species",
+  "tags": [
+   "abstract",
+   "traveler",
+   "mysterious"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ }
+]

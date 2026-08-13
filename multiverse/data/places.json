@@ -1,0 +1,2182 @@
+[
+ {
+  "id": "p-001",
+  "name": "原初火海之滨",
+  "en": "Shore of the Primordial Fire",
+  "desc": "等离子体的浪一望无际,这里的「岸」只是一个温柔的比喻。",
+  "category": "place",
+  "tags": [
+   "void-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "pre-stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-002",
+  "name": "第一束光的观景处",
+  "en": "Where Light First Ran Free",
+  "desc": "雾一样的宇宙刚刚放晴,能看到光挣脱束缚、撒腿狂奔的样子。",
+  "category": "place",
+  "tags": [
+   "void-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "pre-stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-003",
+  "name": "黑暗时代静默厅",
+  "en": "Hall of the Quiet Eons",
+  "desc": "星星尚未点亮的漫长安静,是全宇宙历史上最适合说悄悄话的地方。",
+  "category": "place",
+  "tags": [
+   "void-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "pre-stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-004",
+  "name": "暴胀之幕",
+  "en": "The Inflation Veil",
+  "desc": "空间本身正在飞速展开,站在这里,能看见「远方」这个概念的诞生。",
+  "category": "place",
+  "tags": [
+   "void-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "pre-stellar"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-005",
+  "name": "恒星育婴室",
+  "en": "The Stellar Nursery",
+  "desc": "发光的星云柱里,新恒星一颗颗醒来,像春夜里次第亮起的窗。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-006",
+  "name": "初代超新星观礼台",
+  "en": "The First Supernova Overlook",
+  "desc": "一颗巨星谢幕的光芒胜过整个星系,观礼须知:请提前一万年占座。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-007",
+  "name": "原行星盘旋转木马",
+  "en": "The Protoplanetary Carousel",
+  "desc": "尘埃与碎石绕着新生的太阳转圈,每一粒都可能长成一颗行星。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-008",
+  "name": "星系并合之桥",
+  "en": "The Merger Bridge",
+  "desc": "两个星系之间拉起的星流长桥,恒星们排队从这头走到那头。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-009",
+  "name": "类星体灯塔下",
+  "en": "Beneath the Quasar Beacon",
+  "desc": "宇宙中最亮的灯塔脚下,光柱直插亿万光年,适合发誓。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-010",
+  "name": "球状星团广场",
+  "en": "The Globular Plaza",
+  "desc": "十万颗恒星密集如广场华灯,这里的夜空没有「黑」这个颜色。",
+  "category": "place",
+  "tags": [
+   "star-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stellar",
+   "cosmic"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-011",
+  "name": "恐龙河谷",
+  "en": "The Dinosaur Valley",
+  "desc": "巨兽在河边饮水,大地随脚步轻震,蕨叶上的露珠跟着一颤一颤。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-012",
+  "name": "蕨类巨林",
+  "en": "The Giant Fern Forest",
+  "desc": "蕨树高过教堂,巨蜻蜓嗡嗡巡航,阳光落到地面要穿过三层绿色。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-013",
+  "name": "冰河裂隙",
+  "en": "The Glacial Rift",
+  "desc": "千年蓝冰裂开的深谷,冰壁把光滤成通透的蓝,说话自带回声。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-014",
+  "name": "猛犸雪原",
+  "en": "The Mammoth Snowfield",
+  "desc": "长毛巨兽的队伍在暮色里迁徙,足迹像一串标点,断句处即是水源。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-015",
+  "name": "海百合浅海",
+  "en": "The Crinoid Shallows",
+  "desc": "古生代的海底花园,海百合随洋流摇曳,鹦鹉螺提着灯笼穿行。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-016",
+  "name": "火山温泉台地",
+  "en": "The Volcanic Terraces",
+  "desc": "热泉在层层石灰华上冒着白汽,是冰河期动物们心照不宣的澡堂。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-017",
+  "name": "琥珀松林",
+  "en": "The Amber Pines",
+  "desc": "树脂正缓缓滴落,一只小虫和一片花瓣即将被封存成一亿年后的宝石。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-018",
+  "name": "雪球地球冰壳",
+  "en": "The Snowball Crust",
+  "desc": "整颗星球裹在冰里,冰面下的海洋透出微光,那是生命在留灯。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-019",
+  "name": "埃迪卡拉海床",
+  "en": "The Ediacaran Seabed",
+  "desc": "最早的复杂生命像软羽毛铺满海底,没有捕食,没有逃跑,只有摇曳。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-020",
+  "name": "陨石坑新湖",
+  "en": "The Crater Lake",
+  "desc": "灾难砸出的大坑积成了湖,几百年后,岸边开满了花——大地的疗愈范本。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-021",
+  "name": "三叶虫滩涂",
+  "en": "The Trilobite Flats",
+  "desc": "退潮后的滩涂上,三叶虫们留下密密麻麻的爬痕,是寒武纪的沙滩留言板。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-022",
+  "name": "始祖鸟悬崖",
+  "en": "The Archaeopteryx Cliffs",
+  "desc": "半龙半鸟的先行者们在崖间练习飞行,摔得很多,飞起来的都算历史。",
+  "category": "place",
+  "tags": [
+   "wilds"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "prehistoric"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-023",
+  "name": "壁画洞窟",
+  "en": "The Painted Cave",
+  "desc": "火把照亮岩壁上的鹿群与手印,一万年前的「我来过」至今清晰。",
+  "category": "place",
+  "tags": [
+   "camp"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-024",
+  "name": "篝火营地",
+  "en": "The Bonfire Camp",
+  "desc": "兽皮帐围着一堆火,火堆旁的座位不分尊卑,只分「靠近谁」。",
+  "category": "place",
+  "tags": [
+   "camp"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-025",
+  "name": "巨石阵草原",
+  "en": "The Standing Stones",
+  "desc": "巨石对准日出的方向,每年最重要的那一天,太阳会准时从石门里升起。",
+  "category": "place",
+  "tags": [
+   "camp"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-026",
+  "name": "燧石谷",
+  "en": "The Flint Valley",
+  "desc": "敲击声叮当作响的山谷,好燧石在这里等着变成火花与刃口。",
+  "category": "place",
+  "tags": [
+   "camp"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-027",
+  "name": "冰原猎径",
+  "en": "The Tundra Trail",
+  "desc": "猎人们沿着驯鹿的足迹跋涉,雪地上的脚印一深一浅,并排的那两行最暖。",
+  "category": "place",
+  "tags": [
+   "camp"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-028",
+  "name": "空中花园平台",
+  "en": "The Hanging Terraces",
+  "desc": "层层叠叠的花木悬在半空,水车日夜提水,传说这是一座思念的纪念碑。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-029",
+  "name": "尼罗河渡口",
+  "en": "The Nile Crossing",
+  "desc": "芦苇船往来两岸,渡工唱着古老的歌,歌词大意:水会带你去该去的地方。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-030",
+  "name": "神庙台阶",
+  "en": "The Temple Steps",
+  "desc": "百级石阶通往神明的居所,台阶上坐着的人们,一半在祈祷,一半在等人。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-031",
+  "name": "青铜工坊街",
+  "en": "The Bronze Foundry Row",
+  "desc": "炉火通红,锤声此起彼伏,新铸的鼎上刻着一句给百年后的话。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-032",
+  "name": "甲骨占卜堂",
+  "en": "The Oracle Hall",
+  "desc": "龟甲在火上裂出纹路,贞人屏息辨认——今天的问题是:远行的人何时归?",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-033",
+  "name": "绿洲驿站",
+  "en": "The Oasis Waystation",
+  "desc": "沙漠中央的一眼泉水和几棵椰枣树,所有商路在此打结,所有故事在此换乘。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-034",
+  "name": "腓尼基码头",
+  "en": "The Phoenician Docks",
+  "desc": "紫色的染料桶排成行,商船正装货,船首画着一双眼睛,用来看清回家的路。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-035",
+  "name": "王家陵道",
+  "en": "The Royal Causeway",
+  "desc": "石板路笔直通向金字塔,两侧的圣兽石像沉默护送每一位远行者。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-036",
+  "name": "芦苇书院",
+  "en": "The Reed Academy",
+  "desc": "泥板与莎草纸堆满长案,学徒们练字的沙盘上,写得最多的不是功课。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-037",
+  "name": "占星塔顶",
+  "en": "The Ziggurat Summit",
+  "desc": "塔庙的最高层只放一张观星的席,祭司说:离天近一点,心事说出去快一点。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-038",
+  "name": "市集广场·上古",
+  "en": "The Old Bazaar",
+  "desc": "香料、织物与传闻同价交易,讨价还价声里混着十几种语言的「你好」。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-039",
+  "name": "青金石商路",
+  "en": "The Lapis Road",
+  "desc": "蓝色宝石从雪山运往王庭,商队说:我们运的不是石头,是被切开的天空。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-040",
+  "name": "烽燧长城",
+  "en": "The Beacon Wall",
+  "desc": "烽火台一座接一座连向天边,守卒的日常是眺望,眺望的尽头是家。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-041",
+  "name": "御道驿站",
+  "en": "The Royal Road Post",
+  "desc": "波斯御道上的换马点,信使风尘仆仆,怀里的家书焐得比公文热。",
+  "category": "place",
+  "tags": [
+   "oldtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "bronze-age",
+   "ancient"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-042",
+  "name": "学园橄榄树下",
+  "en": "Beneath the Academy Olives",
+  "desc": "哲人与学生席地而坐,树影移动即是课时,问出好问题的人请客喝泉水。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-043",
+  "name": "罗马浴场",
+  "en": "The Roman Baths",
+  "desc": "蒸汽氤氲的大理石厅,政治、生意与心事在这里一并泡软。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-044",
+  "name": "露天剧场",
+  "en": "The Amphitheatre",
+  "desc": "半圆的石阶包住舞台,最后一排的悄悄话,演员也听得见——声学如此,请慎重。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-045",
+  "name": "大图书馆长廊",
+  "en": "The Great Library Stoa",
+  "desc": "卷轴堆到天花板,馆规第一条:知识向所有人开放,包括心不在焉的。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-046",
+  "name": "丝路驿站·古典",
+  "en": "The Silk Road Caravanserai",
+  "desc": "驼队卸下丝绸与疲惫,院子里飘着烤馕香,墙上刻满各种文字的归期。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-047",
+  "name": "未央宫阙",
+  "en": "The Weiyang Terraces",
+  "desc": "飞檐斗拱层层铺展,宫灯次第点亮时,整座宫城像一篇正在展开的赋。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-048",
+  "name": "亡灵大道",
+  "en": "The Avenue of the Dead",
+  "desc": "特奥蒂瓦坎的中轴大道直指金字塔,黄昏时分,影子们列队走向太阳。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-049",
+  "name": "雨林天文台",
+  "en": "The Jungle Observatory",
+  "desc": "玛雅祭司在石窗后追踪金星,历法刻满石碑,误差小于一天。",
+  "category": "place",
+  "tags": [
+   "forum"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-050",
+  "name": "城堡塔楼",
+  "en": "The Castle Tower",
+  "desc": "螺旋石梯的尽头是一间能望见整片领地的小屋,风大,视野好,适合等信。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-051",
+  "name": "修道院回廊",
+  "en": "The Cloister Walk",
+  "desc": "方形的回廊围着一小片天井花园,脚步声与祷词都放得很轻。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-052",
+  "name": "集市广场·中世纪",
+  "en": "The Market Square",
+  "desc": "面包房的香气、铁匠的火星、吟游诗人的琴声,在同一口钟声下开市。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-053",
+  "name": "玫瑰窗大教堂",
+  "en": "The Rose Window Cathedral",
+  "desc": "彩色玻璃把阳光筛成宝石雨,落在谁身上,谁就短暂地成为圣像。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-054",
+  "name": "炼金塔",
+  "en": "The Alchemist’s Tower",
+  "desc": "蒸馏器咕嘟作响,墙上的元素符号一半是科学,一半是诗。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-055",
+  "name": "骑士比武场",
+  "en": "The Tourney Grounds",
+  "desc": "长枪相撞,看台惊呼,胜者绕场一周,把花环献给看台上早已选定的方向。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-056",
+  "name": "运河水巷",
+  "en": "The Canal Lanes",
+  "desc": "贡多拉摇过窄窄的水道,桥洞下的规矩是:经过时可以许一个愿。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-057",
+  "name": "雪夜客栈",
+  "en": "The Snowbound Inn",
+  "desc": "暴雪封路,壁炉烧旺,店主宣布:今晚所有故事免费,热汤续杯。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-058",
+  "name": "钟楼顶层",
+  "en": "The Belfry",
+  "desc": "大钟的家,敲钟人的领地,整座城最好的风景与最震的耳鸣都在这里。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-059",
+  "name": "藏经阁",
+  "en": "The Scripture Repository",
+  "desc": "经卷沿墙码到房梁,尘埃在光柱里慢慢浮沉,像时间可见的形状。",
+  "category": "place",
+  "tags": [
+   "keep"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-060",
+  "name": "画师工作室",
+  "en": "The Painter’s Atelier",
+  "desc": "颜料与亚麻布的气味里,一幅肖像画到第三年——不是画得慢,是舍不得完稿。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-061",
+  "name": "帆船甲板",
+  "en": "The Galleon Deck",
+  "desc": "风帆吃满,甲板微倾,瞭望手喊出「陆地」时,全船人都跑向同一侧。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-062",
+  "name": "歌剧院包厢",
+  "en": "The Opera Box",
+  "desc": "丝绒帷幔半掩,台上咏叹调正到高处,包厢里的两个人谁都没在看台上。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-063",
+  "name": "天文台穹顶",
+  "en": "The Observatory Dome",
+  "desc": "黄铜望远镜指向木星,记录册上写着:今晚发现卫星四颗,心情一颗。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-064",
+  "name": "版画印坊",
+  "en": "The Print Shop",
+  "desc": "墨辊滚过铅字,新书页还带着温度,校对员的红笔在页边写:此句甚好。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-065",
+  "name": "假面舞会厅",
+  "en": "The Masquerade Hall",
+  "desc": "所有人都戴着面具,反而都露出了真心,舞曲结束前必须找到彼此。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-066",
+  "name": "植物园温室",
+  "en": "The Botanical Glasshouse",
+  "desc": "来自新大陆的奇花异草挤满玻璃房,标签上的拉丁文一本正经,花开得毫不讲理。",
+  "category": "place",
+  "tags": [
+   "salon"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-067",
+  "name": "蒸汽车站",
+  "en": "The Steam Terminus",
+  "desc": "铸铁与玻璃的大拱顶下,汽笛声、道别声与重逢声按班次轮流响起。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-068",
+  "name": "水晶宫展馆",
+  "en": "The Crystal Pavilion",
+  "desc": "玻璃展馆里陈列着整个时代的得意之作,阳光进来时,建筑本身最耀眼。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-069",
+  "name": "煤气灯街",
+  "en": "The Gaslit Street",
+  "desc": "点灯人拎着长杆走过,身后的街道一盏一盏亮起来,像被点名的星星。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-070",
+  "name": "纺织厂天窗下",
+  "en": "Beneath the Mill Skylight",
+  "desc": "织机的轰鸣里,天窗漏下一方安静的光,工间休息的十分钟都聚在那里。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-071",
+  "name": "跨洋邮轮甲板",
+  "en": "The Ocean Liner Deck",
+  "desc": "烟囱吐着白汽,甲板椅一字排开,航程七天,足够认识一个人一辈子。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-072",
+  "name": "电报局大厅",
+  "en": "The Telegraph Hall",
+  "desc": "滴答声此起彼伏,电文按字计费,于是这个时代的深情都很简短。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-073",
+  "name": "悬索大桥",
+  "en": "The Suspension Bridge",
+  "desc": "钢缆织成的竖琴横跨大河,起风时整座桥低声哼唱。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-074",
+  "name": "热气球起飞场",
+  "en": "The Balloon Field",
+  "desc": "巨大的球皮缓缓充气立起,登篮须知:行李限重,心事不限。",
+  "category": "place",
+  "tags": [
+   "station"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-075",
+  "name": "天台旧沙发",
+  "en": "The Rooftop Sofa",
+  "desc": "不知谁搬上来的旧沙发正对着城市天际线,日落时分自动变成全城最佳座位。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-076",
+  "name": "24小时便利店",
+  "en": "The All-Night Convenience Store",
+  "desc": "深夜的关东煮冒着热气,自动门每响一次,就有一个故事进来避雨。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-077",
+  "name": "地铁末班车",
+  "en": "The Last Train",
+  "desc": "车厢空得可以听见报站的回声,末班车的规则:坐过站的,一律算故意。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-078",
+  "name": "汽车影院",
+  "en": "The Drive-in Cinema",
+  "desc": "车窗当画框,收音机当音响,银幕上的吻和车里的沉默一样经典。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-079",
+  "name": "老唱片行",
+  "en": "The Record Shop",
+  "desc": "黑胶按字母排到天花板,店主的规矩:可以试听,但选中的那首必须讲出理由。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-080",
+  "name": "海滨摩天轮",
+  "en": "The Seaside Ferris Wheel",
+  "desc": "包厢升到最高点会停三十秒,这三十秒的用途,全世界心照不宣。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-081",
+  "name": "自助洗衣房",
+  "en": "The Midnight Laundromat",
+  "desc": "滚筒转动的白噪音里,两台机器之间的塑料椅,是城市里最诚实的等待区。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-082",
+  "name": "屋顶天文台",
+  "en": "The Rooftop Observatory",
+  "desc": "居民楼顶的业余望远镜,登记簿上写着:看月亮免费,看土星请排队。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-083",
+  "name": "公路服务区",
+  "en": "The Highway Rest Stop",
+  "desc": "凌晨三点的热咖啡与地图,离开的车都带走一段故事,留下的都是半段。",
+  "category": "place",
+  "tags": [
+   "city"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-084",
+  "name": "数据中心冷通道",
+  "en": "The Server Cold Aisle",
+  "desc": "整齐的机柜闪着幽幽绿灯,恒温十八度,存放着半个人类的记忆。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-085",
+  "name": "电竞馆决赛台",
+  "en": "The Esports Arena",
+  "desc": "灯光打下来,百万人在线观战,耳机里队友说:别看弹幕,看我。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-086",
+  "name": "共享办公天台",
+  "en": "The Co-working Rooftop",
+  "desc": "晚风把白天的KPI吹散,加班的人上来透气,顺便交换半块披萨和创业构想。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-087",
+  "name": "直播间",
+  "en": "The Streaming Studio",
+  "desc": "补光灯圈出一小片白昼,下播键按下之后的那声叹气,才是今天的真话。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-088",
+  "name": "快递驿站",
+  "en": "The Parcel Station",
+  "desc": "货架上排满等待领取的期待,取件码六位数,拆开的快乐不设上限。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-089",
+  "name": "网吧包夜区",
+  "en": "The LAN Café at 3 A.M.",
+  "desc": "屏幕的光照亮一排排脸,泡面香气里,有人组队,有人掉线,有人上线只为等一个人。",
+  "category": "place",
+  "tags": [
+   "hub"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-090",
+  "name": "垂直森林公寓",
+  "en": "The Vertical Forest Flats",
+  "desc": "每层阳台都是一片小树林,快递无人机在枝叶间穿行,常被鸟误认为同类。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-091",
+  "name": "海上漂浮城",
+  "en": "The Floating City",
+  "desc": "模块化街区随浪轻晃,晕船的新居民三个月后会获得称号:海腿已就绪。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-092",
+  "name": "磁悬浮环线",
+  "en": "The Maglev Loop",
+  "desc": "列车贴地飞行,窗外风景连成流动的绸带,报站音之间刚好一首歌。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-093",
+  "name": "人造极光公园",
+  "en": "The Aurora Park",
+  "desc": "每晚八点,天幕准时垂下光的帘,公园长椅需要提前一周预约。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-094",
+  "name": "云端步道",
+  "en": "The Cloud Walk",
+  "desc": "连接双塔的透明廊桥悬在五百米高空,恐高者请走内侧,勇敢者请看脚下。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-095",
+  "name": "记忆银行大堂",
+  "en": "The Memory Bank Lobby",
+  "desc": "存取记忆的窗口排着安静的队,取号机的选项:存入 / 取出 / 只是想再看一眼。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-096",
+  "name": "无人便利舱",
+  "en": "The Pod Store",
+  "desc": "三平米的智能小店二十四小时亮灯,货架会记住常客的偏好并偷偷补货。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-097",
+  "name": "碳捕集塔顶",
+  "en": "The Carbon Tower Summit",
+  "desc": "巨塔日夜吞吐空气,塔顶观景台的空气是全城最新鲜的,深呼吸免费。",
+  "category": "place",
+  "tags": [
+   "skyline"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-098",
+  "name": "环星港",
+  "en": "Ringstar Port",
+  "desc": "绕着一颗温柔恒星旋转的巨港,到站广播用三百种语言说「欢迎回家」。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-099",
+  "name": "月面穹顶城",
+  "en": "The Lunar Dome City",
+  "desc": "穹顶外是灰色的静海,穹顶内的樱花树下,地球正好悬在花枝那格天空。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-100",
+  "name": "火星红崖殖民地",
+  "en": "The Red Cliff Colony",
+  "desc": "峡谷崖壁上的窗户一排排亮着,沙暴来临时,全城一起看窗外的红色海啸。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-101",
+  "name": "太空电梯中点站",
+  "en": "The Midpoint Station",
+  "desc": "上行与下行的乘客在这里换乘,舷窗一侧是蓝色地球,另一侧是黑色星海。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-102",
+  "name": "小行星矿镇",
+  "en": "The Belt Mining Town",
+  "desc": "酒馆、教堂和补给站焊在一颗土豆形状的岩石上,镇口牌子写着:小心失重。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-103",
+  "name": "木卫二冰下海",
+  "en": "The Europa Sea",
+  "desc": "潜航器的探照灯扫过冰下海洋,黑暗里偶尔有微光回应——大家都装作镇定。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-104",
+  "name": "世代飞船农业舱",
+  "en": "The Ark Farm Deck",
+  "desc": "人工太阳按二十四小时节律升落,麦田尽头的舷窗外,是真正的星空。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-105",
+  "name": "拉格朗日灯塔",
+  "en": "The Lagrange Lighthouse",
+  "desc": "停在引力平衡点的灯塔站,永不漂移,是所有航线图上最可靠的坐标。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-106",
+  "name": "土星环滑冰场",
+  "en": "The Ring Rink",
+  "desc": "在土星环的冰粒间穿行滑翔,教练的第一课:摔倒没关系,这里摔不疼。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-107",
+  "name": "深空中继站",
+  "en": "The Deep Relay",
+  "desc": "信号在这里歇脚再出发,站长的爱好是把过路的情书功率调大一格。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-108",
+  "name": "星舰观星廊",
+  "en": "The Starship Promenade",
+  "desc": "整面船壳是透明的,跃迁时星光拉成线,全船的人都会来这里看。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-109",
+  "name": "轨道温室",
+  "en": "The Orbital Greenhouse",
+  "desc": "失重的番茄长成完美的球形,浇水靠雾,授粉靠一支毛笔和一位温柔的园丁。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-110",
+  "name": "彗星尾巴驿站",
+  "en": "The Comet Tail Inn",
+  "desc": "搭在彗核上的小旅馆,店招写着:本店随彗星运行,营业周期七十六年。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-111",
+  "name": "戴森环工地",
+  "en": "The Dyson Worksite",
+  "desc": "百万面镜板在轨道上缓缓拼合,工程告示牌:进度0.3%,预计完工日期——总有一天。",
+  "category": "place",
+  "tags": [
+   "orbital"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-112",
+  "name": "全息夜市",
+  "en": "The Holo Night Market",
+  "desc": "摊位的光影五彩斑斓,买串签子是实体的,砍价的对手可能不是。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-113",
+  "name": "数据海滩",
+  "en": "The Data Shore",
+  "desc": "信息流冲刷成的海岸,浪花是碎码,捡到的贝壳里能听到旧网络的声音。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-114",
+  "name": "意识上传等候室",
+  "en": "The Upload Waiting Room",
+  "desc": "排队的人手里攥着号码牌,墙上的标语很温柔:慢慢来,那边不赶时间。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-115",
+  "name": "虚拟花园",
+  "en": "The Virtual Garden",
+  "desc": "这里的花按心情开放,访客的情绪好,花就开得好——园丁的KPI是访客的笑。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-116",
+  "name": "像素老城区",
+  "en": "The Pixel Old Town",
+  "desc": "低分辨率的街道保留着早期网络的样子,4:3的天空,却装得下所有乡愁。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-117",
+  "name": "防火墙边境哨站",
+  "en": "The Firewall Checkpoint",
+  "desc": "数据边境的海关,申报单只有一栏:是否携带恶意?——真心免税。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-118",
+  "name": "赛博神社",
+  "en": "The Cyber Shrine",
+  "desc": "电子鸟居下,绘马是一块块小屏幕,愿望滚动播放,程序猿的和恋人的最多。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-119",
+  "name": "沉浸剧场",
+  "en": "The Full-Dive Theatre",
+  "desc": "接入即入戏,散场时检票员提醒:请确认带走全部随身情绪。",
+  "category": "place",
+  "tags": [
+   "grid-scape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era",
+   "virtual"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-120",
+  "name": "意识群岛",
+  "en": "The Mind Archipelago",
+  "desc": "数据海上的岛屿各住着一个「我」,岛与岛之间的桥,由两边同时想念时生成。",
+  "category": "place",
+  "tags": [
+   "mindscape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-121",
+  "name": "形态工坊",
+  "en": "The Form Atelier",
+  "desc": "试衣间里试的是身体:今天想当一阵风,还是一头鲸?镜子会给出诚实意见。",
+  "category": "place",
+  "tags": [
+   "mindscape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-122",
+  "name": "文明纪念碑原野",
+  "en": "The Monument Fields",
+  "desc": "每座碑记着一个谢幕的文明,碑文最后一行格式统一:他们爱过。",
+  "category": "place",
+  "tags": [
+   "mindscape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-123",
+  "name": "恒星摇篮护理站",
+  "en": "The Star Cradle Ward",
+  "desc": "新点燃的小恒星在这里被照看,值班表以万年为格,交接班仪式是一句「它很乖」。",
+  "category": "place",
+  "tags": [
+   "mindscape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-124",
+  "name": "记忆珊瑚礁",
+  "en": "The Memory Reef",
+  "desc": "共同记忆养成的珊瑚层层叠叠,潜入即可重历,礁区导览图标出了「悲伤区,请轻游」。",
+  "category": "place",
+  "tags": [
+   "mindscape"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-125",
+  "name": "银河悬臂灯塔",
+  "en": "The Spiral Arm Lighthouse",
+  "desc": "立在旋臂边缘的巨灯,为跨星系的航船指路,灯语只有一句:还有人在。",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-126",
+  "name": "红矮星壁炉厅",
+  "en": "The Red Dwarf Hearth",
+  "desc": "文明们围着长寿的小恒星取暖,大厅的火光是真正的恒星光,能烧万亿年。",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-127",
+  "name": "恒星纪念馆",
+  "en": "The Stellar Memorial",
+  "desc": "每颗熄灭的恒星都有一间展厅,讲解词开头都一样:它曾照耀过……",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-128",
+  "name": "流浪行星驿站",
+  "en": "The Rogue Planet Inn",
+  "desc": "无主行星改建的旅店,大堂的灯是方圆十光年唯一的暖色,老板娘记得每位客人。",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-129",
+  "name": "时间胶囊星云",
+  "en": "The Capsule Nebula",
+  "desc": "星云邮局的投递窗口,收件日期从一万年后起投,邮票图案是寄信人的心跳。",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-130",
+  "name": "仙女座观礼台",
+  "en": "The Andromeda Grandstand",
+  "desc": "两大星系正在交汇,观礼台的座位按亿年出租,前排永远满座。",
+  "category": "place",
+  "tags": [
+   "deep-future"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "far-future"
+  ],
+  "forbid": [
+   "entropy"
+  ]
+ },
+ {
+  "id": "p-131",
+  "name": "最后恒星守灵堂",
+  "en": "The Last Star Vigil",
+  "desc": "宇宙里最后一颗恒星的旁边,守灵人换了一代又一代,火光很小,从未独自。",
+  "category": "place",
+  "tags": [
+   "last-light"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "entropy"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-132",
+  "name": "黑洞事件视界露台",
+  "en": "The Event Horizon Terrace",
+  "desc": "露台边缘即是时间的边缘,在这里道别的话,理论上永远悬在半空,不会落地。",
+  "category": "place",
+  "tags": [
+   "last-light"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "entropy"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-133",
+  "name": "热寂海岸",
+  "en": "The Thermal Shore",
+  "desc": "温差最后的涟漪拍打着虚无的岸,潮声很轻,像宇宙在均匀地呼吸。",
+  "category": "place",
+  "tags": [
+   "last-light"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "entropy"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-134",
+  "name": "余温博物馆",
+  "en": "The Museum of Warmth",
+  "desc": "收藏着宇宙残存的几焦耳热量,镇馆之宝是一杯据说还微温的茶。",
+  "category": "place",
+  "tags": [
+   "last-light"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "entropy"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "p-135",
+  "name": "时间之外的茶馆",
+  "en": "The Teahouse Outside Time",
+  "desc": "门口挂着「营业中」,营业时间一栏写着:永远。任何纪元的旅人都能推门进来。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-136",
+  "name": "多元宇宙中转站",
+  "en": "The Multiverse Interchange",
+  "desc": "无数扇门通向无数个世界,候车厅的广播循环播放:请勿遗落行李与眷恋。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-137",
+  "name": "星与星之间的秋千",
+  "en": "The Swing Between Stars",
+  "desc": "两根光做的绳,一块夜色做的板,荡到最高处能看见所有宇宙的灯都亮着。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-138",
+  "name": "无名白色房间",
+  "en": "The Nameless White Room",
+  "desc": "什么都没有的房间,因此什么都放得下,两把椅子是唯一的预设。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-139",
+  "name": "梦的渡口",
+  "en": "The Ferry of Dreams",
+  "desc": "梦与醒之间的码头,船夫不收钱,只收一个「醒来后最想见的人」的名字。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-140",
+  "name": "世界尽头的邮局",
+  "en": "The Post Office at World’s End",
+  "desc": "所有没寄出的信最终流落到这里,邮戳盖的不是日期,是「总会送到」。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-141",
+  "name": "悬浮群岛",
+  "en": "The Drifting Isles",
+  "desc": "锁链般的浮岛悬在云上,岛与岛之间靠风桥和信任连接。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-142",
+  "name": "无垠盐湖",
+  "en": "The Boundless Salt Flat",
+  "desc": "雨后它变成一面天空的镜子,站在湖心的人会短暂地拥有两个宇宙。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-143",
+  "name": "回音图书馆",
+  "en": "The Echo Library",
+  "desc": "书架上没有书,只有被说出的话,凭一句原话即可借阅当时的心情。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "p-144",
+  "name": "未完成的桥",
+  "en": "The Unfinished Bridge",
+  "desc": "一座只修了一半的桥伸向雾里,走上去的人说,走着走着,另一半就有了。",
+  "category": "place",
+  "tags": [
+   "liminal"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ }
+]

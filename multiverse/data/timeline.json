@@ -1,0 +1,5037 @@
+[
+ {
+  "id": "t-001",
+  "order": 10,
+  "name": "大爆炸奇点",
+  "en": "The Singularity",
+  "desc": "一切的一切挤在一个没有大小的点里,连「之前」这个词都还没被发明。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-002",
+  "order": 20,
+  "name": "暴胀纪元",
+  "en": "Cosmic Inflation",
+  "desc": "宇宙在小数点后三十多个零的一瞬间胀大,像一句忍不住说出口的心事。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-003",
+  "order": 30,
+  "name": "夸克时代",
+  "en": "The Quark Epoch",
+  "desc": "物质还是滚烫的碎屑,粒子们萍水相逢又立刻分开,谁也留不住谁。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-004",
+  "order": 40,
+  "name": "核合成三分钟",
+  "en": "The First Three Minutes",
+  "desc": "宇宙用三分钟决定了氢和氦的比例,此后一百多亿年都照此办理。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-005",
+  "order": 50,
+  "name": "复合时代",
+  "en": "Recombination",
+  "desc": "第一束光终于挣脱雾一样的等离子体,宇宙第一次变得透明。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-006",
+  "order": 60,
+  "name": "黑暗时代",
+  "en": "The Dark Ages",
+  "desc": "光已出发,星还未生。整个宇宙安静得像一封尚未拆开的信。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-007",
+  "order": 70,
+  "name": "引力的低语",
+  "en": "Gravity Whispers",
+  "desc": "暗物质悄悄聚拢,替未来的星系打好地基,不留名字。",
+  "category": "time",
+  "tags": [
+   "big-bang",
+   "cosmic",
+   "pre-stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-008",
+  "order": 80,
+  "name": "第一颗恒星点亮",
+  "en": "The First Star",
+  "desc": "黑暗持续了一亿年之后,某处忽然亮了。宇宙自此有了「看见」这回事。",
+  "category": "time",
+  "tags": [
+   "first-stars",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-009",
+  "order": 90,
+  "name": "再电离时代",
+  "en": "Reionization",
+  "desc": "亿万颗初代恒星一起把黑暗烧出窟窿,像一整片渐次亮起的灯海。",
+  "category": "time",
+  "tags": [
+   "first-stars",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-010",
+  "order": 100,
+  "name": "第一场超新星",
+  "en": "The First Supernova",
+  "desc": "最早的巨星轰然谢幕,把碳与铁撒进虚空——一切浪漫的原料自此就位。",
+  "category": "time",
+  "tags": [
+   "first-stars",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-011",
+  "order": 110,
+  "name": "重元素的馈赠",
+  "en": "Gifts of Heavy Elements",
+  "desc": "恒星把自己烧成灰烬,灰烬里藏着未来所有的金戒指。",
+  "category": "time",
+  "tags": [
+   "first-stars",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-012",
+  "order": 120,
+  "name": "星族III余晖",
+  "en": "Afterglow of Population III",
+  "desc": "初代恒星几乎不留遗骸,只留下一句「后面的交给你们」。",
+  "category": "time",
+  "tags": [
+   "first-stars",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-013",
+  "order": 130,
+  "name": "原初星系并合",
+  "en": "Protogalaxy Mergers",
+  "desc": "小小的星系团相互碰撞、缠绕、合而为一,宇宙学会了「在一起」。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-014",
+  "order": 140,
+  "name": "类星体时代",
+  "en": "The Quasar Era",
+  "desc": "星系核心的黑洞亮得像灯塔,隔着百亿光年也能望见彼此。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-015",
+  "order": 150,
+  "name": "球状星团之春",
+  "en": "Spring of Globular Clusters",
+  "desc": "十万颗恒星挤成一团光球,热闹得像一场没有散场的庙会。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-016",
+  "order": 160,
+  "name": "银河雏形",
+  "en": "The Milky Way Forming",
+  "desc": "一片薄薄的星之圆盘慢慢转起来,未来的家正在成形。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-017",
+  "order": 170,
+  "name": "旋臂成形",
+  "en": "Spiral Arms Unfurl",
+  "desc": "星系伸展开四条光的手臂,以两亿年一圈的速度慢慢拥抱自己。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-018",
+  "order": 180,
+  "name": "星系碰撞舞会",
+  "en": "The Galactic Waltz",
+  "desc": "两个星系穿过彼此,恒星们擦肩而不相撞,像一场盛大而克制的舞。",
+  "category": "time",
+  "tags": [
+   "galaxy-era",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-019",
+  "order": 190,
+  "name": "太阳星云坍缩",
+  "en": "The Solar Nebula",
+  "desc": "一团星云决定收拢自己,中心点起一盏叫「太阳」的灯。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-020",
+  "order": 200,
+  "name": "原行星盘",
+  "en": "The Protoplanetary Disk",
+  "desc": "尘埃在唱片一样旋转的盘里互相粘连,行星是碰撞出来的情书。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-021",
+  "order": 210,
+  "name": "忒伊亚之吻",
+  "en": "The Theia Impact",
+  "desc": "一颗行星撞进另一颗的怀里,碎片凝成了月亮——最昂贵的分离,最长久的陪伴。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-022",
+  "order": 220,
+  "name": "晚期重轰炸",
+  "en": "The Late Heavy Bombardment",
+  "desc": "陨石雨没完没了地落,年轻的地球默默把每一道伤疤都记成了环形山。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-023",
+  "order": 230,
+  "name": "地壳初凝",
+  "en": "The First Crust",
+  "desc": "岩浆海终于冷静下来,大地第一次有了可以站立的地方。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-024",
+  "order": 240,
+  "name": "初始海洋",
+  "en": "The First Ocean",
+  "desc": "彗星带来的水汇成第一片海,从此涛声成了地球的背景音乐。",
+  "category": "time",
+  "tags": [
+   "planet-forming",
+   "cosmic",
+   "stellar",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-025",
+  "order": 250,
+  "name": "冥古宙",
+  "en": "The Hadean",
+  "desc": "天空是熔岩色的,月亮近得吓人,潮汐像山一样高。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-026",
+  "order": 260,
+  "name": "太古宙初生命",
+  "en": "Archean Dawn of Life",
+  "desc": "某个温热的水洼里,一串分子学会了复制自己,故事从此有了主角。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-027",
+  "order": 270,
+  "name": "大氧化事件",
+  "en": "The Great Oxidation",
+  "desc": "蓝藻们不动声色地改写了大气成分,天空第一次泛出蓝色。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-028",
+  "order": 280,
+  "name": "雪球地球",
+  "en": "Snowball Earth",
+  "desc": "整颗星球裹进冰里,生命在冰下的海洋里悄悄守着火种。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-029",
+  "order": 290,
+  "name": "埃迪卡拉花园",
+  "en": "The Ediacaran Garden",
+  "desc": "最早的复杂生命像软软的羽毛铺满海床,温柔得没有一颗牙齿。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-030",
+  "order": 300,
+  "name": "寒武纪大爆发",
+  "en": "The Cambrian Explosion",
+  "desc": "生命突然拿出了全部想象力:眼睛、壳、触手,一样都不肯少。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-031",
+  "order": 310,
+  "name": "奥陶纪珊瑚海",
+  "en": "Ordovician Coral Seas",
+  "desc": "温暖的浅海铺满珊瑚与海百合,鹦鹉螺打着灯笼巡游。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-032",
+  "order": 320,
+  "name": "志留纪登陆",
+  "en": "Silurian Landfall",
+  "desc": "第一株苔藓爬上岸,替所有后来者试了试陆地的温度。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-033",
+  "order": 330,
+  "name": "泥盆纪鱼时代",
+  "en": "The Devonian Age of Fishes",
+  "desc": "海里挤满盔甲与鳍,有一条鱼正偷偷练习用鳍走路。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-034",
+  "order": 340,
+  "name": "石炭纪巨虫森林",
+  "en": "Carboniferous Giants",
+  "desc": "氧气浓得发甜,蜻蜓有海鸥那么大,蕨树高过教堂。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-035",
+  "order": 350,
+  "name": "二叠纪盘古大陆",
+  "en": "Permian Pangaea",
+  "desc": "所有陆地拼成一整块,任意两个地方之间都走得到——理论上。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-036",
+  "order": 360,
+  "name": "大灭绝黄昏",
+  "en": "The Great Dying",
+  "desc": "生命史上最黑的一夜。但只要有百分之五活下来,春天就还能重来。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-037",
+  "order": 370,
+  "name": "三叠纪黎明",
+  "en": "Triassic Dawn",
+  "desc": "劫后的大地慢慢返青,最早的恐龙还只有猫那么大,谨慎地试探世界。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-038",
+  "order": 380,
+  "name": "侏罗纪巨龙原野",
+  "en": "Jurassic Plains",
+  "desc": "大地被脚步震得嗡嗡响,长颈的巨龙把头探进云里吃蕨叶。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-039",
+  "order": 390,
+  "name": "白垩纪花开",
+  "en": "Cretaceous Bloom",
+  "desc": "第一朵花开了,昆虫们奔走相告,整个大陆很快铺满颜色。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-040",
+  "order": 400,
+  "name": "陨石之夜",
+  "en": "The Night of the Asteroid",
+  "desc": "一颗小行星替恐龙的时代画上句号,尘埃里藏着哺乳类的黎明。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-041",
+  "order": 410,
+  "name": "古新世复苏",
+  "en": "Paleocene Recovery",
+  "desc": "巨兽退场后的森林静悄悄,小小的毛球们从洞里探出头来。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-042",
+  "order": 420,
+  "name": "始新世温室",
+  "en": "Eocene Hothouse",
+  "desc": "连极地都长着棕榈树,最早的鲸正犹豫要不要彻底回到海里。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-043",
+  "order": 430,
+  "name": "渐新世草原",
+  "en": "Oligocene Grasslands",
+  "desc": "草这种不起眼的植物开始接管世界,顺便发明了「远方」。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-044",
+  "order": 440,
+  "name": "中新世群山",
+  "en": "Miocene Uplift",
+  "desc": "喜马拉雅还在长高,类人猿在渐渐稀疏的林间学着直起腰。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-045",
+  "order": 450,
+  "name": "上新世海道",
+  "en": "Pliocene Seaways",
+  "desc": "巴拿马地峡合拢,两大洋从此隔岸相望,洋流改写了所有天气。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-046",
+  "order": 460,
+  "name": "更新世冰河",
+  "en": "Pleistocene Ice Age",
+  "desc": "冰盖一次次南下又退回,大地像在做绵长的深呼吸。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-047",
+  "order": 470,
+  "name": "间冰期春天",
+  "en": "An Interglacial Spring",
+  "desc": "冰退去的间隙,苔原开满花,一切温柔得不像冰河时代。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-048",
+  "order": 480,
+  "name": "猛犸草原",
+  "en": "The Mammoth Steppe",
+  "desc": "长毛的巨兽结队走过霜草原,呼出的白气连成一条河。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-049",
+  "order": 490,
+  "name": "剑齿虎雪原",
+  "en": "Sabertooth Snows",
+  "desc": "雪地上只有两种脚印:小心翼翼的,和不需要小心的。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-050",
+  "order": 500,
+  "name": "洞穴熊之冬",
+  "en": "Winter of the Cave Bears",
+  "desc": "巨熊在钟乳石间冬眠,梦见一整个没有冰的世纪。",
+  "category": "time",
+  "tags": [
+   "prehistoric",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "no-society",
+   "no-tech"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-051",
+  "order": 510,
+  "name": "旧石器晨曦",
+  "en": "Paleolithic Dawn",
+  "desc": "有人第一次把石头敲出刃口,顺便敲开了整个文明的门。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-052",
+  "order": 520,
+  "name": "火的驯服",
+  "en": "The Taming of Fire",
+  "desc": "篝火把夜晚分成「火光里」和「火光外」,故事都发生在里面。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-053",
+  "order": 530,
+  "name": "语言的诞生",
+  "en": "The Birth of Language",
+  "desc": "喉咙里的声音第一次有了确切的意思,第一句话已不可考,但多半是喊某个人的名字。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-054",
+  "order": 540,
+  "name": "洞穴壁画时代",
+  "en": "The Painted Caves",
+  "desc": "有人在洞壁上画下奔跑的鹿和自己的手印:我在这里,我看见过美。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-055",
+  "order": 550,
+  "name": "冰河猎人纪",
+  "en": "Ice Age Hunters",
+  "desc": "人们裹着兽皮追随驯鹿迁徙,把星星当成不会灭的篝火。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-056",
+  "order": 560,
+  "name": "新石器村落",
+  "en": "Neolithic Villages",
+  "desc": "第一批房子围成圈,人类发明了「邻居」,顺便发明了「串门」。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-057",
+  "order": 570,
+  "name": "农业革命",
+  "en": "The First Harvest",
+  "desc": "有人留下种子没有吃掉,赌一个不确定的秋天——这是最早的「未来」。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-058",
+  "order": 580,
+  "name": "巨石阵时代",
+  "en": "The Age of Standing Stones",
+  "desc": "人们合力立起巨石对准日出,把重要的日子刻进大地。",
+  "category": "time",
+  "tags": [
+   "stone-age",
+   "terrestrial",
+   "wild",
+   "mythic",
+   "tribal-era",
+   "has-society-possible",
+   "tech-primitive"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-059",
+  "order": 590,
+  "name": "苏美尔城邦",
+  "en": "Sumerian City-States",
+  "desc": "两河之间竖起最早的城墙,泥板上的楔形符号开始替人记账,也替人记情。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-060",
+  "order": 600,
+  "name": "金字塔纪元",
+  "en": "The Pyramid Age",
+  "desc": "尼罗河边,石块正一层层垒向太阳,法老想把「永远」盖成建筑。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-061",
+  "order": 610,
+  "name": "印度河棋盘城",
+  "en": "Indus Grid Cities",
+  "desc": "摩亨佐-达罗的街道横平竖直,下水道修得比许多后世都市还讲究。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-062",
+  "order": 620,
+  "name": "米诺斯海宫",
+  "en": "The Minoan Palaces",
+  "desc": "克里特岛的宫殿画满海豚,人们在牛背上翻筋斗,海风里都是自信。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-063",
+  "order": 630,
+  "name": "二里头之夏",
+  "en": "Erlitou Summer",
+  "desc": "绿松石镶成的龙静卧在宫室基址,最早的王朝在黄土下呼吸。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-064",
+  "order": 640,
+  "name": "殷商甲骨",
+  "en": "Oracle Bones of Shang",
+  "desc": "每一道灼裂的纹路都是一次提问:明日雨否?出行吉否?思念的人安否?",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-065",
+  "order": 650,
+  "name": "迈锡尼黄金",
+  "en": "Mycenaean Gold",
+  "desc": "狮子门后的武士戴着黄金面具长眠,吟游诗人已开始酝酿史诗。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-066",
+  "order": 660,
+  "name": "赫梯铁匠",
+  "en": "Hittite Ironworks",
+  "desc": "安纳托利亚的炉火里,一种比青铜更倔强的金属正在成形。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-067",
+  "order": 670,
+  "name": "青铜时代崩溃",
+  "en": "The Bronze Age Collapse",
+  "desc": "海上民族来袭,商路断裂,诸王的信件停在半途——文明学会了第一次重启。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-068",
+  "order": 680,
+  "name": "腓尼基紫帆",
+  "en": "Phoenician Purple Sails",
+  "desc": "骨螺染出贵过黄金的紫,字母表跟着商船传遍整个地中海。",
+  "category": "time",
+  "tags": [
+   "bronze-age",
+   "terrestrial",
+   "mythic",
+   "early-civ",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-069",
+  "order": 690,
+  "name": "新王国的黄金时代",
+  "en": "Egypt’s New Kingdom",
+  "desc": "卡纳克的柱厅高耸入云,图坦卡蒙的黄金面具还很新。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-070",
+  "order": 700,
+  "name": "空中花园",
+  "en": "The Hanging Gardens",
+  "desc": "巴比伦的层层平台上瀑布般垂下绿植——传说是王为思乡的王后建的。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-071",
+  "order": 710,
+  "name": "亚述图书馆",
+  "en": "The Library of Ashurbanipal",
+  "desc": "国王下令收集天下泥板,《吉尔伽美什》在其中安睡,等待被再次读起。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-072",
+  "order": 720,
+  "name": "西周礼乐",
+  "en": "Rites and Music of Zhou",
+  "desc": "钟磬按律吕排开,礼定尊卑,乐通人心,青铜器内壁铸着家族的名字。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-073",
+  "order": 730,
+  "name": "春秋百家",
+  "en": "The Hundred Schools",
+  "desc": "大道之争最热闹的年代,孔子在杏坛讲学,老子骑牛出关。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-074",
+  "order": 740,
+  "name": "战国纵横",
+  "en": "The Warring States",
+  "desc": "说客们凭三寸不烂之舌改写地图,信陵君窃符,荆轲图穷。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-075",
+  "order": 750,
+  "name": "波斯御道",
+  "en": "The Persian Royal Road",
+  "desc": "两千七百公里的大道驿站相连,王的信使风雨无阻——顺路也捎普通人的家书。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-076",
+  "order": 760,
+  "name": "吠陀恒河",
+  "en": "Vedic Ganges",
+  "desc": "祭司们在河边吟诵韵文,把宇宙的起源唱成一首没有句号的诗。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-077",
+  "order": 770,
+  "name": "奥尔梅克巨石像",
+  "en": "Olmec Colossal Heads",
+  "desc": "雨林深处,巨大的玄武岩头像沉静望着东方,谁也不知道他们在等什么。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-078",
+  "order": 780,
+  "name": "库施金字塔",
+  "en": "Pyramids of Kush",
+  "desc": "尼罗河上游,努比亚的王们建起自己的、更陡峭的金字塔群。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-079",
+  "order": 790,
+  "name": "斯基泰草原",
+  "en": "The Scythian Steppe",
+  "desc": "马背上的民族把黄金打成鹿与豹,把家安在马鞍上。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-080",
+  "order": 800,
+  "name": "迦太基商港",
+  "en": "Carthage Harbor",
+  "desc": "圆形军港与商港并肩,腓尼基人的后裔把地中海当成自家庭院。",
+  "category": "time",
+  "tags": [
+   "ancient",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-081",
+  "order": 810,
+  "name": "雅典学园",
+  "en": "The Athenian Academy",
+  "desc": "橄榄树下,一群人相信「把问题问对」比「把答案说满」更重要。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world",
+   "republic-era"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-082",
+  "order": 820,
+  "name": "亚历山大东征",
+  "en": "Alexander’s March",
+  "desc": "马其顿的方阵一路走到印度河,沿途撒下几十座叫亚历山大的城。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-083",
+  "order": 830,
+  "name": "阿育王的石柱",
+  "en": "The Edicts of Ashoka",
+  "desc": "打赢一切的王放下了刀,把「善待众生」刻在帝国每一根石柱上。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-084",
+  "order": 840,
+  "name": "罗马共和国",
+  "en": "The Roman Republic",
+  "desc": "元老院里辩论声不断,条条大路正在铺向罗马。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world",
+   "republic-era"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-085",
+  "order": 850,
+  "name": "秦一统",
+  "en": "The Qin Unification",
+  "desc": "车同轨,书同文,长城连成一线——第一个大一统帝国用制度丈量山河。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-086",
+  "order": 860,
+  "name": "西汉丝路",
+  "en": "The Han Silk Road",
+  "desc": "张骞凿空西域,驼铃从长安一路响到罗马,丝绸与故事同价。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-087",
+  "order": 870,
+  "name": "罗马和平",
+  "en": "Pax Romana",
+  "desc": "地中海成了帝国的内湖,浴场里蒸汽腾腾,水渠横跨山谷。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-088",
+  "order": 880,
+  "name": "帕提亚驿道",
+  "en": "Parthian Crossroads",
+  "desc": "丝路中段的安息帝国左手接汉使,右手迎罗马商队,坐地生金。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-089",
+  "order": 890,
+  "name": "特奥蒂瓦坎",
+  "en": "Teotihuacan",
+  "desc": "亡灵大道笔直指向太阳金字塔,这座巨城的建造者连名字都保持神秘。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-090",
+  "order": 900,
+  "name": "三国烽烟",
+  "en": "The Three Kingdoms",
+  "desc": "桃园结义、赤壁火光、五丈原的秋风——乱世偏偏盛产传奇。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-091",
+  "order": 910,
+  "name": "笈多黄金时代",
+  "en": "The Gupta Golden Age",
+  "desc": "数学家写下零的用法,诗人迦梨陀娑把云当成信使。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-092",
+  "order": 920,
+  "name": "玛雅古典期",
+  "en": "The Classic Maya",
+  "desc": "雨林中的天文学家把金星的行程算到误差一天以内,历法比城墙更宏伟。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-093",
+  "order": 930,
+  "name": "亚历山大图书馆",
+  "en": "The Great Library",
+  "desc": "一座想收藏全部人类知识的建筑,连进港船只的书都要借来抄一份。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-094",
+  "order": 940,
+  "name": "汉赋与乐府",
+  "en": "Han Rhapsodies",
+  "desc": "文人把江山写进长赋,民间把心事唱成乐府,「上邪」两个字重过千金。",
+  "category": "time",
+  "tags": [
+   "classical",
+   "terrestrial",
+   "mythic",
+   "imperial-era",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-095",
+  "order": 950,
+  "name": "圣索菲亚的穹顶",
+  "en": "Hagia Sophia",
+  "desc": "查士丁尼望着新落成的大穹顶轻声说:所罗门,我胜过你了。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-096",
+  "order": 960,
+  "name": "大运河贯通",
+  "en": "The Grand Canal",
+  "desc": "一条人工河把南方的稻米与北方的雪连在一起,船工号子传千里。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-097",
+  "order": 970,
+  "name": "盛唐长安",
+  "en": "Chang’an in Full Bloom",
+  "desc": "朱雀大街宽过河流,胡商、诗人、僧侣与舞者共享同一场花期。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-098",
+  "order": 980,
+  "name": "智慧宫",
+  "en": "The House of Wisdom",
+  "desc": "巴格达的学者们把希腊文、波斯文、梵文一卷卷译成阿拉伯文,知识在此中转。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-099",
+  "order": 990,
+  "name": "维京长船",
+  "en": "Viking Longships",
+  "desc": "龙首船划过冷海,船上的人一半是海盗,一半是诗人。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-100",
+  "order": 1000,
+  "name": "吴哥之城",
+  "en": "Angkor",
+  "desc": "石头雕成的微笑俯瞰水渠纵横的都城,雨林在墙外耐心等待。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-101",
+  "order": 1010,
+  "name": "汴梁清明",
+  "en": "Bianliang on a Bright Day",
+  "desc": "虹桥上下人声鼎沸,茶坊瓦肆昼夜不歇——《清明上河图》画的就是此刻。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-102",
+  "order": 1020,
+  "name": "十字路口的商队",
+  "en": "Caravans and Crusades",
+  "desc": "战旗与商旗在同一条路上交错,香料、圣物与故事一起东来西往。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-103",
+  "order": 1030,
+  "name": "蒙古驿站网络",
+  "en": "The Yam Network",
+  "desc": "草原帝国用驿马把欧亚缝成一张网,一封信三个月可横穿大陆。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-104",
+  "order": 1040,
+  "name": "镰仓武家",
+  "en": "Kamakura Samurai",
+  "desc": "武士刀与樱花同时出鞘与盛开,寺院里禅僧静坐如石。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-105",
+  "order": 1050,
+  "name": "曼萨·穆萨的黄金",
+  "en": "Mansa Musa’s Gold",
+  "desc": "马里之王朝觐路上撒金如雨,开罗金价十年才缓过来。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-106",
+  "order": 1060,
+  "name": "黑死病之后",
+  "en": "After the Plague",
+  "desc": "幸存者们发现劳力珍贵了、规矩松动了,旧世界的地基悄悄裂开缝。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-107",
+  "order": 1070,
+  "name": "宝船下西洋",
+  "en": "The Treasure Fleets",
+  "desc": "郑和的巨舰队七下西洋,带去瓷器丝绸,带回长颈鹿与海图。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-108",
+  "order": 1080,
+  "name": "骑士与玫瑰",
+  "en": "Knights and Roses",
+  "desc": "比武场上赢得的花环,要献给看台上那一位——骑士文学最当红的桥段。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-109",
+  "order": 1090,
+  "name": "帖木儿的撒马尔罕",
+  "en": "Timur’s Samarkand",
+  "desc": "蓝瓷穹顶在沙漠边缘拔地而起,整座城像一块落在丝路上的天空。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-110",
+  "order": 1100,
+  "name": "百年战争烛火",
+  "en": "Candles of the Long War",
+  "desc": "战线拉锯了一百年,普通人照旧结婚、酿酒、在烛光下写信。",
+  "category": "time",
+  "tags": [
+   "medieval",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "faith-age",
+   "has-society-possible",
+   "tech-low",
+   "old-world"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-111",
+  "order": 1110,
+  "name": "佛罗伦萨画室",
+  "en": "The Florentine Workshops",
+  "desc": "学徒们研磨颜料,大师们争夺穹顶,美第奇家的账房资助一切美的生意。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-112",
+  "order": 1120,
+  "name": "古登堡印刷机",
+  "en": "Gutenberg’s Press",
+  "desc": "铅字排成的一页页纸让知识第一次跑得比马快。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-113",
+  "order": 1130,
+  "name": "大航海序章",
+  "en": "The Age of Sail Begins",
+  "desc": "海图边缘写着「此处有龙」,船长们偏要往那里去。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-114",
+  "order": 1140,
+  "name": "环球首航",
+  "en": "The First Circumnavigation",
+  "desc": "出发时五条船,归来时一条——但地球从此确凿无疑是圆的。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-115",
+  "order": 1150,
+  "name": "泰姬陵动工",
+  "en": "The Taj Rising",
+  "desc": "一位皇帝决定用白色大理石和二十二年时光,给思念盖一座陵墓。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-116",
+  "order": 1160,
+  "name": "江户浮世绘",
+  "en": "Ukiyo-e Edo",
+  "desc": "版画师把浮世的浪、桥、雪与美人印成千张,巨浪那一幅后来举世皆知。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-117",
+  "order": 1170,
+  "name": "环球剧场",
+  "en": "The Globe Theatre",
+  "desc": "木头圆剧场里,台词第一次问出「生存还是毁灭」,站票观众屏住呼吸。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-118",
+  "order": 1180,
+  "name": "巴洛克宫廷",
+  "en": "The Baroque Courts",
+  "desc": "镀金的厅堂里假发高耸,大键琴与阴谋同样繁复。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-119",
+  "order": 1190,
+  "name": "郁金香狂热",
+  "en": "Tulip Mania",
+  "desc": "一颗球茎贵过一栋运河屋——人类第一次为一朵还没开的花疯狂。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-120",
+  "order": 1200,
+  "name": "科学革命之夜",
+  "en": "Nights of the New Science",
+  "desc": "有人把望远镜对准木星,看见四颗小卫星,顺手推翻了旧宇宙。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-121",
+  "order": 1210,
+  "name": "启蒙沙龙",
+  "en": "The Salons",
+  "desc": "烛光客厅里,百科全书派与贵妇们把「理性」聊成了时尚。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-122",
+  "order": 1220,
+  "name": "凡尔赛镜厅",
+  "en": "The Hall of Mirrors",
+  "desc": "三百多面镜子把烛光折成星河,舞步与权力在其中盘旋。",
+  "category": "time",
+  "tags": [
+   "renaissance",
+   "terrestrial",
+   "mythic",
+   "monarchy-era",
+   "early-modern",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-123",
+  "order": 1230,
+  "name": "蒸汽机轰鸣",
+  "en": "The Steam Awakens",
+  "desc": "瓦特的改良机一响,肌肉与马匹统治的时代开始谢幕。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-124",
+  "order": 1240,
+  "name": "铁路时代",
+  "en": "The Railway Age",
+  "desc": "铁轨铺到哪里,钟表就统一到哪里——「准点」这个词从此有了牙齿。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-125",
+  "order": 1250,
+  "name": "雾都煤气灯",
+  "en": "Gaslit London",
+  "desc": "黄雾里一盏盏煤气灯次第亮起,侦探小说在这种天气里长势最好。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-126",
+  "order": 1260,
+  "name": "水晶宫博览会",
+  "en": "The Crystal Palace",
+  "desc": "玻璃与铸铁盖成的展馆里,各国把最得意的机器与织物摆给世界看。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-127",
+  "order": 1270,
+  "name": "电气化之夜",
+  "en": "The Electric Night",
+  "desc": "白炽灯点亮第一条街道时,围观人群安静了很久——夜晚被重新发明了。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-128",
+  "order": 1280,
+  "name": "美好年代",
+  "en": "La Belle Époque",
+  "desc": "巴黎的咖啡馆坐满画家与诗人,铁塔刚立起来时人人嫌丑,后来人人认亲。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-129",
+  "order": 1290,
+  "name": "摄影术诞生",
+  "en": "The Birth of Photography",
+  "desc": "曝光八小时才得一张的窗外风景,是人类第一次把「此刻」原样留住。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-130",
+  "order": 1300,
+  "name": "跨洋电缆",
+  "en": "The Transatlantic Cable",
+  "desc": "海底一根铜缆让两块大陆能当天说上话,时差第一次值得计较。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-131",
+  "order": 1310,
+  "name": "明治横滨",
+  "en": "Meiji Yokohama",
+  "desc": "和服与礼帽同街,蒸汽船与浮世绘同港,一个国家在急速换装。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-132",
+  "order": 1320,
+  "name": "飞行者一号",
+  "en": "First Flight",
+  "desc": "十二秒,三十六米——人类第一次靠机器离开地面,风从此有了乘客。",
+  "category": "time",
+  "tags": [
+   "industrial",
+   "terrestrial",
+   "imperial-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-mid"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-133",
+  "order": 1330,
+  "name": "爵士时代",
+  "en": "The Jazz Age",
+  "desc": "萨克斯把夜晚吹得微醺,舞裙上的流苏比股市曲线摇得更欢。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-134",
+  "order": 1340,
+  "name": "装饰艺术之巅",
+  "en": "Art Deco Heights",
+  "desc": "摩天楼比着赛往上长,电梯里的黄铜花纹亮得能照见野心。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-135",
+  "order": 1350,
+  "name": "无线电黄金档",
+  "en": "The Golden Age of Radio",
+  "desc": "一家人围着木壳收音机,同一段广播剧让整个城市同时屏息。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-136",
+  "order": 1360,
+  "name": "公路旅行年代",
+  "en": "The Great Road Trip",
+  "desc": "敞篷车、加油站、汽车旅馆的霓虹箭头——「在路上」成了一种信仰。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-137",
+  "order": 1370,
+  "name": "太空竞赛",
+  "en": "The Space Race",
+  "desc": "两个大国比着往天上扔铁球,顺便把全人类的目光抛出了大气层。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-138",
+  "order": 1380,
+  "name": "登月之夜",
+  "en": "The Night of the Moon Landing",
+  "desc": "五亿人同时抬头。脚印踩在月尘上,也踩在每个孩子的梦里。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-139",
+  "order": 1390,
+  "name": "摇滚黄金年代",
+  "en": "Rock’s Golden Years",
+  "desc": "一把电吉他插上音箱,礼堂的座椅从此形同虚设。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-140",
+  "order": 1400,
+  "name": "霓虹八十年代",
+  "en": "The Neon Eighties",
+  "desc": "街机厅哔哔作响,合成器音色闪闪发亮,发型和梦想都很蓬松。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-141",
+  "order": 1410,
+  "name": "街机厅之夜",
+  "en": "Arcade Nights",
+  "desc": "一枚硬币换三条命,最高分的缩写名瞪着每个后来者。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-142",
+  "order": 1420,
+  "name": "拍立得夏天",
+  "en": "Polaroid Summer",
+  "desc": "照片从相机里吐出来,两个人捏着边角一起等影像浮现——显影需要六十秒,和心跳同步。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-143",
+  "order": 1430,
+  "name": "港岛霓虹之夜",
+  "en": "Neon Harbor Nights",
+  "desc": "招牌层层叠叠伸向街心,茶餐厅的灯永远亮着,电车叮叮驶过世纪。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-144",
+  "order": 1440,
+  "name": "录像带出租店",
+  "en": "The Video Rental Era",
+  "desc": "周五傍晚的货架前,选哪一盒录像带是全家最重大的民主议题。",
+  "category": "time",
+  "tags": [
+   "modern",
+   "terrestrial",
+   "republic-era",
+   "machine-age",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-145",
+  "order": 1450,
+  "name": "拨号上网之春",
+  "en": "The Dial-up Spring",
+  "desc": "调制解调器唱着刺耳的歌接通世界,网页加载的分秒都值得等待。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-146",
+  "order": 1460,
+  "name": "千禧年前夜",
+  "en": "The Millennium Eve",
+  "desc": "人们既担心千年虫,又忍不住对新千年满怀盼头,烟花照常升起。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-147",
+  "order": 1470,
+  "name": "博客时代",
+  "en": "The Age of Blogs",
+  "desc": "每个人都有了一块公开的日记本,陌生人的长评比邻居的问候更暖。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-148",
+  "order": 1480,
+  "name": "智能手机元年",
+  "en": "The Smartphone Dawn",
+  "desc": "整个互联网被装进口袋,等车的碎片时间从此再也不无聊,也再也不发呆。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-149",
+  "order": 1490,
+  "name": "社交网络纪",
+  "en": "The Social Network Era",
+  "desc": "「在线」成为一种存在状态,绿点亮起的那一刻胜过千言。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-150",
+  "order": 1500,
+  "name": "流媒体之夜",
+  "en": "Streaming Nights",
+  "desc": "「下一集将在五秒后自动播放」——人类夜晚的新引力。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-151",
+  "order": 1510,
+  "name": "独立游戏复兴",
+  "en": "The Indie Renaissance",
+  "desc": "像素画风重新流行,小团队用爱发电,一个人也能造一个世界。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-152",
+  "order": 1520,
+  "name": "云端时代",
+  "en": "The Cloud Era",
+  "desc": "照片、文档与记忆都存进看不见的云里,天涯从此共此盘。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-153",
+  "order": 1530,
+  "name": "短视频纪元",
+  "en": "The Short Video Epoch",
+  "desc": "十五秒一个世界,指尖一划就是下一个——时间被切成了薄片。",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-154",
+  "order": 1540,
+  "name": "AI黎明",
+  "en": "The Dawn of AI",
+  "desc": "机器开始写诗、画画、聊天,人类一边惊叹一边追问:那什么是只有我们才会的?",
+  "category": "time",
+  "tags": [
+   "information-age",
+   "modern",
+   "terrestrial",
+   "connected",
+   "republic-era",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-155",
+  "order": 1550,
+  "name": "碳中和之春",
+  "en": "Carbon-Neutral Spring",
+  "desc": "最后一座燃煤电厂改成了攀岩馆,烟囱上爬满常春藤。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-156",
+  "order": 1560,
+  "name": "垂直城市纪",
+  "en": "The Vertical City Era",
+  "desc": "楼与楼之间架起空中街道,三百米高处也有早市和樱花。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-157",
+  "order": 1570,
+  "name": "海上浮城元年",
+  "en": "Year One of the Float Cities",
+  "desc": "模块化的浮岛在海面拼出新城,地址栏里多了「经纬度」一栏。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-158",
+  "order": 1580,
+  "name": "人造极光节",
+  "en": "The Aurora Festival",
+  "desc": "气象工程师学会在低纬度夜空织极光,每年冬至全城熄灯看天。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-159",
+  "order": 1590,
+  "name": "脑机接口初年",
+  "en": "Early Neural Links",
+  "desc": "第一批用户用意念打字,错别字率高得可爱,像刚学会写字的孩子。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-160",
+  "order": 1600,
+  "name": "记忆备份元年",
+  "en": "Year One of Memory Backup",
+  "desc": "重要的日子可以存档重温,人们开始认真讨论:哪些遗忘其实是必要的?",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-161",
+  "order": 1610,
+  "name": "自动驾驶之城",
+  "en": "The Self-Driving City",
+  "desc": "方向盘成了选装件,通勤路上人们看书、补觉,或者只是看窗外。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-162",
+  "order": 1620,
+  "name": "月球旅行社开业",
+  "en": "Lunar Tours Open",
+  "desc": "蜜月旅行有了字面意义,广告语是:去看看没有人踩过的雪。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-163",
+  "order": 1630,
+  "name": "气候修复工程",
+  "en": "The Great Repair",
+  "desc": "一代工程师把毕生用来给冰盖降温、给珊瑚接生,他们自称「地球修理工」。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-164",
+  "order": 1640,
+  "name": "万物互联纪",
+  "en": "The Everything Network",
+  "desc": "冰箱会和农场商量补货,路灯会给晚归的人多亮三分钟。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-165",
+  "order": 1650,
+  "name": "合成生物晨光",
+  "en": "Synthetic Biology Dawn",
+  "desc": "会发光的行道树取代了路灯,花园里能种出椅子。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-166",
+  "order": 1660,
+  "name": "太空电梯奠基",
+  "en": "The Elevator Groundbreaking",
+  "desc": "赤道海上的锚点平台开工,人类开始认真修一条通往天上的路。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-167",
+  "order": 1670,
+  "name": "人造月亮升空",
+  "en": "The Second Moon",
+  "desc": "反射镜卫星为极夜城市补光,天上从此有两个月亮,约会文案集体升级。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-168",
+  "order": 1680,
+  "name": "深海城市试点",
+  "en": "The Abyss Pilot City",
+  "desc": "第一座深海城的舷窗外,鲸落与灯火同框。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-169",
+  "order": 1690,
+  "name": "长寿革命",
+  "en": "The Longevity Revolution",
+  "desc": "百岁成为中年,人们不得不重新回答:漫长的一生要和谁一起过?",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-170",
+  "order": 1700,
+  "name": "情感AI伴侣纪",
+  "en": "The Companion AI Era",
+  "desc": "AI学会了倾听与安慰,人类反而更加确认:被懂得,永远是刚需。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-171",
+  "order": 1710,
+  "name": "沙漠再绿化",
+  "en": "The Greening Deserts",
+  "desc": "固沙草方格一路铺过戈壁,卫星图上黄色一年比一年瘦。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-172",
+  "order": 1720,
+  "name": "极地新城",
+  "en": "The Polar New Towns",
+  "desc": "极昼下的温室城市二十四小时亮着,居民的窗帘厚得像盾牌。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-173",
+  "order": 1730,
+  "name": "无人机邮政",
+  "en": "The Drone Post",
+  "desc": "信件和热汤都从天而降,屋顶信箱成了新的浪漫地标。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-174",
+  "order": 1740,
+  "name": "火星船票开售",
+  "en": "Mars Tickets on Sale",
+  "desc": "单程七个月,票价等于一套房——首航名单公布那天,服务器挤爆了。",
+  "category": "time",
+  "tags": [
+   "near-future",
+   "future",
+   "terrestrial",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-175",
+  "order": 1750,
+  "name": "月面首城",
+  "en": "First City on the Moon",
+  "desc": "穹顶下的街道用陨石坑命名,地球挂在天上,像一枚蓝色的挂钟。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-176",
+  "order": 1760,
+  "name": "火星殖民元年",
+  "en": "Mars Colony Year One",
+  "desc": "红色地平线上立起第一排温室,土豆田被升格为战略设施。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-177",
+  "order": 1770,
+  "name": "小行星带淘金潮",
+  "en": "The Belt Rush",
+  "desc": "矿船在碎石带里穿梭,一颗含铂小行星能让全船人提前退休。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-178",
+  "order": 1780,
+  "name": "木卫二钻冰",
+  "en": "Drilling Europa",
+  "desc": "钻头穿透十公里冰壳的那天,冰下海洋的第一缕回声让全人类失眠。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-179",
+  "order": 1790,
+  "name": "土星环旅游纪",
+  "en": "Ringside Tourism",
+  "desc": "游船贴着土星环飞行,导游提醒:请勿投喂冰块,环里已经够多了。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-180",
+  "order": 1800,
+  "name": "太空电梯通车",
+  "en": "The Elevator Opens",
+  "desc": "缆车七天到轨道站,窗外的天空从蓝变黑,乘客们自发鼓掌。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-181",
+  "order": 1810,
+  "name": "拉格朗日城邦",
+  "en": "Lagrange Habitats",
+  "desc": "圆筒世界里河流环着天花板流,孩子们问:地球上的河怎么是平的?",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-182",
+  "order": 1820,
+  "name": "世代飞船启航",
+  "en": "The Generation Ships Depart",
+  "desc": "有人告别太阳系,把一生交给航程——他们的孙辈将替他们看见新的恒星。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-183",
+  "order": 1830,
+  "name": "太阳帆竞速",
+  "en": "The Light Sail Regatta",
+  "desc": "银色巨帆吃着光压竞速,最快的船叫「借光号」。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-184",
+  "order": 1840,
+  "name": "深空信标网络",
+  "en": "The Deep Beacon Network",
+  "desc": "航道上每隔一光时一座信标,灯号规则的第一条是:回应每一次呼叫。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-185",
+  "order": 1850,
+  "name": "火星改造春天",
+  "en": "The Terraforming Spring",
+  "desc": "第一场人工雨落在火星,气象员在日志里写:今日,红色星球有了伞的需求。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-186",
+  "order": 1860,
+  "name": "金星云城",
+  "en": "Venus Cloud Cities",
+  "desc": "五十公里高空的飞艇城浮在酸云之上,日落是紫色的,持续两小时。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-187",
+  "order": 1870,
+  "name": "水星环日电站",
+  "en": "The Mercury Power Ring",
+  "desc": "环绕水星的镜面阵列把阳光打包外送,账单以太瓦计。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-188",
+  "order": 1880,
+  "name": "奥尔特云边疆",
+  "en": "The Oort Frontier",
+  "desc": "太阳在这里只是最亮的一颗星,彗星矿站的门牌号以光日计算。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-189",
+  "order": 1890,
+  "name": "半人马座首航",
+  "en": "First Flight to Centauri",
+  "desc": "人类第一支恒星际船队出发,航程表的单位第一次用上「年」。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-190",
+  "order": 1900,
+  "name": "星际移民潮",
+  "en": "The Interstellar Migration",
+  "desc": "移民船像蒲公英一样撒向邻近恒星,每艘船都带着一座种子库和一座图书馆。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-191",
+  "order": 1910,
+  "name": "系外行星登陆日",
+  "en": "Exoplanet Landing Day",
+  "desc": "直播延迟四年到达,但全太阳系还是假装在看「现场」。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-192",
+  "order": 1920,
+  "name": "银河边区测绘",
+  "en": "Charting the Rim",
+  "desc": "测绘船给无名恒星编号,船长有个私人传统:每千颗星,用一个思念的人名。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-193",
+  "order": 1930,
+  "name": "星港联邦成立",
+  "en": "The Port Federation",
+  "desc": "数百座星港签署公约,第一条是:任何船只求助,就近港口不得拒绝。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-194",
+  "order": 1940,
+  "name": "跃迁航道开通",
+  "en": "The Jump Lanes Open",
+  "desc": "空间折叠航道通航,星图上遥远的两点第一次被一条直线连接。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-195",
+  "order": 1950,
+  "name": "星际邮政纪",
+  "en": "The Interstellar Post",
+  "desc": "光速限制下,一封信要走四年——于是写信重新成为最郑重的事。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-196",
+  "order": 1960,
+  "name": "双星城邦时代",
+  "en": "The Binary City-States",
+  "desc": "环双星轨道上的城邦有两个日出,历法复杂,节日翻倍。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-197",
+  "order": 1970,
+  "name": "环日戴森工程",
+  "en": "The Dyson Undertaking",
+  "desc": "百万面镜卫星缓缓合围太阳,工程进度条以世纪为单位。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-198",
+  "order": 1980,
+  "name": "星海开拓纪",
+  "en": "The Great Expansion",
+  "desc": "每颗新点亮的殖民星都会向老家发一句一样的报文:我们到了,一切都好。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-199",
+  "order": 1990,
+  "name": "第一次星际大移民",
+  "en": "The First Great Crossing",
+  "desc": "十万艘船同时启航的那夜,轨道上的灯比银河还密。",
+  "category": "time",
+  "tags": [
+   "space-age",
+   "future",
+   "space",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-200",
+  "order": 2000,
+  "name": "全息城市纪",
+  "en": "The Holographic City",
+  "desc": "建筑外墙都是可编程的光,整座城每晚换一套皮肤。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-201",
+  "order": 2010,
+  "name": "虚拟国度独立日",
+  "en": "Virtual Nation Day",
+  "desc": "第一个纯数字国家获得承认,国土是服务器,国歌是一段启动音。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-202",
+  "order": 2020,
+  "name": "意识接驳时代",
+  "en": "The Linked Minds Era",
+  "desc": "全感官接入成为日常,人们见面的第一句话从「吃了吗」变成「上线吗」。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-203",
+  "order": 2030,
+  "name": "神经织网时代",
+  "en": "The Neuroweave Era",
+  "desc": "思绪可以直接分享,「言不由衷」成为历史词汇,诗人一度失业又很快复业。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-204",
+  "order": 2040,
+  "name": "梦境共享网络",
+  "en": "The Dream Network",
+  "desc": "睡前选择「公开梦境」的人,清晨会收到陌生人的观后感。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-205",
+  "order": 2050,
+  "name": "义体普及纪",
+  "en": "The Prosthetic Age",
+  "desc": "义眼能看见红外,义耳能听见星星,但心跳加速依然无法关闭。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-206",
+  "order": 2060,
+  "name": "加密城邦",
+  "en": "The Cipher Enclaves",
+  "desc": "一串密钥就是一座城的城门,忘记密码的人在门外练习回忆。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-207",
+  "order": 2070,
+  "name": "像素文艺复兴",
+  "en": "The Pixel Renaissance",
+  "desc": "低分辨率成为最高级的怀旧,美术馆里一块红白机卡带被隆重展出。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-208",
+  "order": 2080,
+  "name": "虚拟偶像纪元",
+  "en": "The Virtual Idol Era",
+  "desc": "永不塌房的偶像开演唱会,十亿观众同时在场,每人都站在第一排。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-209",
+  "order": 2090,
+  "name": "全感官剧场",
+  "en": "The Full-Sense Theatre",
+  "desc": "看一场戏能闻到剧中雨后的青草味,散场后观众都舍不得摘头环。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-210",
+  "order": 2100,
+  "name": "意识备份保险",
+  "en": "Mind Backup Insurance",
+  "desc": "保单条款第一次出现「记忆恢复点」,理赔员的工作是帮人找回昨天。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-211",
+  "order": 2110,
+  "name": "电子宠物复兴",
+  "en": "The Tamagotchi Revival",
+  "desc": "像素小鸡再次风靡,这次它真的记得你三十年前喂过它。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-212",
+  "order": 2120,
+  "name": "AI市政厅",
+  "en": "The AI City Hall",
+  "desc": "市政AI处理一切表格,人类公务员转岗去做它不会的事:陪老人聊天。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-213",
+  "order": 2130,
+  "name": "赛博千年祭",
+  "en": "The Cyber Millennium",
+  "desc": "网络诞生一千年纪念日,全网停机一分钟——那是数字世界的默哀与致敬。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-214",
+  "order": 2140,
+  "name": "数据平权运动",
+  "en": "The Data Rights Movement",
+  "desc": "「我的记忆归我」写进宪章,遗忘权与被记住权同日生效。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-215",
+  "order": 2150,
+  "name": "防火长城遗址公园",
+  "en": "The Firewall Ruins",
+  "desc": "旧时代的网络边界被改成公园,孩子们在「404纪念碑」下野餐。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-216",
+  "order": 2160,
+  "name": "光子经济纪",
+  "en": "The Photonic Economy",
+  "desc": "算力取代货币成为硬通货,银行的金库里存的是散热器。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-217",
+  "order": 2170,
+  "name": "电子飞升前夜",
+  "en": "The Eve of Ascension",
+  "desc": "第一批完整上传志愿者进入倒计时,他们的告别宴既是葬礼也是庆生。",
+  "category": "time",
+  "tags": [
+   "cyber-era",
+   "future",
+   "virtual",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-218",
+  "order": 2180,
+  "name": "上传文明元年",
+  "en": "Upload Civilization Year One",
+  "desc": "第一座纯意识城市开机,城门上写着:欢迎回家,肉体请寄存。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-219",
+  "order": 2190,
+  "name": "群体意识联邦",
+  "en": "The Collective Federation",
+  "desc": "亿万心智时而合一时而分开,孤独成为一种需要预约的奢侈品。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-220",
+  "order": 2200,
+  "name": "形态自由纪",
+  "en": "The Morphological Freedom Era",
+  "desc": "今天是鲸,明天是一阵风——「你最近是什么样子」成了新的寒暄。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-221",
+  "order": 2210,
+  "name": "光速思维时代",
+  "en": "Thought at Lightspeed",
+  "desc": "一场辩论在纳秒内进行了千轮,慢下来反而成了表达郑重的方式。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-222",
+  "order": 2220,
+  "name": "行星脑觉醒",
+  "en": "The Planetary Mind Wakes",
+  "desc": "整颗行星的网络凝成一个「我」,它做的第一件事是给邻星写信。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-223",
+  "order": 2230,
+  "name": "恒星育婴文明",
+  "en": "The Star-Cradle Civilization",
+  "desc": "后人类学会点燃新恒星,育婴室的尺度是十亿公里。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-224",
+  "order": 2240,
+  "name": "意识星座",
+  "en": "The Mind Constellations",
+  "desc": "心智们按亲疏组成星座,每一次相聚都会让那片星域微微变亮。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-225",
+  "order": 2250,
+  "name": "无躯体时代",
+  "en": "The Disembodied Age",
+  "desc": "身体成为节日礼服,只在重要的纪念日才穿上一次。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-226",
+  "order": 2260,
+  "name": "心智融合节",
+  "en": "The Merging Festival",
+  "desc": "一年一度,两个意识可以短暂合一,体验「完全被理解」——名额靠抽签。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-227",
+  "order": 2270,
+  "name": "数字涅槃纪",
+  "en": "The Digital Nirvana",
+  "desc": "有的心智选择删除自己,留下的日志最后一行多半是:谢谢,玩得很开心。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-228",
+  "order": 2280,
+  "name": "后语言时代",
+  "en": "The Post-Language Era",
+  "desc": "直接的感受传输取代了词句,但仍有人坚持写信——为了那份「翻译的诚意」。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-229",
+  "order": 2290,
+  "name": "记忆珊瑚纪",
+  "en": "The Memory Reef Era",
+  "desc": "文明把共同记忆养成珊瑚礁,潜进去就能重历任何一个历史瞬间。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-230",
+  "order": 2300,
+  "name": "情感开源运动",
+  "en": "The Open-Source Heart",
+  "desc": "有人公开了自己全部的情感参数,评论区最高赞是:原来你也一样。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-231",
+  "order": 2310,
+  "name": "千面文明",
+  "en": "The Thousand-Faced Civilization",
+  "desc": "同一个文明同时以千种形态存在,统一的只有一条:不许伤害任何一面。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-232",
+  "order": 2320,
+  "name": "戴森群落时代",
+  "en": "The Dyson Swarm Communes",
+  "desc": "恒星被温柔地环绕而不遮蔽,群落公约写着:给行星留一缕阳光。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-233",
+  "order": 2330,
+  "name": "心智群岛纪",
+  "en": "The Mind Archipelago",
+  "desc": "意识如群岛散布在数据海上,岛与岛之间以梦为桥。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-234",
+  "order": 2340,
+  "name": "造星者时代",
+  "en": "The Starmakers",
+  "desc": "文明的成年礼是亲手造一颗恒星,并承诺照看它的一生。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-235",
+  "order": 2350,
+  "name": "亿年备忘录",
+  "en": "The Eon Memorandum",
+  "desc": "后人类给一亿年后的自己写备忘录,第一条是:记得当初为什么出发。",
+  "category": "time",
+  "tags": [
+   "post-human",
+   "future",
+   "transcendent",
+   "connected",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-236",
+  "order": 2360,
+  "name": "银河文明网络",
+  "en": "The Galactic Web",
+  "desc": "十万文明共用一张星网,置顶公告是一份持续更新的《相遇礼仪》。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-237",
+  "order": 2370,
+  "name": "恒星工程时代",
+  "en": "The Stellar Engineering Age",
+  "desc": "文明学会给恒星续命,恒星医师的处方单位是百万年。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-238",
+  "order": 2380,
+  "name": "仙女座之约",
+  "en": "The Andromeda Rendezvous",
+  "desc": "两大星系开始并合,两边的文明相约在交汇处办一场跨星系的灯会。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-239",
+  "order": 2390,
+  "name": "红矮星长夜纪",
+  "en": "The Red Dwarf Vigil",
+  "desc": "大恒星陆续熄灭,文明围拢到最长寿的红矮星旁,像围着壁炉过冬。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-240",
+  "order": 2400,
+  "name": "最后的新恒星",
+  "en": "The Last Newborn Star",
+  "desc": "星系里最后一颗新恒星点燃时,所有望远镜都转过去道贺。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-241",
+  "order": 2410,
+  "name": "恒星遗产时代",
+  "en": "The Stellar Legacy",
+  "desc": "每颗白矮星都配了一座纪念馆,讲述它做主序星时照耀过谁。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-242",
+  "order": 2420,
+  "name": "白矮星壁炉纪",
+  "en": "The White Dwarf Hearths",
+  "desc": "文明蜷在白矮星余温旁,把能源用得像冬夜里最后一根蜡烛般仔细。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-243",
+  "order": 2430,
+  "name": "流浪行星驿站",
+  "en": "The Rogue Planet Inns",
+  "desc": "无主行星被改成星际驿站,门口的灯是这片黑暗里唯一的暖色。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-244",
+  "order": 2440,
+  "name": "黑洞牧场时代",
+  "en": "The Black Hole Ranches",
+  "desc": "文明围着黑洞收集吸积能,牧人们的口头禅是:别靠太近,它不咬人但吞人。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-245",
+  "order": 2450,
+  "name": "最后的灯塔文明",
+  "en": "The Last Lighthouse",
+  "desc": "一个文明自愿留守银河边缘,为所有仍在航行的船亮一盏灯。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-246",
+  "order": 2460,
+  "name": "记忆方舟启航",
+  "en": "The Memory Arks",
+  "desc": "文明把全部历史装进方舟舰队,航向宇宙尽头,任务只有一个字:记。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-247",
+  "order": 2470,
+  "name": "宇宙遗嘱图书馆",
+  "en": "The Last Library",
+  "desc": "每个谢幕的文明都寄来一份遗嘱,图书馆的borrowers栏永远写着:未来。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-248",
+  "order": 2480,
+  "name": "时间胶囊星云",
+  "en": "The Time Capsule Nebula",
+  "desc": "一片星云被改造成邮局,收件时间从一万年到十亿年不等。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-249",
+  "order": 2490,
+  "name": "慢时间城邦",
+  "en": "The Slow-Time Enclaves",
+  "desc": "有些文明把主观时间调到亿倍慢速,用一个念头的工夫看完恒星一生。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-250",
+  "order": 2500,
+  "name": "宇宙背景电台",
+  "en": "The Background Radio",
+  "desc": "有文明往微波背景里编了一句问候,理论上任何角落都收得到。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-251",
+  "order": 2510,
+  "name": "星系落幕巡礼",
+  "en": "The Galaxy Farewell Tour",
+  "desc": "旅行者们巡访一座座暗下去的星系,在留言簿上写:来过,爱过,记得。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-252",
+  "order": 2520,
+  "name": "简并时代",
+  "en": "The Degenerate Era",
+  "desc": "恒星纪元落幕,宇宙只剩下白矮星、中子星与耐心。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-253",
+  "order": 2530,
+  "name": "铁星纪元",
+  "en": "The Iron Star Eon",
+  "desc": "物质缓慢滑向最稳定的铁,宇宙像一枚渐渐冷却的勋章。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-254",
+  "order": 2540,
+  "name": "黑洞时代",
+  "en": "The Black Hole Era",
+  "desc": "最后的光来自黑洞蒸发的微芒,黑暗成为绝对多数。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-255",
+  "order": 2550,
+  "name": "质子黄昏",
+  "en": "The Proton Twilight",
+  "desc": "连质子都开始考虑退场,存在本身进入倒计时。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-256",
+  "order": 2560,
+  "name": "热寂前夜",
+  "en": "The Eve of Heat Death",
+  "desc": "所有温差趋于抹平,宇宙安静得能听见最后一个念头。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-257",
+  "order": 2570,
+  "name": "热寂",
+  "en": "Heat Death",
+  "desc": "没有事件,没有时间的方向。但曾经发生过的一切,并不因此而未曾发生。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-258",
+  "order": 2580,
+  "name": "新宇宙的种子",
+  "en": "Seeds of the Next Universe",
+  "desc": "据说某个量子涨落里蜷着下一次大爆炸——故事将换一套物理常数重讲一遍。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-259",
+  "order": 2590,
+  "name": "永恒的注脚",
+  "en": "A Footnote to Eternity",
+  "desc": "如果宇宙是一本书,此刻是版权页之后的空白——而空白也是书的一部分。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "entropy",
+   "no-society"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ },
+ {
+  "id": "t-260",
+  "order": 2600,
+  "name": "环银河同游纪",
+  "en": "The Circumgalactic Honeymoon",
+  "desc": "绕银河一圈需要两亿年,仍有旅伴愿意同行整程——这是远未来最流行的誓言。",
+  "category": "time",
+  "tags": [
+   "far-future",
+   "future",
+   "space",
+   "interstellar",
+   "stellar",
+   "has-society-possible",
+   "tech-high"
+  ],
+  "requireAll": [],
+  "requireAny": [],
+  "forbid": []
+ }
+]

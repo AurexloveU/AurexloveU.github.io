@@ -1,0 +1,1619 @@
+[
+ {
+  "id": "r-001",
+  "name": "部落祭司",
+  "en": "Tribal Shaman",
+  "desc": "解读兽骨与星象的人,部落所有说不出口的心事都由其代为转达给神明。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-002",
+  "name": "火种守护者",
+  "en": "Keeper of the Flame",
+  "desc": "整个部落的火由其看护,迁徙时走在队伍正中,风雪再大也不能灭。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-003",
+  "name": "猎队首领",
+  "en": "Hunt Leader",
+  "desc": "带队追踪猛犸的人,出发前的规矩是:数两遍人数,回来时还要一个不少。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-004",
+  "name": "岩画画师",
+  "en": "Cave Painter",
+  "desc": "用赭石与炭在洞壁作画的人,负责让部落的故事比部落活得更久。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-005",
+  "name": "采集智者",
+  "en": "Forage Elder",
+  "desc": "认得每一种浆果与蘑菇的老人,弟子的第一课是:不确定的,不要碰。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-006",
+  "name": "驯狼人",
+  "en": "Wolf Tamer",
+  "desc": "第一个朝狼扔出肉骨头的勇者,人类最古老友谊的经手人。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-007",
+  "name": "星象长老",
+  "en": "Star Elder",
+  "desc": "夜里守着篝火数星星的人,部落的历法与所有重要日子由其钦定。",
+  "category": "socialRole",
+  "tags": [
+   "tribe"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "stone-age",
+   "tribal-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-008",
+  "name": "宫廷乐师",
+  "en": "Court Musician",
+  "desc": "在礼制的缝隙里奏乐。真正想弹给谁听,只有琴知道。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-009",
+  "name": "御前史官",
+  "en": "Royal Chronicler",
+  "desc": "一支笔记录王朝起落,职业操守是:哪怕君王皱眉,也照实写。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-010",
+  "name": "星占祭司",
+  "en": "Court Astrologer",
+  "desc": "替王室问天的人,星图上的吉凶要报,流星的浪漫私下留用。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-011",
+  "name": "青铜铸匠",
+  "en": "Bronze Master",
+  "desc": "为王室铸鼎的匠人,花纹的每一道弧线都有名字和讲究。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-012",
+  "name": "王室园丁",
+  "en": "Palace Gardener",
+  "desc": "打理御花园的人,知道哪一株花开得最好,也知道谁常来看它。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-013",
+  "name": "御医",
+  "en": "Court Physician",
+  "desc": "给君王把脉的医者,药方谨慎,话更谨慎,心肠却软。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-014",
+  "name": "异邦使节",
+  "en": "Foreign Envoy",
+  "desc": "带着国书与礼物远道而来的人,一句话说错就是外交事故,所以字字斟酌。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-015",
+  "name": "神庙舞者",
+  "en": "Temple Dancer",
+  "desc": "以舞蹈事神的人,旋转时铃铛作响,传说神明会借舞步回话。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-016",
+  "name": "王家驯马师",
+  "en": "Royal Horsemaster",
+  "desc": "驯服烈马的人,信条是:马不是被驯服的,是被说服的。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-017",
+  "name": "抄写员",
+  "en": "Scribe",
+  "desc": "负责把口头的历史誊进竹简或羊皮。指尖常年带墨,句读之间夹带私货。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-018",
+  "name": "盐铁商",
+  "en": "Salt Merchant",
+  "desc": "经营国之命脉的大商人,账本厚如城砖,人情账另记一册。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-019",
+  "name": "商队首领",
+  "en": "Caravan Master",
+  "desc": "带着驼队横穿沙漠的人,星星是地图,水囊是命,同伴是全部。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-020",
+  "name": "陵墓建筑师",
+  "en": "Tomb Architect",
+  "desc": "为君王修「永远的家」的人,自己的心愿却是修一座小小的、有人间烟火的房子。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-021",
+  "name": "宫廷诗人",
+  "en": "Court Poet",
+  "desc": "奉旨写颂歌的人,最好的几首却从未呈上——那些是写给某个人的。",
+  "category": "socialRole",
+  "tags": [
+   "court"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "monarchy-era",
+   "imperial-era"
+  ],
+  "forbid": [
+   "prehistoric",
+   "no-society"
+  ]
+ },
+ {
+  "id": "r-022",
+  "name": "城邦哲人",
+  "en": "Polis Philosopher",
+  "desc": "在柱廊下追问「什么是好生活」的人,答案每天不同,追问从不间断。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-023",
+  "name": "角斗士",
+  "en": "Gladiator",
+  "desc": "竞技场上为生存与自由而战的人,盾牌内侧刻着一个小小的名字。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-024",
+  "name": "广场演说家",
+  "en": "Orator",
+  "desc": "声音能盖过整个广场的人,私下说话却很轻,像怕惊动什么。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-025",
+  "name": "剧场诗人",
+  "en": "Theatre Poet",
+  "desc": "写悲剧与喜剧的人,深知两者的配方其实相同,只差一个结尾。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-026",
+  "name": "图书馆抄录员",
+  "en": "Library Copyist",
+  "desc": "在大图书馆誊抄典籍的人,借着职务之便,读遍了世上所有情诗。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-027",
+  "name": "军团测绘官",
+  "en": "Legion Surveyor",
+  "desc": "为大军铺路架桥的人,地图边角习惯性留白——那里将来要标一座家。",
+  "category": "socialRole",
+  "tags": [
+   "civic"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "classical"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-028",
+  "name": "骑士",
+  "en": "Knight",
+  "desc": "发过誓言的武人,盔甲很重,誓言更重,常年替人挡在前面。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-029",
+  "name": "抄经僧",
+  "en": "Manuscript Monk",
+  "desc": "在修道院描金抄经的人,页边空白处画满小兽与花——那是严肃里私藏的温柔。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-030",
+  "name": "行会工匠",
+  "en": "Guild Artisan",
+  "desc": "凭手艺吃饭的人,作品出手前要盖上印记:活儿是我的,责任也是。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-031",
+  "name": "城堡守夜人",
+  "en": "Castle Nightwatch",
+  "desc": "在城垛上守到天明的人,熟悉每一颗星的位置和每一种脚步声。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-032",
+  "name": "炼金术士",
+  "en": "Alchemist",
+  "desc": "在塔顶炼「不可能」的人,黄金没炼成,倒是先炼出了颜料、瓷釉和无数个不眠之夜。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-033",
+  "name": "药草修女",
+  "en": "Herbalist Sister",
+  "desc": "修道院药圃的主人,治病的药草和安心的话都按方抓取。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-034",
+  "name": "石匠大师",
+  "en": "Master Mason",
+  "desc": "主持大教堂工程的人,深知自己看不到完工那天,依然把每块石头放对位置。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-035",
+  "name": "猎鹰师",
+  "en": "Falconer",
+  "desc": "与猛禽立约的人,手臂一抬一收之间,是这个时代最优雅的信任。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-036",
+  "name": "商栈掌柜",
+  "en": "Trading Post Keeper",
+  "desc": "南来北往消息的枢纽,货物明码标价,传话分文不取。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-037",
+  "name": "敲钟人",
+  "en": "Bell Ringer",
+  "desc": "住在钟楼顶的人,整座城的时间由其双手报出,唯独自己的日子过得没有钟点。",
+  "category": "socialRole",
+  "tags": [
+   "guild"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "medieval"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-038",
+  "name": "宫廷画师",
+  "en": "Court Painter",
+  "desc": "为权贵画像的人,把委托人的威严画在明处,把模特的温柔藏进光里。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-039",
+  "name": "印刷坊主",
+  "en": "Print Master",
+  "desc": "铅字的指挥官,最自豪的是:从这里印出去的字,跑得比谣言快。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-040",
+  "name": "航海领航员",
+  "en": "Sea Navigator",
+  "desc": "凭星辰与海图为整船人指路的人,航线尽头永远画着一个小小的港。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-041",
+  "name": "剧团名伶",
+  "en": "Star of the Troupe",
+  "desc": "台上千面,台下一心,谢幕时目光总往同一个包厢看。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-042",
+  "name": "制图师",
+  "en": "Cartographer",
+  "desc": "为「未知」画像的人,笔下的海怪是提醒:世界比地图大,勇气要随身携带。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-043",
+  "name": "玻璃吹制师",
+  "en": "Glassblower",
+  "desc": "与火焰共舞的匠人,能把一口气吹成星星的形状。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-044",
+  "name": "天文台助手",
+  "en": "Observatory Assistant",
+  "desc": "为天文学家记录数据的人,私下里给没有名字的星都起了小名。",
+  "category": "socialRole",
+  "tags": [
+   "atelier"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "renaissance"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-045",
+  "name": "机车司机",
+  "en": "Locomotive Engineer",
+  "desc": "驾驶钢铁巨兽的人,汽笛长鸣两声是规程,三声是给站台上某个人的。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-046",
+  "name": "电报员",
+  "en": "Telegraph Operator",
+  "desc": "指尖敲出滴答电码的人,公务电文之外,也偷偷发过几条没有署名的问候。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-047",
+  "name": "纺织厂督导",
+  "en": "Mill Overseer",
+  "desc": "在织机轰鸣中巡走的人,能凭声音听出哪一台机器累了。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-048",
+  "name": "报社记者",
+  "en": "Newspaper Reporter",
+  "desc": "追着新闻跑的人,笔杆子硬,鞋底磨得飞快,相信真相赶得上印刷机。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-049",
+  "name": "灯塔看守",
+  "en": "Lighthouse Keeper",
+  "desc": "守着一座灯和一片海的人,日志写得极简:今夜有雾,灯亮着,一切都好。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-050",
+  "name": "铁路测量员",
+  "en": "Rail Surveyor",
+  "desc": "为铁轨探路的人,翻过的每一座山,将来都会变成别人窗外的风景。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-051",
+  "name": "橱窗设计师",
+  "en": "Window Dresser",
+  "desc": "百货公司玻璃后的造梦者,每月一换的橱窗是写给全城的公开情书。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-052",
+  "name": "热气球飞行员",
+  "en": "Balloonist",
+  "desc": "这个时代离天空最近的人,乘客须知只有一条:风决定方向,我们负责欣赏。",
+  "category": "socialRole",
+  "tags": [
+   "works"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "industrial"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-053",
+  "name": "爵士乐手",
+  "en": "Jazz Musician",
+  "desc": "深夜俱乐部的萨克斯手,即兴是本职,某一段旋律却每晚都原样出现。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-054",
+  "name": "电影放映员",
+  "en": "Projectionist",
+  "desc": "放映室里的隐形人,换片从不出错,散场后会独自把片尾字幕看完。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-055",
+  "name": "电台DJ",
+  "en": "Radio DJ",
+  "desc": "凌晨频道的声音,只放点歌,不问点给谁。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-056",
+  "name": "侦探",
+  "en": "Detective",
+  "desc": "风衣口袋里装着两枚硬币和半座城市的秘密,只接「找回丢失之物」的委托。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-057",
+  "name": "摄影师",
+  "en": "Photographer",
+  "desc": "把「此刻」装进暗盒的人,快门按下的时机,全凭心跳指挥。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-058",
+  "name": "出租车司机",
+  "en": "Taxi Driver",
+  "desc": "全城道路的活地图,听过的故事比广播还多,职业操守是:到站即忘。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-059",
+  "name": "图书管理员",
+  "en": "Librarian",
+  "desc": "书海的引路人,记得每本书的位置,也记得谁借过哪本没舍得还。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-060",
+  "name": "天气预报员",
+  "en": "Weather Forecaster",
+  "desc": "预报晴雨的人,准确率一般,但「记得带伞」四个字从不缺席。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-061",
+  "name": "霓虹灯匠",
+  "en": "Neon Sign Maker",
+  "desc": "弯玻璃管的手艺人,整条街的夜色都出自其手,最亮的一块招牌留给自己的小店。",
+  "category": "socialRole",
+  "tags": [
+   "metro"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "modern"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-062",
+  "name": "独立游戏开发者",
+  "en": "Indie Game Dev",
+  "desc": "一个人扛下策划美术程序的人,游戏里藏着一个只有特定操作才能进入的房间。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-063",
+  "name": "数据分析师",
+  "en": "Data Analyst",
+  "desc": "在报表里找故事的人,深知相关不等于因果,除了某两条曲线的同步。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-064",
+  "name": "视频博主",
+  "en": "Video Creator",
+  "desc": "对着镜头说话的人,粉丝百万,片尾的「晚安」却只对一个人认真。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-065",
+  "name": "电竞选手",
+  "en": "Esports Player",
+  "desc": "手速惊人的职业玩家,赛后采访永远感谢队友——尤其固定双排的那位。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-066",
+  "name": "开源维护者",
+  "en": "Open Source Maintainer",
+  "desc": "深夜合并代码的志愿者,回复陌生人的 issue 比回自己消息还快。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-067",
+  "name": "无人机飞手",
+  "en": "Drone Pilot",
+  "desc": "视角常年在百米高空的人,航拍硬盘里存着全城最美的落日合集。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-068",
+  "name": "深夜电台主播",
+  "en": "Midnight Streamer",
+  "desc": "零点后开播的声音,听众不多但都是熟人,弹幕安静得像炉火。",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-069",
+  "name": "算法伦理审查员",
+  "en": "Algorithm Auditor",
+  "desc": "给代码做良心体检的人,常问的一句是:如果对象是你在乎的人,这个功能还上线吗?",
+  "category": "socialRole",
+  "tags": [
+   "online"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "information-age"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-070",
+  "name": "气候修复工程师",
+  "en": "Climate Repair Engineer",
+  "desc": "给地球降温的一线工人,工牌背面印着自家孩子画的蓝色星球。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-071",
+  "name": "垂直农场主",
+  "en": "Vertical Farmer",
+  "desc": "在三十层楼里种菜的人,顶层留了一畦不上市的草莓,专供来访的朋友现摘。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-072",
+  "name": "脑机接口调音师",
+  "en": "Neural Link Tuner",
+  "desc": "为意念设备做校准的技师,口头禅是:想不清楚没关系,想着那个人就稳了。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-073",
+  "name": "城市风道规划师",
+  "en": "Wind Corridor Planner",
+  "desc": "给城市安排风的走向的人,确保每年春天,花香能吹进每一扇通勤的车窗。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-074",
+  "name": "人造月亮维护员",
+  "en": "Second Moon Technician",
+  "desc": "维护反射镜卫星的人,加班的补偿是:可以指定一晚,把月光调亮百分之三。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-075",
+  "name": "记忆备份公证人",
+  "en": "Memory Notary",
+  "desc": "为重要记忆做认证存档的人,业务高峰在每年纪念日前后。",
+  "category": "socialRole",
+  "tags": [
+   "newtown"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "near-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-076",
+  "name": "星港领航员",
+  "en": "Port Navigator",
+  "desc": "为进出港的巨舰指路。习惯说「一路顺风」,尽管太空里并没有风。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-077",
+  "name": "水培农夫",
+  "en": "Hydroponic Farmer",
+  "desc": "殖民地的粮食官,温室是全站最受欢迎的散步地点,因为那里有「绿色」。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-078",
+  "name": "飞船轮机长",
+  "en": "Chief Engineer",
+  "desc": "住在引擎室隔壁的人,能从震动频率听出船的心情,并声称船也懂自己的。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-079",
+  "name": "太空电梯乘务",
+  "en": "Elevator Attendant",
+  "desc": "在七天的升轨旅程里照顾乘客的人,最常回答的问题是:快到了吗?——快了。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-080",
+  "name": "小行星矿工",
+  "en": "Belt Miner",
+  "desc": "在碎石带里讨生活的人,头盔里贴着一张照片,那是所有安全规程之外的护身符。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-081",
+  "name": "深空信标维护员",
+  "en": "Beacon Keeper",
+  "desc": "独驻信标站的人,工作是让灯一直亮着,爱好是给每艘路过的船起外号。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-082",
+  "name": "星际邮差",
+  "en": "Interstellar Courier",
+  "desc": "跑一趟要几年的送信人,信封上的「亲启」二字,值得整段航程。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-083",
+  "name": "舰队外交官",
+  "en": "Fleet Diplomat",
+  "desc": "代表船队与陌生文明说第一句话的人,行前必修课是三百种微笑的含义。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-084",
+  "name": "引力波观测员",
+  "en": "Gravity Wave Watcher",
+  "desc": "守着干涉仪听宇宙动静的人,值班日志里写过一句:今晚宇宙很安静,适合想念。",
+  "category": "socialRole",
+  "tags": [
+   "fleet"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "space-age",
+   "far-future"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-085",
+  "name": "数据织工",
+  "en": "Data Weaver",
+  "desc": "在信息流里打捞、修补被遗忘的记忆碎片,按夜计费,按心情退款。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-086",
+  "name": "义体医师",
+  "en": "Prosthetic Surgeon",
+  "desc": "给义体做手术的医生,坚持术前谈话面对面进行:有些误差,仪器测不出来。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-087",
+  "name": "虚拟建筑师",
+  "en": "Virtual Architect",
+  "desc": "在数据空间盖房子的人,不受重力约束,却坚持给每栋建筑留一扇朝南的窗。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-088",
+  "name": "加密信使",
+  "en": "Cipher Courier",
+  "desc": "递送最高密级信息的人,记忆里的送件内容会自动焚毁,只有「送到了」留下。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-089",
+  "name": "电子驱魔人",
+  "en": "Digital Exorcist",
+  "desc": "清理恶意程序与数据怨灵的人,对良性的「数字幽灵」网开一面,还会代转遗言。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-090",
+  "name": "防火墙守卫",
+  "en": "Firewall Warden",
+  "desc": "意识边境的哨兵,拦截一切入侵,放行所有真心的问候——这是权限内的温柔。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-091",
+  "name": "全息偶像经纪人",
+  "en": "Holo-idol Manager",
+  "desc": "数据艺人的经纪人,谈合同寸步不让,谈到艺人的休息时间更寸步不让。",
+  "category": "socialRole",
+  "tags": [
+   "grid"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "cyber-era"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-092",
+  "name": "意识花园园丁",
+  "en": "Mind Garden Keeper",
+  "desc": "照料新生意识的园丁,浇的是算力,施的是耐心,开的花叫「自我」。",
+  "category": "socialRole",
+  "tags": [
+   "ascended"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-093",
+  "name": "形态设计师",
+  "en": "Form Designer",
+  "desc": "为客户设计新身体的人,签名作是一对可以在恒星风里牵手的形态。",
+  "category": "socialRole",
+  "tags": [
+   "ascended"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-094",
+  "name": "文明记忆馆员",
+  "en": "Civilization Archivist",
+  "desc": "看管全文明记忆的馆员,借阅台立着一块牌子:悲伤的记忆也值得被善待。",
+  "category": "socialRole",
+  "tags": [
+   "ascended"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-095",
+  "name": "恒星工程监理",
+  "en": "Stellar Works Inspector",
+  "desc": "验收恒星工程的人,验收单最后一项是:百万年后,它是否依然温柔。",
+  "category": "socialRole",
+  "tags": [
+   "ascended"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-096",
+  "name": "群意识调解人",
+  "en": "Chorus Mediator",
+  "desc": "当亿万心智吵架时居中调停的人,秘诀是让每个「我」都先被听完。",
+  "category": "socialRole",
+  "tags": [
+   "ascended"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "post-human"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-097",
+  "name": "游吟诗人",
+  "en": "Wandering Bard",
+  "desc": "哪个时代都收留唱歌的人。传说他们的行囊里装着所有没讲完的故事。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-098",
+  "name": "流浪商贩",
+  "en": "Traveling Peddler",
+  "desc": "背着整个杂货铺行走的人,货担里总有一样东西,恰好是你正需要的。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-099",
+  "name": "说书人",
+  "en": "Storyteller",
+  "desc": "一块醒木拍碎悬念。最擅长的桥段,是把听众讲进故事里。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-100",
+  "name": "信使",
+  "en": "Messenger",
+  "desc": "任何时代都需要的角色:把一句话原封不动、连同语气一起,送到另一个人面前。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-101",
+  "name": "厨子",
+  "en": "Cook",
+  "desc": "掌管人间烟火的人,手艺的最高境界不是山珍海味,而是「你上次说好吃的那道」。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-102",
+  "name": "占星师",
+  "en": "Stargazer",
+  "desc": "替人问星星的人,星盘复杂,结论通常很简单:诚实,勇敢,去见想见的人。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ },
+ {
+  "id": "r-103",
+  "name": "守桥人",
+  "en": "Bridge Keeper",
+  "desc": "住在桥头的人,不收过桥费,只攒过桥的故事,攒了一辈子。",
+  "category": "socialRole",
+  "tags": [
+   "wandering"
+  ],
+  "requireAll": [],
+  "requireAny": [
+   "has-society-possible"
+  ],
+  "forbid": []
+ }
+]
